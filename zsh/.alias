@@ -1,0 +1,12 @@
+alias up="brew update && brew upgrade && brew cleanup && omz update"
+alias vi="nvim"
+alias vim="nvim"
+alias cat="bat"
+# Pretty print the path
+alias path='echo $PATH | tr -s ":" "\n"'
+
+# Include custom aliases
+if [[ -f ~/.aliases.local ]]; then
+  source ~/.aliases.local
+fi
+

@@ -1,0 +1,36 @@
+# This is Git's per-user configuration file.
+[url "git@gitlab.woqutech.com:"]
+	insteadOf = https://gitlab.woqutech.com/
+[user]
+# Please adapt and uncomment the following lines:
+	name = Waynerv
+	email = wei.xie@woqutech.com
+[core]
+	pager = delta
+[pull]
+	rebase = false
+[merge]
+	conflictstyle = diff3
+[diff]
+	colorMoved = default
+[init]
+	defaultBranch = main
+
+[interactive]
+	diffFilter = delta --color-only --features=interactive
+
+[delta]
+	features = decorations
+	navigate = true
+
+[delta "interactive"]
+	keep-plus-minus-markers = false
+
+[delta "decorations"]
+	commit-decoration-style = blue ol
+	commit-style = raw
+	file-style = omit
+	hunk-header-decoration-style = blue box
+	hunk-header-file-style = red
+	hunk-header-line-number-style = "#067a00"
+	hunk-header-style = file line-number syntax
