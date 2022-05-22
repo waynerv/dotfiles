@@ -73,5 +73,16 @@ brew "yq"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
 brew "hudochenkov/sshpass/sshpass"
+cask "go2shell"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
+# Privacy-first, open-source platform for knowledge sharing and management
+cask "logseq"
+# Smooths scrolling and set mouse scroll directions independently
+cask "mos"
+# Image optimization tool
+cask "optimage"
 # Control your tools with a few keystrokes
 cask "raycast"
+# Open-source code editor
+cask "visual-studio-code"
