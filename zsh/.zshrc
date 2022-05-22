@@ -124,4 +124,5 @@ export EDITOR="nvim"
 
 eval $(thefuck --alias)
 
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

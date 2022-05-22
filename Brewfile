@@ -26,6 +26,8 @@ brew "dust"
 brew "exa"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
+# Command-line fuzzy finder written in Go
+brew "fzf"
 # Distributed revision control system
 brew "git"
 # Syntax-highlighting pager for git and diff output
@@ -71,3 +73,5 @@ brew "yq"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
 brew "hudochenkov/sshpass/sshpass"
+# Control your tools with a few keystrokes
+cask "raycast"
