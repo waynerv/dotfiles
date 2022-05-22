@@ -1,4 +1,4 @@
-alias up="brew update && brew upgrade && brew cleanup && omz update"
+alias up="brew update && brew upgrade && brew cleanup && omz update && git -C ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k pull"
 alias vi="nvim"
 alias vim="nvim"
 alias cat="bat"
