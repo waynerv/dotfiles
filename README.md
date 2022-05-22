@@ -29,7 +29,7 @@ cd ~/dotfiles
 stow */
 ```
 
-## Set up other tools
+## Set up
 
 ### Homebrew
 
@@ -83,23 +83,23 @@ apps are exposed on your $PATH at /Users/waynerv/.local/bin
 ### Others
 
 1. oh-my-zsh
-  ```
-  sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-  ```
+    ```
+    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    ```
 
 2. [install nerd font](https://github.com/romkatv/powerlevel10k/blob/master/README.md#meslo-nerd-font-patched-for-powerlevel10k)
 
 3. powerline10k
-  1) Clone the repository:
-      ```zsh
-      git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-      ```
-  2) Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc`.
+    1) Clone the repository:
+        ```zsh
+        git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+        ```
+    2) Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc`.
 
 4. LunarVim
-  ```
-  bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
-  ```
+    ```
+    bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+    ```
 
 ## How to backup
 
