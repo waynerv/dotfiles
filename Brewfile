@@ -73,6 +73,8 @@ brew "yq"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
 brew "hudochenkov/sshpass/sshpass"
+# Universal database tool and SQL client
+cask "dbeaver-community"
 cask "go2shell"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"

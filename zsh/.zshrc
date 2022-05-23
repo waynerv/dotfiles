@@ -76,7 +76,7 @@ POWERLEVEL9K_MODE="awesome-patched"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions asdf poetry kubectl golang)
+plugins=(git asdf poetry kubectl golang zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -110,7 +110,6 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 # Created by `pipx` on 2021-06-02 04:50:33
@@ -123,6 +122,5 @@ export GOPATH="$HOME/go"
 export EDITOR="nvim"
 
 eval $(thefuck --alias)
-
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
