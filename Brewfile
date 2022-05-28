@@ -40,6 +40,8 @@ brew "gnupg"
 brew "helm"
 # Configurable static site generator
 brew "hugo"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "k9s"
 # Run local Kubernetes cluster in Docker
