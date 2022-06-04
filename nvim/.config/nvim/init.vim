@@ -1,10 +1,5 @@
-syntax on
-set nu ru et
+set number cursorline expandtab
 set ts=2 sts=2 sw=2
-set cursorline
-set hlsearch
-set nocompatible
-filetype on
 
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
@@ -33,11 +28,17 @@ Plug 'preservim/nerdtree'
 " Plugin options
 
 " Plugin outside ~/.vim/plugged with post-update hook
-Plug 'vim-airline/vim-airline'
+Plug 'nvim-lualine/lualine.nvim'
+" If you want to have icons in your statusline choose one of these
+Plug 'kyazdani42/nvim-web-devicons'
 Plug 'https://github.com/joshdick/onedark.vim.git'
 
 " Initialize plugin system
 call plug#end()
 
 colorscheme onedark
+
+lua << END
+require('lualine').setup()
+END
 
