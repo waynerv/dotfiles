@@ -56,8 +56,6 @@ brew "mas"
 brew "neovim"
 # Development kit for the Java programming language
 brew "openjdk"
-# Generate clients, server & docs from an OpenAPI spec (v2, v3)
-brew "openapi-generator"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
 # Work with remote images registries
@@ -78,8 +76,6 @@ brew "wget"
 brew "wrk"
 # Process YAML documents from the CLI
 brew "yq"
-# Fish shell like syntax highlighting for zsh
-brew "zsh-syntax-highlighting"
 brew "hudochenkov/sshpass/sshpass"
 # Universal database tool and SQL client
 cask "dbeaver-community"
