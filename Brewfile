@@ -20,6 +20,8 @@ brew "cloc"
 brew "curl"
 # Tool for exploring each layer in a docker image
 brew "dive"
+# Disk Usage/Free Utility - a better 'df' alternative
+brew "duf"
 # More intuitive version of du in rust
 brew "dust"
 # Modern replacement for 'ls'
@@ -48,6 +50,8 @@ brew "k9s"
 brew "kind"
 # Tool that can switch between kubectl contexts easily and create aliases
 brew "kubectx"
+# Mac App Store command-line interface
+brew "mas"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Development kit for the Java programming language
@@ -62,6 +66,8 @@ brew "skopeo"
 brew "stow"
 # User interface to the TELNET protocol
 brew "telnet"
+# Upgrade all the things
+brew "topgrade"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Command-line unarchiving tools supporting multiple formats
@@ -90,3 +96,13 @@ cask "optimage"
 cask "raycast"
 # Open-source code editor
 cask "visual-studio-code"
+mas "CotEditor", id: 1024640650
+mas "Eye Monitor", id: 1527031341
+mas "GIPHY CAPTURE", id: 668208984
+mas "iShot", id: 1485844094
+mas "Kindle", id: 405399194
+mas "OneDrive", id: 823766827
+mas "QQ音乐", id: 595615424
+mas "Reeder", id: 1449412482
+mas "Unsplash Wallpapers", id: 1284863847
+mas "微信", id: 836500024
