@@ -52,6 +52,8 @@ brew "kind"
 brew "kubectx"
 # Mac App Store command-line interface
 brew "mas"
+# Fast, highly customisable system info script
+brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Development kit for the Java programming language
@@ -77,9 +79,13 @@ brew "wrk"
 # Process YAML documents from the CLI
 brew "yq"
 brew "hudochenkov/sshpass/sshpass"
+# E-books management software
+cask "calibre"
 # Universal database tool and SQL client
 cask "dbeaver-community"
 cask "go2shell"
+# Free and open-source media player
+cask "iina"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Privacy-first, open-source platform for knowledge sharing and management
@@ -98,7 +104,6 @@ mas "GIPHY CAPTURE", id: 668208984
 mas "iShot", id: 1485844094
 mas "Kindle", id: 405399194
 mas "OneDrive", id: 823766827
-mas "QQ音乐", id: 595615424
 mas "Reeder", id: 1449412482
 mas "Unsplash Wallpapers", id: 1284863847
 mas "微信", id: 836500024
