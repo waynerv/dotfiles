@@ -48,8 +48,8 @@ brew "jq"
 brew "k9s"
 # Run local Kubernetes cluster in Docker
 brew "kind"
-# Tool that can switch between kubectl contexts easily and create aliases
-brew "kubectx"
+# Kubernetes command-line interface
+brew "kubernetes-cli"
 # Mac App Store command-line interface
 brew "mas"
 # Fast, highly customisable system info script
@@ -96,6 +96,8 @@ cask "mos"
 cask "optimage"
 # Control your tools with a few keystrokes
 cask "raycast"
+# Configurable document editor that supports Markdown
+cask "typora"
 # Open-source code editor
 cask "visual-studio-code"
 mas "CotEditor", id: 1024640650
