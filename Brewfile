@@ -16,12 +16,8 @@ brew "bat"
 brew "btop"
 # Statistics utility to count lines of code
 brew "cloc"
-# Get a file from an HTTP, HTTPS or FTP server
-brew "curl"
 # Tool for exploring each layer in a docker image
 brew "dive"
-# Disk Usage/Free Utility - a better 'df' alternative
-brew "duf"
 # More intuitive version of du in rust
 brew "dust"
 # Modern replacement for 'ls'
@@ -52,8 +48,6 @@ brew "kind"
 brew "kubernetes-cli"
 # Mac App Store command-line interface
 brew "mas"
-# Fast, highly customisable system info script
-brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Development kit for the Java programming language
