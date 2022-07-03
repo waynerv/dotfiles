@@ -5,7 +5,8 @@ set termguicolors
 let g:do_filetype_lua = 1
 let g:did_load_filetypes = 0
 
-nnoremap <C-n> :NERDTree<CR>
+" keymap
+nnoremap <C-n> :NvimTreeToggle<CR>
 
 imap jj <Esc>
 
@@ -18,15 +19,11 @@ call plug#begin()
 " You can specify a custom plugin directory by passing it as the argument
 "   - e.g. `call plug#begin('~/.vim/plugged')`
 "   - Avoid using standard Vim directory names like 'plugin'
-
 " Make sure you use single quotes
-
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 " Any valid git URL is allowed
 " Multiple Plug commands can be written in a single line using | separators
 " On-demand loading
-Plug 'preservim/nerdtree'
-
 " Using a non-default branch
 " Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
 " Plugin options
@@ -35,19 +32,20 @@ Plug 'preservim/nerdtree'
 Plug 'nvim-lualine/lualine.nvim'
 " If you want to have icons in your statusline choose one of these
 Plug 'kyazdani42/nvim-web-devicons'
-Plug 'https://github.com/joshdick/onedark.vim.git'
+Plug 'kyazdani42/nvim-tree.lua'
+Plug 'olimorris/onedarkpro.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " Initialize plugin system
 call plug#end()
 
-colorscheme onedark
+colorscheme onedarkpro
 
 lua << END
 require('lualine').setup()
-END
 
-lua << END
+require('nvim-tree').setup()
+
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all"
   ensure_installed = { "go", "python", "bash" },
@@ -69,4 +67,11 @@ require'nvim-treesitter.configs'.setup {
     enable = true
   }
 }
+
+local onedarkpro = require("onedarkpro")
+onedarkpro.setup({
+  dark_theme = "onedark_vivid", -- The default dark theme
+  light_theme = "onelight", -- The default light theme
+})
+onedarkpro.load()
 END
