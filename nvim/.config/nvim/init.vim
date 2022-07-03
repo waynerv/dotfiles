@@ -2,6 +2,9 @@ set number cursorline expandtab
 set ts=2 sts=2 sw=2
 set termguicolors
 
+let g:do_filetype_lua = 1
+let g:did_load_filetypes = 0
+
 nnoremap <C-n> :NERDTree<CR>
 
 imap jj <Esc>
