@@ -76,6 +76,30 @@ brew install git
 
 ## How to backup
 
+### package
+
+```bash
+mkdir -p ~/dotfiles/<package>
+mv ~/<dotfile> ~/dotfiles/<package>/<dotfile>
+cd ~/dorfiles
+stow <package>
+```
+Example:
+```bash
+❯ pwd
+/Users/waynerv/dotfiles
+❯ find nvim
+nvim
+nvim/.config
+nvim/.config/nvim
+nvim/.config/nvim/init.vim
+nvim/.config/nvim/autoload
+nvim/.config/nvim/autoload/plug.vim
+❯ stow --target=/Users/waynerv nvim
+❯ ls -l ~/.config/nvim
+lrwxr-xr-x  1 waynerv  staff  29  5 21 22:36 /Users/waynerv/.config/nvim -> ../dotfiles/nvim/.config/nvim
+```
+
 ### homebrew
 
 ```bash

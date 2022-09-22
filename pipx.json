@@ -25,7 +25,7 @@
                     "include_dependencies": false,
                     "package": "black",
                     "package_or_url": "black",
-                    "package_version": "22.3.0",
+                    "package_version": "22.8.0",
                     "pip_args": [],
                     "suffix": ""
                 },
@@ -84,7 +84,7 @@
                     "include_dependencies": false,
                     "package": "bpython",
                     "package_or_url": "bpython",
-                    "package_version": "0.22.1",
+                    "package_version": "0.23",
                     "pip_args": [],
                     "suffix": ""
                 },
@@ -135,7 +135,7 @@
                     "include_dependencies": false,
                     "package": "cookiecutter",
                     "package_or_url": "cookiecutter",
-                    "package_version": "1.7.3",
+                    "package_version": "2.1.1",
                     "pip_args": [],
                     "suffix": ""
                 },
@@ -195,6 +195,26 @@
                                 "__type__": "Path"
                             }
                         ],
+                        "dulwich": [
+                            {
+                                "__Path__": "/Users/waynerv/.local/pipx/venvs/poetry/bin/dul-receive-pack",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/Users/waynerv/.local/pipx/venvs/poetry/bin/dul-upload-pack",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/Users/waynerv/.local/pipx/venvs/poetry/bin/dulwich",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "jsonschema": [
+                            {
+                                "__Path__": "/Users/waynerv/.local/pipx/venvs/poetry/bin/jsonschema",
+                                "__type__": "Path"
+                            }
+                        ],
                         "keyring": [
                             {
                                 "__Path__": "/Users/waynerv/.local/pipx/venvs/poetry/bin/keyring",
@@ -212,6 +232,12 @@
                                 "__Path__": "/Users/waynerv/.local/pipx/venvs/poetry/bin/virtualenv",
                                 "__type__": "Path"
                             }
+                        ],
+                        "xattr": [
+                            {
+                                "__Path__": "/Users/waynerv/.local/pipx/venvs/poetry/bin/xattr",
+                                "__type__": "Path"
+                            }
                         ]
                     },
                     "apps": [
@@ -220,15 +246,20 @@
                     "apps_of_dependencies": [
                         "doesitcache",
                         "normalizer",
+                        "dul-receive-pack",
+                        "dul-upload-pack",
+                        "dulwich",
+                        "jsonschema",
                         "keyring",
                         "pkginfo",
-                        "virtualenv"
+                        "virtualenv",
+                        "xattr"
                     ],
                     "include_apps": true,
                     "include_dependencies": false,
                     "package": "poetry",
                     "package_or_url": "poetry",
-                    "package_version": "1.1.13",
+                    "package_version": "1.2.1",
                     "pip_args": [],
                     "suffix": ""
                 },

@@ -54,6 +54,8 @@ brew "neovim"
 brew "openjdk"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
 # Work with remote images registries
 brew "skopeo"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
@@ -75,8 +77,6 @@ brew "yq"
 brew "hudochenkov/sshpass/sshpass"
 # E-books management software
 cask "calibre"
-# Universal database tool and SQL client
-cask "dbeaver-community"
 cask "go2shell"
 # Free and open-source media player
 cask "iina"
@@ -94,6 +94,7 @@ cask "raycast"
 cask "typora"
 # Open-source code editor
 cask "visual-studio-code"
+mas "Bob", id: 1630034110
 mas "CotEditor", id: 1024640650
 mas "Eye Monitor", id: 1527031341
 mas "GIPHY CAPTURE", id: 668208984
