@@ -62,6 +62,8 @@ brew "stow"
 brew "telnet"
 # Terminal multiplexer
 brew "tmux"
+# CPU, RAM memory, and load monitor for use with tmux
+brew "tmux-mem-cpu-load"
 # Upgrade all the things
 brew "topgrade"
 # Display directories as trees (with optional color/HTML output)
