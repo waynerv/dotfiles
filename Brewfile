@@ -50,8 +50,6 @@ brew "kubernetes-cli"
 brew "mas"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# Development kit for the Java programming language
-brew "openjdk"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
 # Search tool like grep and The Silver Searcher
@@ -62,6 +60,8 @@ brew "skopeo"
 brew "stow"
 # User interface to the TELNET protocol
 brew "telnet"
+# Terminal multiplexer
+brew "tmux"
 # Upgrade all the things
 brew "topgrade"
 # Display directories as trees (with optional color/HTML output)
@@ -101,7 +101,6 @@ mas "GIPHY CAPTURE", id: 668208984
 mas "iShot", id: 1485844094
 mas "Kindle", id: 405399194
 mas "OneDrive", id: 823766827
-mas "Reeder", id: 1449412482
 mas "Unsplash Wallpapers", id: 1284863847
 mas "微信", id: 836500024
 mas "腾讯会议", id: 1484048379
