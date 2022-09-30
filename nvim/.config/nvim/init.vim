@@ -42,8 +42,6 @@ call plug#end()
 colorscheme onedarkpro
 
 lua << END
-require('lualine').setup()
-
 require('nvim-tree').setup()
 
 require'nvim-treesitter.configs'.setup {
@@ -74,4 +72,8 @@ onedarkpro.setup({
   light_theme = "onelight", -- The default light theme
 })
 onedarkpro.load()
+
+-- always load lualine after colorscheme
+require('lualine').setup()
+
 END

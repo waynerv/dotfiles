@@ -11,6 +11,14 @@ alias la="exa --long --header --git --icons --group-directories-first --all"
 
 alias gmv="go mod tidy && go mod vendor"
 
+# tmux
+alias ta='tmux attach -t'
+alias tad='tmux attach -d -t'
+alias ts='tmux new-session -s'
+alias tl='tmux list-sessions'
+alias tksv='tmux kill-server'
+alias tkss='tmux kill-session -t'
+
 # Include custom aliases
 if [[ -f ~/.aliases.local ]]; then
   source ~/.aliases.local
