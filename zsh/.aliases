@@ -12,7 +12,8 @@ alias la="exa --long --header --git --icons --group-directories-first --all"
 alias gmv="go mod tidy && go mod vendor"
 
 # tmux
-alias ta='tmux attach -t'
+alias ta='tmux attach'
+alias tat='tmux attach -t'
 alias tad='tmux attach -d -t'
 alias ts='tmux new-session -s'
 alias tl='tmux list-sessions'
