@@ -2,9 +2,6 @@ set number cursorline expandtab
 set ts=2 sts=2 sw=2
 set termguicolors
 
-let g:do_filetype_lua = 1
-let g:did_load_filetypes = 0
-
 " keymap
 nnoremap <C-n> :NvimTreeToggle<CR>
 
@@ -66,12 +63,10 @@ require'nvim-treesitter.configs'.setup {
   }
 }
 
-local onedarkpro = require("onedarkpro")
-onedarkpro.setup({
+require("onedarkpro").setup({
   dark_theme = "onedark_vivid", -- The default dark theme
   light_theme = "onelight", -- The default light theme
 })
-onedarkpro.load()
 
 -- always load lualine after colorscheme
 require('lualine').setup()
