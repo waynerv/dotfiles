@@ -33,6 +33,8 @@ Plug 'kyazdani42/nvim-tree.lua'
 Plug 'olimorris/onedarkpro.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
+Plug 'justinmk/vim-sneak'
+
 " Initialize plugin system
 call plug#end()
 
