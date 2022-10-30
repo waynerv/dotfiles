@@ -25,7 +25,7 @@
                     "include_dependencies": false,
                     "package": "black",
                     "package_or_url": "black",
-                    "package_version": "22.8.0",
+                    "package_version": "22.10.0",
                     "pip_args": [],
                     "suffix": ""
                 },
@@ -259,7 +259,7 @@
                     "include_dependencies": false,
                     "package": "poetry",
                     "package_or_url": "poetry",
-                    "package_version": "1.2.1",
+                    "package_version": "1.2.2",
                     "pip_args": [],
                     "suffix": ""
                 },

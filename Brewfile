@@ -8,6 +8,8 @@ brew "asciinema"
 brew "coreutils"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
+# Linter and formatter to improve copywriting, correct spaces, words between CJK
+brew "autocorrect"
 # Shell extension to jump to frequently used directories
 brew "autojump"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -46,6 +48,8 @@ brew "k9s"
 brew "kind"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
+# Validate Kubernetes configuration files, supports multiple Kubernetes versions
+brew "kubeval"
 # Mac App Store command-line interface
 brew "mas"
 # Ambitious Vim-fork focused on extensibility and agility
