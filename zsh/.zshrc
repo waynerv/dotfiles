@@ -110,7 +110,14 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+  [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
+  [ -f /usr/share/autojump/autojump.sh ] && . /usr/share/autojump/autojump.sh
+  [ -f /usr/share/doc/fzf/examples/key-bindings.zsh ] && . /usr/share/doc/fzf/examples/key-bindings.zsh 
+  [ -f /usr/share/doc/fzf/examples/completion.zsh ] && . /usr/share/doc/fzf/examples/completion.zsh
+fi
 
 # Created by `pipx` on 2021-06-02 04:50:33
 export PATH="$HOME/.local/bin:$PATH"
@@ -123,4 +130,3 @@ export EDITOR="nvim"
 
 eval $(thefuck --alias)
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

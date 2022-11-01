@@ -61,7 +61,8 @@ brew install git
 
     ```bash
     cd ~/dotfiles
-    stow */
+    stow --adopt */
+    git reset --hard
     ```
 
 9. install asdf packages:
