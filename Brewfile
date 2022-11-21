@@ -18,6 +18,8 @@ brew "bat"
 brew "btop"
 # Statistics utility to count lines of code
 brew "cloc"
+# Cloudflare Tunnel client (formerly Argo Tunnel)
+brew "cloudflared"
 # Tool for exploring each layer in a docker image
 brew "dive"
 # More intuitive version of du in rust
