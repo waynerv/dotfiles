@@ -38,7 +38,7 @@ Plug 'justinmk/vim-sneak'
 " Initialize plugin system
 call plug#end()
 
-colorscheme onedarkpro
+colorscheme onedark_vivid
 
 lua << END
 require('nvim-tree').setup()
@@ -65,10 +65,6 @@ require'nvim-treesitter.configs'.setup {
   }
 }
 
-require("onedarkpro").setup({
-  dark_theme = "onedark_vivid", -- The default dark theme
-  light_theme = "onelight", -- The default light theme
-})
 
 -- always load lualine after colorscheme
 require('lualine').setup()
