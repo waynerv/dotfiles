@@ -50,8 +50,6 @@ brew "k9s"
 brew "kind"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
-# Validate Kubernetes configuration files, supports multiple Kubernetes versions
-brew "kubeval"
 # Mac App Store command-line interface
 brew "mas"
 # Ambitious Vim-fork focused on extensibility and agility
@@ -80,7 +78,7 @@ brew "unar"
 brew "wget"
 # HTTP benchmarking tool
 brew "wrk"
-# Process YAML documents from the CLI
+# Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
 brew "hudochenkov/sshpass/sshpass"
 # E-books management software
