@@ -1,6 +1,4 @@
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
 tap "hudochenkov/sshpass"
 # Record and share terminal sessions
 brew "asciinema"
@@ -83,6 +81,7 @@ brew "yq"
 brew "hudochenkov/sshpass/sshpass"
 # E-books management software
 cask "calibre"
+# Opens a terminal window to the current directory in Finder
 cask "go2shell"
 # Free and open-source media player
 cask "iina"
@@ -92,7 +91,7 @@ cask "iterm2"
 cask "logseq"
 # Smooths scrolling and set mouse scroll directions independently
 cask "mos"
-# Image optimization tool
+# Image optimisation tool
 cask "optimage"
 # Control your tools with a few keystrokes
 cask "raycast"
