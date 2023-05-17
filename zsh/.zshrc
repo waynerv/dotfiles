@@ -128,5 +128,8 @@ export GOPATH="$HOME/go"
 # Neovim
 export EDITOR="nvim"
 
+# K9s
+export K9SCONFIG="$HOME/.config/k9s"
+
 eval $(thefuck --alias)
 

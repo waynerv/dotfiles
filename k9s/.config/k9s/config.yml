@@ -6,7 +6,9 @@ k9s:
   logoless: false
   crumbsless: false
   readOnly: false
+  noExitOnCtrlC: false
   noIcons: false
+  skipLatestRevCheck: false
   logger:
     tail: 100
     buffer: 5000
@@ -14,15 +16,20 @@ k9s:
     fullScreenLogs: false
     textWrap: false
     showTime: false
-  currentContext: kind-kind
-  currentCluster: kind-kind
+  currentContext: kubernetes-admin@kubernetes
+  currentCluster: kubernetes
   clusters:
-    kind-kind:
+    kubernetes:
       namespace:
-        active: ""
+        active: qfusion-admin
+        lockFavorites: true
         favorites:
-        - all
         - default
+        - qfusion
+        - qfusion-admin
+        - kube-system
+        - all
+        - kube-node-lease
       view:
         active: po
       featureGates:
@@ -35,6 +42,7 @@ k9s:
         limits:
           cpu: 100m
           memory: 100Mi
+        labels: {}
       portForwardAddress: localhost
   thresholds:
     cpu:
@@ -43,3 +51,4 @@ k9s:
     memory:
       critical: 90
       warn: 70
+  screenDumpDir: /var/folders/rt/kpxl0_ls3650rzq7yy184x9w0000gn/T/k9s-screens-waynerv
