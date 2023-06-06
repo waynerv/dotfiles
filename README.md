@@ -44,6 +44,12 @@ brew install git
     ```bash
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
     ```
+5. install tmux plugins
+    
+    5.1 tmux-resurrect:
+    ```bash
+    git clone https://github.com/tmux-plugins/tmux-resurrect ~/.tmux/tmux-resurrect
+    ```
 
 5. [install nerd font](https://github.com/romkatv/powerlevel10k/blob/master/README.md#meslo-nerd-font-patched-for-powerlevel10k)
 

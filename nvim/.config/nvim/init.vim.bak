@@ -38,7 +38,7 @@ Plug 'justinmk/vim-sneak'
 " Initialize plugin system
 call plug#end()
 
-colorscheme onedark_vivid
+colorscheme onedark
 
 lua << END
 require('nvim-tree').setup()
