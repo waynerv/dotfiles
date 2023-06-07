@@ -6,6 +6,7 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.number = true
 vim.opt.cursorline = true
 vim.opt.termguicolors = true
+vim.opt.relativenumber = true
 
 -- Tab settings
 vim.opt.expandtab = true
@@ -34,28 +35,30 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
 
-  "nvim-lualine/lualine.nvim",
+  {"olimorris/onedarkpro.nvim", priority = 1000},
 
   {"nvim-tree/nvim-web-devicons", lazy = true},
 
-  "nvim-tree/nvim-tree.lua",
+  "nvim-lualine/lualine.nvim",
 
-  "olimorris/onedarkpro.nvim",
+  "nvim-tree/nvim-tree.lua",
 
   {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
 
-  "justinmk/vim-sneak",
+  "ggandor/leap.nvim",
 
 })
 
--- Plugin settings
+-- Set colorscheme
 vim.cmd.colorscheme("onedark")
+vim.cmd.highlight({ "CursorLine", "guibg=#333841" })
 
+-- Plugin settings
 require('nvim-tree').setup()
 
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all"
-  ensure_installed = { "go", "python", "bash" },
+  ensure_installed = { "lua", "go", "python", "bash" },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
@@ -77,4 +80,6 @@ require'nvim-treesitter.configs'.setup {
 
 -- always load lualine after colorscheme
 require('lualine').setup()
+
+require('leap').add_default_mappings()
 
