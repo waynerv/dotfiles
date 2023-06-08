@@ -48,7 +48,11 @@ brew install git
     
     5.1 tmux-resurrect:
     ```bash
-    git clone https://github.com/tmux-plugins/tmux-resurrect ~/.tmux/tmux-resurrect
+    git clone https://github.com/tmux-plugins/tmux-resurrect ~/.tmux/plugins/tmux-resurrect
+    ```
+    5.2 tmux-thumbs:
+    ```bash
+    git clone https://github.com/fcsonline/tmux-thumbs ~/.tmux/plugins/tmux-thumbs
     ```
 
 5. [install nerd font](https://github.com/romkatv/powerlevel10k/blob/master/README.md#meslo-nerd-font-patched-for-powerlevel10k)

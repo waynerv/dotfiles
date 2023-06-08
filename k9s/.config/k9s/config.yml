@@ -21,7 +21,7 @@ k9s:
   clusters:
     kubernetes:
       namespace:
-        active: qfusion
+        active: qfusion-admin
         lockFavorites: true
         favorites:
         - default
@@ -31,7 +31,7 @@ k9s:
         - all
         - kube-node-lease
       view:
-        active: pods
+        active: po
       featureGates:
         nodeShell: false
       shellPod:
