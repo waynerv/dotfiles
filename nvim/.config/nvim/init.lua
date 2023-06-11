@@ -2,7 +2,7 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
--- Options
+-- General Options
 vim.opt.number = true
 vim.opt.cursorline = true
 vim.opt.termguicolors = true
@@ -15,6 +15,9 @@ vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 
 -- Mappings
+vim.keymap.set('n', ' ', '')
+vim.g.mapleader = ' '
+
 vim.keymap.set('n', '<C-n>', ':NvimTreeToggle<CR>')
 
 vim.keymap.set('i', 'jj', '<Esc>')
@@ -33,6 +36,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- Plugin List
 require("lazy").setup({
 
   {"olimorris/onedarkpro.nvim", priority = 1000},
@@ -66,6 +70,61 @@ require("lazy").setup({
       {'hrsh7th/cmp-nvim-lsp'}, -- Required
       {'L3MON4D3/LuaSnip'},     -- Required
     }
+  },
+
+  {
+    'nvim-telescope/telescope.nvim',
+    tag = '0.1.1',
+    dependencies = {
+      { 'nvim-lua/plenary.nvim' },
+    }
+  },
+
+  {'akinsho/bufferline.nvim'},
+
+  {
+    'glepnir/dashboard-nvim',
+    event = 'VimEnter',
+    config = function()
+      require('dashboard').setup {
+        -- config
+      }
+    end,
+    dependencies = { {'nvim-tree/nvim-web-devicons'}}
+  },
+
+  {
+    "folke/which-key.nvim",
+    event = "VeryLazy",
+    init = function()
+      vim.o.timeout = true
+      vim.o.timeoutlen = 300
+    end,
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    }
+  },
+
+  {
+    'numToStr/Comment.nvim',
+    config = function()
+      require('Comment').setup {
+        -- config
+      }
+    end,
+  },
+
+  {'akinsho/toggleterm.nvim', version = "*", config = true},
+
+  {
+    'lewis6991/gitsigns.nvim',
+    config = function()
+      require('gitsigns').setup {
+        -- config
+      }
+    end,
   },
 
 })
@@ -114,4 +173,12 @@ end)
 require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
 
 lsp.setup()
+
+require("bufferline").setup{}
+
+local builtin = require('telescope.builtin')
+vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
+vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
+vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
+vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
