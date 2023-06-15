@@ -18,7 +18,7 @@ brew install git
     git clone https://github.com/waynerv/dotfiles.git ~/dotfiles 
     ```
 
-2. install homebrew formulae & casks:
+2. install homebrew formulaes & casks:
 
     ```bash
     brew bundle install ~/dotfiles/Brewfile
@@ -29,8 +29,10 @@ brew install git
     ```bash
     for p in $(cat ~/dotfiles/pipx.json | jq -r '.venvs[].metadata.main_package.package_or_url'); do pipx install $p; done
     ```
+
+4. [install nerd font](https://github.com/romkatv/powerlevel10k/blob/master/README.md#meslo-nerd-font-patched-for-powerlevel10k)
  
-4. oh-my-zsh
+5. setup oh-my-zsh:
 
     4.1 install oh-my-zsh:
     ```bash
@@ -44,7 +46,12 @@ brew install git
     ```bash
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
     ```
-5. install tmux plugins
+    4.4 install Powerlevel10k theme:
+    ```bash
+    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+    ```
+
+6. install tmux plugins
     
     5.1 tmux-resurrect:
     ```bash
@@ -55,19 +62,7 @@ brew install git
     git clone https://github.com/fcsonline/tmux-thumbs ~/.tmux/plugins/tmux-thumbs
     ```
 
-5. [install nerd font](https://github.com/romkatv/powerlevel10k/blob/master/README.md#meslo-nerd-font-patched-for-powerlevel10k)
-
-6. install Powerlevel10k theme:
-    ```bash
-    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-    ```
-
-7. install LunarVim:
-    ```bash
-    bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
-    ```
-
-8. install dotfiles using stow:
+7. install dotfiles using stow:
 
     ```bash
     cd ~/dotfiles
@@ -75,7 +70,7 @@ brew install git
     git reset --hard
     ```
 
-9. install asdf packages:
+8. install asdf packages:
 
     ```bash
     cd ~
@@ -83,11 +78,11 @@ brew install git
     asdf install
     ```
 
-10. import configuration file of iterm2 and raycast.
+9. import configuration file of iterm2 and raycast.
 
 ## How to backup
 
-### package
+### add new package
 
 ```bash
 mkdir -p ~/dotfiles/<package>
