@@ -14,10 +14,6 @@ brew "autojump"
 brew "bat"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
-# Statistics utility to count lines of code
-brew "cloc"
-# Cloudflare Tunnel client (formerly Argo Tunnel)
-brew "cloudflared"
 # Tool for exploring each layer in a docker image
 brew "dive"
 # More intuitive version of du in rust
@@ -48,6 +44,8 @@ brew "k9s"
 brew "kind"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
+# Simple terminal UI for git commands
+brew "lazygit"
 # Mac App Store command-line interface
 brew "mas"
 # Ambitious Vim-fork focused on extensibility and agility
@@ -66,6 +64,8 @@ brew "telnet"
 brew "tmux"
 # CPU, RAM memory, and load monitor for use with tmux
 brew "tmux-mem-cpu-load"
+# Program that allows you to count code, quickly
+brew "tokei"
 # Upgrade all the things
 brew "topgrade"
 # Display directories as trees (with optional color/HTML output)
@@ -109,3 +109,24 @@ mas "OneDrive", id: 823766827
 mas "Unsplash Wallpapers", id: 1284863847
 mas "微信", id: 836500024
 mas "腾讯会议", id: 1484048379
+vscode "4ops.packer"
+vscode "flippidippi.flippidippi-theme"
+vscode "foxundermoon.shell-format"
+vscode "GitHub.codespaces"
+vscode "golang.go"
+vscode "joaompinto.vscode-graphviz"
+vscode "labuladong.leetcode-helper"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-python.isort"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-vscode-remote.remote-ssh"
+vscode "ms-vscode.cpptools"
+vscode "ms-vscode.makefile-tools"
+vscode "ms-vscode.remote-explorer"
+vscode "redhat.vscode-yaml"
+vscode "searKing.preview-vscode"
+vscode "tamasfe.even-better-toml"
+vscode "timonwong.shellcheck"
+vscode "vscodevim.vim"
+vscode "zhuangtongfa.material-theme"
