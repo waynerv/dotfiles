@@ -21,6 +21,11 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   alias tkss='tmux kill-session -t'
 fi
 
+# for skins work properly
+if [[ -n "$TMUX" ]] && [[ "$TERM" = "tmux-256color" ]]; then
+  alias k9s='TERM=xterm-256color k9s'
+fi
+
 # golang
 alias gmv="go mod tidy && go mod vendor"
 

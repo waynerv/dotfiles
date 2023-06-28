@@ -114,6 +114,8 @@ source $ZSH/oh-my-zsh.sh
 if [[ "$OSTYPE" == "darwin"* ]]; then
   [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
   [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+  # For builtin ncurses5.7 to support tmux-256color terminfo
+  export TERMINFO_DIRS=$TERMINFO_DIRS:$HOME/.local/share/terminfo
 elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
   [ -f /usr/share/autojump/autojump.sh ] && . /usr/share/autojump/autojump.sh
   [ -f /usr/share/doc/fzf/examples/key-bindings.zsh ] && . /usr/share/doc/fzf/examples/key-bindings.zsh

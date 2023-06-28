@@ -62,7 +62,13 @@ brew install git
     git clone https://github.com/fcsonline/tmux-thumbs ~/.tmux/plugins/tmux-thumbs
     ```
 
-7. install dotfiles using stow:
+7. install tmux-256color terminfo:
+    
+    ```bash
+    /usr/bin/tic -x -o $HOME/.local/share/terminfo ~/dotfiles/tmux-256color.src
+    ```
+
+8. install dotfiles using stow:
 
     ```bash
     cd ~/dotfiles
@@ -70,7 +76,7 @@ brew install git
     git reset --hard
     ```
 
-8. install asdf packages:
+9. install asdf packages:
 
     ```bash
     cd ~
@@ -78,7 +84,7 @@ brew install git
     asdf install
     ```
 
-9. import configuration file of iterm2 and raycast.
+10. import configuration file of iterm2 and raycast.
 
 ## How to backup
 
