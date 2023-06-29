@@ -87,6 +87,8 @@ cask "go2shell"
 cask "iina"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# GPU-based terminal emulator
+cask "kitty"
 # Privacy-first, open-source platform for knowledge sharing and management
 cask "logseq"
 # Smooths scrolling and set mouse scroll directions independently
