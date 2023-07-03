@@ -79,6 +79,8 @@ brew "wrk"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
 brew "hudochenkov/sshpass/sshpass"
+# GPU-accelerated terminal emulator
+cask "alacritty"
 # E-books management software
 cask "calibre"
 # Opens a terminal window to the current directory in Finder
