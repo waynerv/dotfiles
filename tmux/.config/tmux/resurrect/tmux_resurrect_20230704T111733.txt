@@ -1,0 +1,13 @@
+pane	40-17☸️	1	1	:*	1	@gaussdb-86c53563-cn-0-0:/	:/Users/waynerv	1	k9s	:k9s --kubeconfig /Users/waynerv/.kube/40.17
+pane	40-17☸️	2	0	:-	1	postgres@aaf4ac23d365:~	:/Users/waynerv	1	zsh	:
+pane	40-17☸️	2	0	:-	2	WaynervdeMacBook-Pro.local	:/Users/waynerv	0	zsh	:
+pane	40-17☸️	2	0	:-	3	WaynervdeMacBook-Pro.local	:/Users/waynerv	0	zsh	:
+pane	aarch🐥	1	1	:*	1	@b959a0b912b6:/	:/Users/waynerv	1	zsh	:
+pane	local🏡	1	1	:*	1	WaynervdeMacBook-Pro.local	:/Users/waynerv	1	zsh	:
+pane	remote🧑‍🚀	1	1	:*	1	@9d2ca6d3520f:/	:/Users/waynerv	1	zsh	:
+window	40-17☸️	1	:k9s	1	:*	c33e,191x55,0,0,1	:
+window	40-17☸️	2	:allnodes	0	:-	a02f,191x55,0,0{95x55,0,0,2,95x55,96,0[95x27,96,0,3,95x27,96,28,4]}	off
+window	aarch🐥	1	:zsh	1	:*	c344,191x55,0,0,7	:
+window	local🏡	1	:zsh	1	:*	c33d,191x55,0,0,0	:
+window	remote🧑‍🚀	1	:zsh	1	:*	61cf,191x55,0,0,10	:
+state	local🏡	remote🧑‍🚀
