@@ -14,6 +14,8 @@ brew "autojump"
 brew "bat"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
+# Cross-platform make
+brew "cmake"
 # Tool for exploring each layer in a docker image
 brew "dive"
 # More intuitive version of du in rust
@@ -62,8 +64,6 @@ brew "stow"
 brew "telnet"
 # Terminal multiplexer
 brew "tmux"
-# CPU, RAM memory, and load monitor for use with tmux
-brew "tmux-mem-cpu-load"
 # Program that allows you to count code, quickly
 brew "tokei"
 # Upgrade all the things

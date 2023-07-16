@@ -51,24 +51,13 @@ brew install git
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
     ```
 
-6. install tmux plugins
-    
-    5.1 tmux-resurrect:
-    ```bash
-    git clone https://github.com/tmux-plugins/tmux-resurrect ~/.tmux/plugins/tmux-resurrect
-    ```
-    5.2 tmux-thumbs:
-    ```bash
-    git clone https://github.com/fcsonline/tmux-thumbs ~/.tmux/plugins/tmux-thumbs
-    ```
-
-7. install tmux-256color terminfo:
+6. install tmux-256color terminfo:
     
     ```bash
     /usr/bin/tic -x -o $HOME/.local/share/terminfo ~/dotfiles/tmux-256color.src
     ```
 
-8. install dotfiles using stow:
+7. install dotfiles using stow:
 
     ```bash
     cd ~/dotfiles
@@ -76,15 +65,15 @@ brew install git
     git reset --hard
     ```
 
-9. install asdf packages:
+8. install asdf packages:
 
     ```bash
     cd ~
-    for plug in {golang,python,nodejs}; do asdf plugin add $plug; done
+    for plug in {golang,python,nodejs,rust}; do asdf plugin add $plug; done
     asdf install
     ```
 
-10. import configuration file of iterm2 and raycast.
+9. import configuration file of iterm2 and raycast.
 
 ## How to backup
 
