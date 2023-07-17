@@ -1,7 +1,7 @@
 local M = {
   "nvim-lualine/lualine.nvim",
   commit = "0050b308552e45f7128f399886c86afefc3eb988",
-  event = { "VimEnter", "InsertEnter", "BufReadPre", "BufAdd", "BufNew", "BufReadPost" },
+  event = "VeryLazy",
 }
 
 function M.config()
@@ -19,25 +19,31 @@ function M.config()
     sources = { "nvim_diagnostic" },
     sections = { "error", "warn" },
     symbols = { error = " ", warn = " " },
-    colored = false,
+    colored = true,
     always_visible = true,
   }
 
   local diff = {
     "diff",
-    colored = false,
+    colored = true,
     symbols = { added = " ", modified = " ", removed = " " }, -- changes diff symbols
     cond = hide_in_width,
   }
 
   local filetype = {
     "filetype",
-    icons_enabled = false,
+    icons_enabled = true,
   }
 
   local location = {
     "location",
-    padding = 0,
+    padding = { left = 0, right = 1 },
+  }
+
+  local filename = {
+    "filename",
+    file_status = false,
+    path = 1,
   }
 
   local spaces = function()
@@ -55,12 +61,13 @@ function M.config()
     },
     sections = {
       lualine_a = { "mode" },
-      lualine_b = { "branch" },
-      lualine_c = { diagnostics },
-      lualine_x = { diff, spaces, "encoding", filetype },
+      lualine_b = { "branch", diff },
+      lualine_c = { filename },
+      lualine_x = { diagnostics, spaces, "encoding", filetype },
       lualine_y = { location },
       lualine_z = { "progress" },
     },
+    extensions = { "toggleterm", "quickfix", "nvim-tree" }
   }
 end
 

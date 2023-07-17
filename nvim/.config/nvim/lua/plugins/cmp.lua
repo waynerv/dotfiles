@@ -135,11 +135,11 @@ function M.config()
       format = function(entry, vim_item)
         vim_item.kind = kind_icons[vim_item.kind]
         vim_item.menu = ({
-          nvim_lsp = "",
-          nvim_lua = "",
-          luasnip = "",
-          buffer = "",
-          path = "",
+          nvim_lsp = "LSP",
+          nvim_lua = "Lua",
+          luasnip = "Snip",
+          buffer = "Buf",
+          path = "Path",
           emoji = "",
         })[entry.source.name]
         return vim_item

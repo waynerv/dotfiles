@@ -1,7 +1,10 @@
 local M = {
   "kyazdani42/nvim-tree.lua",
   commit = "f5d970d4506f385b29534252d8c15a782fa53034",
-  event = "VimEnter",
+  cmd = { "NvimTreeToggle", "NvimTreeOpen", "NvimTreeFocus" },
+  keys = {
+    { "<leader>e", "<cmd>NvimTreeToggle<cr>", desc = "Explorer NvimTree" },
+  },
 }
 
 local function on_attach(bufnr)
@@ -82,6 +85,8 @@ function M.config()
   -- local tree_cb = require("nvim-tree.config").nvim_tree_callback
   require("nvim-tree").setup {
     on_attach = on_attach,
+    sync_root_with_cwd = true,
+    respect_buf_cwd = true,
     update_focused_file = {
       enable = true,
       update_cwd = true,
@@ -127,6 +132,7 @@ function M.config()
       width = 30,
       side = "left",
     },
+    filters = { custom = { "^.git$" } },
   }
 end
 

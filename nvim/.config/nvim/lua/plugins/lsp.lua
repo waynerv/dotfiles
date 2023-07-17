@@ -1,8 +1,7 @@
 local M = {
   "neovim/nvim-lspconfig",
   commit = "649137cbc53a044bffde36294ce3160cb18f32c7",
-  lazy = false,
-  event = { BufReadPre },
+  event = { "BufReadPre", "BufNewFile" },
   dependencies = {
     {
       "hrsh7th/cmp-nvim-lsp",
@@ -25,25 +24,25 @@ function M.config()
     keymap(bufnr, "n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
     keymap(bufnr, "n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)
     keymap(bufnr, "n", "gI", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts)
-    keymap(bufnr, "n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
+    keymap(bufnr, "n", "gr", "<cmd>lua vim.lsp.buf.references({includeDeclaration=false})<CR>", opts)
     keymap(bufnr, "n", "gl", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
+    keymap(bufnr, "n", "g.", "<cmd>lua vim.lsp.buf.code_action()<cr>", opts)
     keymap(bufnr, "n", "<leader>li", "<cmd>LspInfo<cr>", opts)
     keymap(bufnr, "n", "<leader>lI", "<cmd>Mason<cr>", opts)
-    keymap(bufnr, "n", "<leader>la", "<cmd>lua vim.lsp.buf.code_action()<cr>", opts)
-    keymap(bufnr, "n", "<leader>lj", "<cmd>lua vim.diagnostic.goto_next({buffer=0})<cr>", opts)
-    keymap(bufnr, "n", "<leader>lk", "<cmd>lua vim.diagnostic.goto_prev({buffer=0})<cr>", opts)
+    keymap(bufnr, "n", "<leader>ln", "<cmd>lua vim.diagnostic.goto_next({buffer=0})<cr>", opts)
+    keymap(bufnr, "n", "<leader>lp", "<cmd>lua vim.diagnostic.goto_prev({buffer=0})<cr>", opts)
     keymap(bufnr, "n", "<leader>lr", "<cmd>lua vim.lsp.buf.rename()<cr>", opts)
     keymap(bufnr, "n", "<leader>ls", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
     keymap(bufnr, "n", "<leader>lq", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
+    keymap(bufnr, "n", "<leader>lf", "<cmd>lua vim.lsp.buf.format{ async = true }<cr>", opts)
   end
 
   local lspconfig = require "lspconfig"
   local on_attach = function(client, bufnr)
     lsp_keymaps(bufnr)
-    require("illuminate").on_attach(client)
   end
 
-  for _, server in pairs(require("utils").servers) do
+  for _, server in pairs(require("lspsettings").servers) do
     Opts = {
       on_attach = on_attach,
       capabilities = capabilities,
@@ -51,7 +50,7 @@ function M.config()
 
     server = vim.split(server, "@")[1]
 
-    local require_ok, conf_opts = pcall(require, "settings." .. server)
+    local require_ok, conf_opts = pcall(require, "lspsettings." .. server)
     if require_ok then
       Opts = vim.tbl_deep_extend("force", conf_opts, Opts)
     end

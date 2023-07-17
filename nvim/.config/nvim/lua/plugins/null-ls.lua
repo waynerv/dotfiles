@@ -1,6 +1,6 @@
 local M = {
   "jose-elias-alvarez/null-ls.nvim",
-  event = "BufReadPre",
+  event = { "BufReadPre", "BufNewFile" },
   commit = "60b4a7167c79c7d04d1ff48b55f2235bf58158a7",
   dependencies = {
     {
@@ -27,8 +27,10 @@ function M.config()
       },
       formatting.black.with { extra_args = { "--fast" } },
       formatting.stylua,
-      formatting.google_java_format,
+      formatting.shfmt,
+      formatting.goimports_reviser,
       diagnostics.flake8,
+      diagnostics.shellcheck,
     },
   }
 end
