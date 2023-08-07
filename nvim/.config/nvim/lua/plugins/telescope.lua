@@ -1,6 +1,13 @@
 local M = {
   "nvim-telescope/telescope.nvim",
   commit = "276362a8020c6e94c7a76d49aa00d4923b0c02f3",
+  dependencies = {
+    {
+      "nvim-telescope/telescope-fzf-native.nvim",
+      commit = "9bc8237565ded606e6c366a71c64c0af25cd7a50",
+      build = "make",
+    },
+  },
   cmd = { "Telescope" },
   keys = {
     { "<leader>ff", "<cmd>Telescope find_files<CR>", desc = "Files" },
@@ -63,6 +70,7 @@ function M.config()
     },
   }
   telescope.load_extension "projects"
+  telescope.load_extension "fzf"
 end
 
 return M
