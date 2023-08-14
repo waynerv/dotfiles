@@ -1,0 +1,11 @@
+pane	local🏡	1	1	:*	1	WaynervdeMacBook-Pro.local	:/Users/waynerv	1	zsh	:
+pane	remote🧑‍🚀	1	1	:*	1	WaynervdeMacBook-Pro.local	:/Users/waynerv	1	zsh	:
+pane	kube☸️	1	1	:*	1	WaynervdeMacBook-Pro.local	:/Users/waynerv	1	zsh	:
+pane	server👷	1	1	:*	1	WaynervdeMacBook-Pro.local	:/Users/waynerv	1	zsh	:
+pane	aarch🐥	1	1	:*	1	WaynervdeMacBook-Pro.local	:/Users/waynerv	1	zsh	:
+window	local🏡	1	:zsh	1	:*	c33d,191x55,0,0,0	:
+window	remote🧑‍🚀	1	:zsh	1	:*	c33f,191x55,0,0,2	:
+window	kube☸️	1	:zsh	1	:*	c340,191x55,0,0,3	:
+window	server👷	1	:zsh	1	:*	c341,191x55,0,0,4	:
+window	aarch🐥	1	:zsh	1	:*	c342,191x55,0,0,5	:
+state	local🏡	remote🧑‍🚀
