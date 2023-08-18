@@ -17,6 +17,9 @@ function M.config()
   toggleterm.setup {
     size = 15,
     open_mapping = [[<c-\>]],
+    on_open = function(term)
+      vim.wo.foldcolumn = "0"
+    end,
     hide_numbers = true,
     shade_terminals = true,
     shading_factor = 2,
@@ -33,7 +36,7 @@ function M.config()
 
   function _G.set_terminal_keymaps()
     local opts = { noremap = true }
-    vim.api.nvim_buf_set_keymap(0, 't', '<esc>', [[<C-\><C-n>]], opts)
+    vim.api.nvim_buf_set_keymap(0, "t", "<esc>", [[<C-\><C-n>]], opts)
     vim.api.nvim_buf_set_keymap(0, "t", "<C-h>", [[<C-\><C-n><C-W>h]], opts)
     vim.api.nvim_buf_set_keymap(0, "t", "<C-j>", [[<C-\><C-n><C-W>j]], opts)
     vim.api.nvim_buf_set_keymap(0, "t", "<C-k>", [[<C-\><C-n><C-W>k]], opts)
