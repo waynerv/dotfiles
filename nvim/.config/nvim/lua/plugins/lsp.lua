@@ -11,16 +11,14 @@ local M = {
 }
 
 function M.config()
-  local cmp_nvim_lsp = require "cmp_nvim_lsp"
-
-  local capabilities = vim.lsp.protocol.make_client_capabilities()
-  capabilities.textDocument.completion.completionItem.snippetSupport = true
+  -- Add additional capabilities supported by nvim-cmp and ufo.nvim
+  local capabilities = require("cmp_nvim_lsp").default_capabilities()
   capabilities.textDocument.foldingRange = {
     dynamicRegistration = false,
     lineFoldingOnly = true,
   }
-  capabilities = cmp_nvim_lsp.default_capabilities(M.capabilities)
 
+  -- Define keymaps
   local function lsp_keymaps(bufnr)
     local opts = { noremap = true, silent = true }
     local keymap = vim.api.nvim_buf_set_keymap
@@ -40,12 +38,12 @@ function M.config()
     keymap(bufnr, "n", "<leader>lq", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
     keymap(bufnr, "n", "<leader>lf", "<cmd>lua vim.lsp.buf.format{ async = true }<cr>", opts)
   end
-
-  local lspconfig = require "lspconfig"
   local on_attach = function(client, bufnr)
     lsp_keymaps(bufnr)
   end
 
+  -- setup lsp servers
+  local lspconfig = require "lspconfig"
   for _, server in pairs(require("lspsettings").servers) do
     Opts = {
       on_attach = on_attach,
@@ -62,6 +60,7 @@ function M.config()
     lspconfig[server].setup(Opts)
   end
 
+  -- config diagnostic
   local signs = {
     { name = "DiagnosticSignError", text = "" },
     { name = "DiagnosticSignWarn", text = "" },
@@ -80,7 +79,7 @@ function M.config()
     signs = {
       active = signs,
     },
-    update_in_insert = true,
+    update_in_insert = false,
     underline = true,
     severity_sort = true,
     float = {
