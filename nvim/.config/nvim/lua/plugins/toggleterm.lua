@@ -9,12 +9,7 @@ local M = {
 }
 
 function M.config()
-  local status_ok, toggleterm = pcall(require, "toggleterm")
-  if not status_ok then
-    return
-  end
-
-  toggleterm.setup {
+  require("toggleterm").setup {
     size = 15,
     open_mapping = [[<c-\>]],
     on_open = function(term)

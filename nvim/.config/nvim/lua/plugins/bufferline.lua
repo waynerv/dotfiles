@@ -14,6 +14,7 @@ local M = {
     { "<S-q>", "<cmd>Bdelete<cr>", { desc = "Close buffer" } },
   },
 }
+
 function M.config()
   require("bufferline").setup {
     options = {

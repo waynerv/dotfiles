@@ -91,9 +91,9 @@ function M.config()
           ["<leader>sa"] = { query = "@parameter.inner", desc = "Swap next parameter" },
         },
         swap_previous = {
-          ["<leader>Sk"] = { query = "@block.outer", desc = "Swap previous block" },
-          ["<leader>Sf"] = { query = "@function.outer", desc = "Swap previous function" },
-          ["<leader>Sa"] = { query = "@parameter.inner", desc = "Swap previous parameter" },
+          ["<leader>sK"] = { query = "@block.outer", desc = "Swap previous block" },
+          ["<leader>sF"] = { query = "@function.outer", desc = "Swap previous function" },
+          ["<leader>sA"] = { query = "@parameter.inner", desc = "Swap previous parameter" },
         },
       },
     }

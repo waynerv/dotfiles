@@ -11,34 +11,32 @@ local M = {
   },
 }
 
-local settings = {
-  ui = {
-    border = "none",
-    icons = {
-      package_installed = "◍",
-      package_pending = "◍",
-      package_uninstalled = "◍",
-    },
-  },
-  log_level = vim.log.levels.INFO,
-  max_concurrent_installers = 4,
-}
-
 function M.config()
-  require("mason").setup(settings)
+  require("mason").setup {
+    ui = {
+      border = "none",
+      icons = {
+        package_installed = "◍",
+        package_pending = "◍",
+        package_uninstalled = "◍",
+      },
+    },
+    log_level = vim.log.levels.INFO,
+    max_concurrent_installers = 4,
+  }
   require("mason-lspconfig").setup {
     ensure_installed = require("lspsettings").servers,
     automatic_installation = true,
   }
 
-  local registry = require("mason-registry")
+  local registry = require "mason-registry"
   local pkgs = require("lspsettings").packages
 
   for _, pkg_name in ipairs(pkgs) do
     local ok, pkg = pcall(registry.get_package, pkg_name)
     if ok then
       if not pkg:is_installed() then
-         pkg:install()
+        pkg:install()
       end
     end
   end

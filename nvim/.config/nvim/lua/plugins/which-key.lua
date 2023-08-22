@@ -12,6 +12,7 @@ function M.config()
       f = { name = "Find" },
       g = { name = "Gitsigns" },
       l = { name = "LSP" },
+      s = { name = "Swap" },
       t = { name = "Toggle" },
     },
   }
