@@ -88,11 +88,3 @@ vim.api.nvim_create_autocmd({ "VimEnter" }, {
     require("nvim-tree.api").tree.open()
   end,
 })
-
-vim.api.nvim_create_autocmd({ "VimEnter" }, {
-  callback = function()
-    vim.cmd "hi link IlluminatedWordText LspReferenceText"
-    vim.cmd "hi link IlluminatedWordRead LspReferenceText"
-    vim.cmd "hi link IlluminatedWordWrite LspReferenceText"
-  end,
-})

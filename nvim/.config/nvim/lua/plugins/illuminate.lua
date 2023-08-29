@@ -15,6 +15,11 @@ function M.config()
       providers = { "lsp" },
     },
   }
+
+  -- use illuminate instead of underline
+  vim.api.nvim_set_hl(0, "IlluminatedWordText", { link = "LspReferenceText" })
+  vim.api.nvim_set_hl(0, "IlluminatedWordRead", { link = "LspReferenceText" })
+  vim.api.nvim_set_hl(0, "IlluminatedWordWrite", { link = "LspReferenceText" })
 end
 
 return M
