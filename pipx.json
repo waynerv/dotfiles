@@ -25,12 +25,15 @@
                     "include_dependencies": false,
                     "package": "black",
                     "package_or_url": "black",
-                    "package_version": "23.3.0",
-                    "pip_args": [],
+                    "package_version": "23.7.0",
+                    "pip_args": [
+                        "--index-url",
+                        "https://pypi.tuna.tsinghua.edu.cn/simple"
+                    ],
                     "suffix": ""
                 },
                 "pipx_metadata_version": "0.2",
-                "python_version": "Python 3.11.4",
+                "python_version": "Python 3.11.5",
                 "venv_args": []
             }
         },
@@ -85,11 +88,14 @@
                     "package": "bpython",
                     "package_or_url": "bpython",
                     "package_version": "0.24",
-                    "pip_args": [],
+                    "pip_args": [
+                        "--index-url",
+                        "https://pypi.tuna.tsinghua.edu.cn/simple"
+                    ],
                     "suffix": ""
                 },
                 "pipx_metadata_version": "0.2",
-                "python_version": "Python 3.11.4",
+                "python_version": "Python 3.11.5",
                 "venv_args": []
             }
         },
@@ -116,6 +122,18 @@
                                 "__type__": "Path"
                             }
                         ],
+                        "markdown-it-py": [
+                            {
+                                "__Path__": "/Users/waynerv/.local/pipx/venvs/cookiecutter/bin/markdown-it",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pygments": [
+                            {
+                                "__Path__": "/Users/waynerv/.local/pipx/venvs/cookiecutter/bin/pygmentize",
+                                "__type__": "Path"
+                            }
+                        ],
                         "python-slugify": [
                             {
                                 "__Path__": "/Users/waynerv/.local/pipx/venvs/cookiecutter/bin/slugify",
@@ -129,18 +147,23 @@
                     "apps_of_dependencies": [
                         "chardetect",
                         "slugify",
-                        "normalizer"
+                        "normalizer",
+                        "markdown-it",
+                        "pygmentize"
                     ],
                     "include_apps": true,
                     "include_dependencies": false,
                     "package": "cookiecutter",
                     "package_or_url": "cookiecutter",
-                    "package_version": "2.1.1",
-                    "pip_args": [],
+                    "package_version": "2.3.0",
+                    "pip_args": [
+                        "--index-url",
+                        "https://pypi.tuna.tsinghua.edu.cn/simple"
+                    ],
                     "suffix": ""
                 },
                 "pipx_metadata_version": "0.2",
-                "python_version": "Python 3.11.4",
+                "python_version": "Python 3.11.5",
                 "venv_args": []
             }
         },
@@ -179,12 +202,15 @@
                     "include_dependencies": false,
                     "package": "flake8",
                     "package_or_url": "flake8",
-                    "package_version": "6.0.0",
-                    "pip_args": [],
+                    "package_version": "6.1.0",
+                    "pip_args": [
+                        "--index-url",
+                        "https://pypi.tuna.tsinghua.edu.cn/simple"
+                    ],
                     "suffix": ""
                 },
                 "pipx_metadata_version": "0.2",
-                "python_version": "Python 3.11.4",
+                "python_version": "Python 3.11.5",
                 "venv_args": []
             }
         },
@@ -208,11 +234,14 @@
                     "package": "jinja2-cli",
                     "package_or_url": "jinja2-cli",
                     "package_version": "0.8.2",
-                    "pip_args": [],
+                    "pip_args": [
+                        "--index-url",
+                        "https://pypi.tuna.tsinghua.edu.cn/simple"
+                    ],
                     "suffix": ""
                 },
                 "pipx_metadata_version": "0.2",
-                "python_version": "Python 3.11.4",
+                "python_version": "Python 3.11.5",
                 "venv_args": []
             }
         },
@@ -259,11 +288,14 @@
                     "package": "pgcli",
                     "package_or_url": "pgcli",
                     "package_version": "3.5.0",
-                    "pip_args": [],
+                    "pip_args": [
+                        "--index-url",
+                        "https://pypi.tuna.tsinghua.edu.cn/simple"
+                    ],
                     "suffix": ""
                 },
                 "pipx_metadata_version": "0.2",
-                "python_version": "Python 3.11.4",
+                "python_version": "Python 3.11.5",
                 "venv_args": []
             }
         },
@@ -361,12 +393,15 @@
                     "include_dependencies": false,
                     "package": "poetry",
                     "package_or_url": "poetry",
-                    "package_version": "1.5.1",
-                    "pip_args": [],
+                    "package_version": "1.6.1",
+                    "pip_args": [
+                        "--index-url",
+                        "https://pypi.tuna.tsinghua.edu.cn/simple"
+                    ],
                     "suffix": ""
                 },
                 "pipx_metadata_version": "0.2",
-                "python_version": "Python 3.11.4",
+                "python_version": "Python 3.11.5",
                 "venv_args": []
             }
         },
@@ -395,11 +430,14 @@
                     "package": "thefuck",
                     "package_or_url": "thefuck",
                     "package_version": "3.32",
-                    "pip_args": [],
+                    "pip_args": [
+                        "--index-url",
+                        "https://pypi.tuna.tsinghua.edu.cn/simple"
+                    ],
                     "suffix": ""
                 },
                 "pipx_metadata_version": "0.2",
-                "python_version": "Python 3.11.4",
+                "python_version": "Python 3.11.5",
                 "venv_args": []
             }
         },
@@ -432,11 +470,14 @@
                     "package": "tldr",
                     "package_or_url": "tldr",
                     "package_version": "3.2.0",
-                    "pip_args": [],
+                    "pip_args": [
+                        "--index-url",
+                        "https://pypi.tuna.tsinghua.edu.cn/simple"
+                    ],
                     "suffix": ""
                 },
                 "pipx_metadata_version": "0.2",
-                "python_version": "Python 3.11.4",
+                "python_version": "Python 3.11.5",
                 "venv_args": []
             }
         }

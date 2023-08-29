@@ -30,6 +30,8 @@ brew "fzf"
 brew "git"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
+# Trim your git remote tracking branches that are merged or gone
+brew "git-trim"
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
 # GNU Pretty Good Privacy (PGP) package
@@ -83,6 +85,8 @@ brew "hudochenkov/sshpass/sshpass"
 cask "alacritty"
 # E-books management software
 cask "calibre"
+# Universal database tool and SQL client
+cask "dbeaver-community"
 # Opens a terminal window to the current directory in Finder
 cask "go2shell"
 # Free and open-source media player

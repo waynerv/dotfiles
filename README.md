@@ -27,7 +27,7 @@ brew install git
 3. install pipx packages:
 
     ```bash
-    for p in $(cat ~/dotfiles/pipx.json | jq -r '.venvs[].metadata.main_package.package_or_url'); do pipx install $p; done
+    for p in $(cat ~/dotfiles/pipx.json | jq -r '.venvs[].metadata.main_package.package_or_url'); do pipx install --index-url https://pypi.tuna.tsinghua.edu.cn/simple $p; done
     ```
 
 4. [install nerd font](https://github.com/romkatv/powerlevel10k/blob/master/README.md#meslo-nerd-font-patched-for-powerlevel10k)
