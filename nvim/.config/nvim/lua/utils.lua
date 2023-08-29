@@ -16,6 +16,7 @@ M.ignore_filetypes = {
   "fugitive",
   "help",
   "mason",
+  "Navbuddy",
   "neogitstatus",
   "NvimTree",
   "lazy",

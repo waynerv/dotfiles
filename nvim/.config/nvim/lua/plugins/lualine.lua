@@ -67,7 +67,7 @@ function M.config()
       lualine_y = { location },
       lualine_z = { "progress" },
     },
-    extensions = { "aerial", "toggleterm", "quickfix", "nvim-tree" }
+    extensions = { "toggleterm", "quickfix", "nvim-tree" }
   }
 end
 

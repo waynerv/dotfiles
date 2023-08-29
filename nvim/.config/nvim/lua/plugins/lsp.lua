@@ -7,6 +7,21 @@ local M = {
       "hrsh7th/cmp-nvim-lsp",
       commit = "0e6b2ed705ddcff9738ec4ea838141654f12eeef",
     },
+    {
+      "SmiteshP/nvim-navbuddy",
+      commit = "46670b27a21ae26d25d3ee2b71f31729162f9de7",
+      dependencies = {
+        { "SmiteshP/nvim-navic", commit = "9c89730da6a05acfeb6a197e212dfadf5aa60ca0" },
+        { "MunifTanjim/nui.nvim", commit = "0f913a3ae1a24c8a4487fbf111b4044cc22b1b0d" },
+      },
+      keys = {
+        { "<leader>n", "<cmd>Navbuddy<cr>", desc = "Navigator", silent = true },
+      },
+      opts = {
+        window = { border = "rounded" },
+        lsp = { auto_attach = true },
+      },
+    },
   },
 }
 
