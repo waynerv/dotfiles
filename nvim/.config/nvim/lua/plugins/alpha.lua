@@ -1,11 +1,10 @@
 local M = {
   "goolord/alpha-nvim",
   event = "VimEnter",
-  commit = "dafa11a6218c2296df044e00f88d9187222ba6b0",
+  commit = "7a6b9487dba044a43fde534bf5036f0fda5b6b23",
 }
 
 function M.config()
-  local alpha = require "alpha"
   local dashboard = require "alpha.themes.dashboard"
   dashboard.section.header.val = {
     [[                               __                ]],
@@ -35,7 +34,7 @@ function M.config()
   dashboard.section.buttons.opts.hl = "Keyword"
 
   dashboard.opts.opts.noautocmd = true
-  alpha.setup(dashboard.opts)
+  require("alpha").setup(dashboard.opts)
 end
 
 return M
