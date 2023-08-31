@@ -1,10 +1,10 @@
 local M = {
   "hrsh7th/nvim-cmp",
-  commit = "cfafe0a1ca8933f7b7968a287d39904156f2c57d",
+  commit = "5dce1b778b85c717f6614e3f4da45e9f19f54435",
   dependencies = {
     {
       "hrsh7th/cmp-nvim-lsp",
-      commit = "0e6b2ed705ddcff9738ec4ea838141654f12eeef",
+      commit = "44b16d11215dce86f253ce0c30949813c0a90765",
     },
     {
       "hrsh7th/cmp-buffer",
@@ -16,7 +16,7 @@ local M = {
     },
     {
       "hrsh7th/cmp-cmdline",
-      commit = "23c51b2a3c00f6abc4e922dbd7c3b9aca6992063",
+      commit = "8ee981b4a91f536f52add291594e89fb6645e451",
     },
     {
       "saadparwaiz1/cmp_luasnip",
@@ -24,16 +24,16 @@ local M = {
     },
     {
       "L3MON4D3/LuaSnip",
-      commit = "9bff06b570df29434a88f9c6a9cea3b21ca17208",
+      commit = "c4d6298347f7707e9757351b2ee03d0c00da5c20",
       event = "InsertEnter",
       dependencies = {
         "rafamadriz/friendly-snippets",
-        commit = "a6f7a1609addb4e57daa6bedc300f77f8d225ab7",
+        commit = "00e191fea2cfbbdd378243f35b5953296537a116",
       },
     },
     {
       "hrsh7th/cmp-nvim-lua",
-      commit = "f3491638d123cfd2c8048aefaf66d246ff250ca6",
+      commit = "f12408bdb54c39c23e67cab726264c10db33ada8",
     },
   },
   event = {
@@ -47,9 +47,10 @@ function M.config()
   local luasnip = require "luasnip"
   require("luasnip/loaders/from_vscode").lazy_load()
 
-  local check_backspace = function()
-    local col = vim.fn.col "." - 1
-    return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
+  local has_words_before = function()
+    unpack = unpack or table.unpack
+    local line, col = unpack(vim.api.nvim_win_get_cursor(0))
+    return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match "%s" == nil
   end
 
   local kind_icons = {
@@ -108,8 +109,8 @@ function M.config()
           luasnip.expand()
         elseif luasnip.expand_or_jumpable() then
           luasnip.expand_or_jump()
-        elseif check_backspace() then
-          fallback()
+        elseif has_words_before() then
+          cmp.complete()
         else
           fallback()
         end
