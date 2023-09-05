@@ -1,3 +1,8 @@
+-- check if we need to reload the file when it changed
+vim.api.nvim_create_autocmd({ "FocusGained", "TermClose", "TermLeave" }, {
+  command = "checktime",
+})
+
 -- close some filetypes with <q>
 vim.api.nvim_create_autocmd({ "FileType" }, {
   pattern = { "qf", "help", "man", "checkhealth", "lspinfo", "spectre_panel" },
