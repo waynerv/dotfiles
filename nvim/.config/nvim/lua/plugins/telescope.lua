@@ -10,8 +10,8 @@ local M = {
   },
   cmd = { "Telescope" },
   keys = {
-    { "<leader>ff", "<cmd>Telescope find_files<CR>", desc = "Files" },
-    { "<leader>fg", "<cmd>Telescope live_grep<CR>", desc = "Grep" },
+    { "<leader>ff", "<cmd>Telescope find_files<CR>", desc = "Find files" },
+    { "<leader>fg", "<cmd>Telescope live_grep<CR>", desc = "Grep files" },
     { "<leader>fp", "<cmd>Telescope projects<CR>", desc = "Projects" },
     { "<leader>fb", "<cmd>Telescope buffers<CR>", desc = "Buffers" },
     { "<leader>fr", "<cmd>Telescope oldfiles<CR>", desc = "Recent files" },
@@ -19,7 +19,7 @@ local M = {
     { "<leader>fd", "<cmd>Telescope diagnostics<CR>", desc = "Diagnostics" },
     { "<leader>fB", "<cmd>Telescope git_branches<CR>", desc = "Branches" },
     { "<leader>fc", "<cmd>Telescope git_commits<CR>", desc = "Commits" },
-    { "<leader>fC", "<cmd>Telescope git_bcommits<CR>", desc = "Commits (current buffer)" },
+    { "<leader>fC", "<cmd>Telescope git_bcommits<CR>", desc = "Commits(bufnr=0)" },
     {
       "<leader>fG",
       function()
@@ -32,6 +32,17 @@ local M = {
       desc = "Grep all files",
     },
     {
+      "<leader>fR",
+      function()
+        require("telescope.builtin").oldfiles(require("telescope.themes").get_dropdown {
+          winblend = 10,
+          previewer = false,
+          cwd = vim.loop.cwd(),
+        })
+      end,
+      desc = "Recent files(cwd)",
+    },
+    {
       "<leader>/",
       function()
         -- You can pass additional configuration to telescope to change theme, layout, etc.
@@ -40,7 +51,7 @@ local M = {
           previewer = false,
         })
       end,
-      desc = "Fuzzy search current buffer",
+      desc = "Fuzzy search(bufnr=0)",
     },
   },
 }
