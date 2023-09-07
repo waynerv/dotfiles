@@ -5,10 +5,7 @@ local M = {
   dependencies = {
     {
       "hrsh7th/nvim-cmp",
-      event = {
-        "InsertEnter",
-        "CmdlineEnter",
-      },
+      commit = "5dce1b778b85c717f6614e3f4da45e9f19f54435",
     },
   },
 }

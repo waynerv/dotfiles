@@ -25,7 +25,6 @@ local M = {
     {
       "L3MON4D3/LuaSnip",
       commit = "c4d6298347f7707e9757351b2ee03d0c00da5c20",
-      event = "InsertEnter",
       dependencies = {
         "rafamadriz/friendly-snippets",
         commit = "00e191fea2cfbbdd378243f35b5953296537a116",
