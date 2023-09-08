@@ -17,10 +17,13 @@ local M = {
       keys = {
         { "<leader>n", "<cmd>Navbuddy<cr>", desc = "Navigator", silent = true },
       },
-      opts = {
-        window = { border = "rounded" },
-        lsp = { auto_attach = true },
-      },
+      config = function()
+        require("nvim-navbuddy").setup {
+          window = { border = "rounded" },
+          lsp = { auto_attach = true },
+        }
+        vim.api.nvim_set_hl(0, "NavbuddyName", { fg = "#DCD7BA", bold = true })
+      end,
     },
   },
 }
