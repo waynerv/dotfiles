@@ -5,7 +5,7 @@ local M = {
   dependencies = {
     {
       "nvim-lua/plenary.nvim",
-      commit = "0dbe561ae023f02c2fb772b879e905055b939ce3",
+      commit = "a56bf0071bf63d35274fdc4738bb1e8821cfd2ea",
     },
   },
 }
@@ -21,10 +21,6 @@ function M.config()
   null_ls.setup {
     debug = false,
     sources = {
-      formatting.prettier.with {
-        extra_filetypes = { "toml" },
-        extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
-      },
       formatting.black.with { extra_args = { "--fast" } },
       formatting.stylua,
       formatting.shfmt,
