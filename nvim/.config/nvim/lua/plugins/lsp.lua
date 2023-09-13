@@ -21,6 +21,7 @@ local M = {
         require("nvim-navbuddy").setup {
           window = { border = "rounded" },
           lsp = { auto_attach = true },
+          icons = require("utils").nav_icons,
         }
         vim.api.nvim_set_hl(0, "NavbuddyName", { fg = "#DCD7BA", bold = true })
       end,
