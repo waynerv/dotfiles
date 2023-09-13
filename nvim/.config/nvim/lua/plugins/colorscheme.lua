@@ -1,6 +1,6 @@
 local M = {
   "rebelot/kanagawa.nvim",
-  commit = "0a24e504a3a278849ad0aef31cd6dd24c73ca3db",
+  commit = "a4e99f089110c6d00bc33f5497709200e914e763",
   lazy = false,    -- make sure we load this during startup if it is your main colorscheme
   priority = 1000, -- make sure to load this before all the other start plugins
 }
