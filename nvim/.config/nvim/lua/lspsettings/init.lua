@@ -8,12 +8,4 @@ M.servers = {
   "gopls",
 }
 
--- Non-LSP linters or formatters
-M.packages = {
-  "stylua",
-  "shellcheck",
-  "shfmt",
-  "goimports-reviser",
-}
-
 return M
