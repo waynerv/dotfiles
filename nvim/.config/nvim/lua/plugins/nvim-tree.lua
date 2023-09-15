@@ -1,5 +1,5 @@
 local M = {
-  "kyazdani42/nvim-tree.lua",
+  "nvim-tree/nvim-tree.lua",
   commit = "f5d970d4506f385b29534252d8c15a782fa53034",
   cmd = { "NvimTreeToggle", "NvimTreeOpen", "NvimTreeFocus" },
   keys = {

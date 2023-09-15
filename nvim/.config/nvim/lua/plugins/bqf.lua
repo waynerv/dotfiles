@@ -1,6 +1,6 @@
 local M = {
   "kevinhwang91/nvim-bqf",
-  commit = "5895e26e34d032f48d0b9a843da1eb24e25680ea",
+  commit = "a906a9dfc1bd7b3ac51ac954e32e157ffad9a7cd",
   ft = "qf",
 }
 
