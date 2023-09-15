@@ -28,11 +28,10 @@ function M.config()
       formatting.shfmt,
       formatting.goimports_reviser,
       diagnostics.flake8,
-      diagnostics.shellcheck,
     },
   }
   require("mason-null-ls").setup {
-    ensure_installed = nil,
+    ensure_installed = {"shellcheck"},
     automatic_installation = true,
   }
 end
