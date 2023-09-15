@@ -28,7 +28,7 @@ function M.config()
     },
   }
   require("mason-null-ls").setup {
-    ensure_installed = {"shellcheck"},
+    ensure_installed = { "shellcheck", "goimports-reviser" },
     automatic_installation = true,
   }
 end
