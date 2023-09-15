@@ -1,6 +1,6 @@
 local M = {
   "nvim-treesitter/nvim-treesitter",
-  commit = "226c1475a46a2ef6d840af9caa0117a439465500",
+  commit = "2aa9e9b0e655462890c6d2d8632a0d569be66482",
   event = { "BufReadPost", "BufNewFile" },
   build = ":TSUpdate",
   dependencies = {
@@ -24,7 +24,7 @@ function M.config()
   local configs = require "nvim-treesitter.configs"
 
   configs.setup {
-    ensure_installed = { "lua", "markdown", "markdown_inline", "bash", "python", "go" }, -- put the language you want in this array
+    ensure_installed = { "c", "lua", "markdown", "markdown_inline", "bash", "python", "go" }, -- put the language you want in this array
     -- ensure_installed = "all", -- one of "all" or a list of languages
     ignore_install = { "" },                                                       -- List of parsers to ignore installing
     sync_install = false,                                                          -- install languages synchronously (only applied to `ensure_installed`)
