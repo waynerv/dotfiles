@@ -1,16 +1,12 @@
 local M = {
   "nvim-treesitter/nvim-treesitter",
   commit = "226c1475a46a2ef6d840af9caa0117a439465500",
-  build = ":TSUpdate",
   event = { "BufReadPost", "BufNewFile" },
+  build = ":TSUpdate",
   dependencies = {
     {
       "JoosepAlviste/nvim-ts-context-commentstring",
       commit = "729d83ecb990dc2b30272833c213cc6d49ed5214",
-    },
-    {
-      "nvim-tree/nvim-web-devicons",
-      commit = "e283ab937e0197b37ec5d8013e49495193407324"
     },
     {
       "HiPhish/nvim-ts-rainbow2",

@@ -1,13 +1,10 @@
 local M = {
   "jay-babu/mason-null-ls.nvim",
-  event = { "BufReadPre", "BufNewFile" },
   commit = "ae0c5fa57468ac65617f1bf821ba0c3a1e251f0c",
+  event = { "BufReadPre", "BufNewFile" },
   dependencies = {
-    {
-      "nvim-lua/plenary.nvim",
-      commit = "a56bf0071bf63d35274fdc4738bb1e8821cfd2ea",
-    },
-    { "williamboman/mason.nvim", commit = "d66c60e17dd6fd8165194b1d14d21f7eb2c1697a" },
+    "nvim-lua/plenary.nvim",
+    "williamboman/mason.nvim",
     { "jose-elias-alvarez/null-ls.nvim", commit = "0010ea927ab7c09ef0ce9bf28c2b573fc302f5a7" },
   },
 }

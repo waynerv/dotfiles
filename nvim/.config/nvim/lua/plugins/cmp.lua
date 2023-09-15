@@ -1,6 +1,7 @@
 local M = {
   "hrsh7th/nvim-cmp",
   commit = "5dce1b778b85c717f6614e3f4da45e9f19f54435",
+  event = { "InsertEnter", "CmdlineEnter" },
   dependencies = {
     {
       "hrsh7th/cmp-nvim-lsp",
@@ -34,10 +35,6 @@ local M = {
       "hrsh7th/cmp-nvim-lua",
       commit = "f12408bdb54c39c23e67cab726264c10db33ada8",
     },
-  },
-  event = {
-    "InsertEnter",
-    "CmdlineEnter",
   },
 }
 

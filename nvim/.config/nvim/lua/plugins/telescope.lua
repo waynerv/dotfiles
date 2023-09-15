@@ -1,14 +1,19 @@
 local M = {
   "nvim-telescope/telescope.nvim",
   commit = "276362a8020c6e94c7a76d49aa00d4923b0c02f3",
+  cmd = { "Telescope" },
   dependencies = {
+    "nvim-tree/nvim-web-devicons",
+    {
+      "nvim-lua/plenary.nvim",
+      commit = "a56bf0071bf63d35274fdc4738bb1e8821cfd2ea",
+    },
     {
       "nvim-telescope/telescope-fzf-native.nvim",
       commit = "9bc8237565ded606e6c366a71c64c0af25cd7a50",
       build = "make",
     },
   },
-  cmd = { "Telescope" },
   keys = {
     { "<leader>ff", "<cmd>Telescope find_files<CR>", desc = "Find files" },
     { "<leader>fg", "<cmd>Telescope live_grep<CR>", desc = "Grep files" },

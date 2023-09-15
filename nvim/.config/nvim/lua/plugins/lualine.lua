@@ -1,6 +1,7 @@
 local M = {
   "nvim-lualine/lualine.nvim",
   commit = "45e27ca739c7be6c49e5496d14fcf45a303c3a63",
+  dependencies = { "nvim-tree/nvim-web-devicons" },
   event = "VeryLazy",
 }
 
@@ -67,7 +68,7 @@ function M.config()
       lualine_y = { location },
       lualine_z = { "progress" },
     },
-    extensions = { "toggleterm", "quickfix", "nvim-tree" }
+    extensions = { "toggleterm", "quickfix", "nvim-tree" },
   }
 end
 
