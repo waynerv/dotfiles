@@ -1,7 +1,7 @@
 local M = {
   "goolord/alpha-nvim",
   event = "VimEnter",
-  commit = "7a6b9487dba044a43fde534bf5036f0fda5b6b23",
+  commit = "234822140b265ec4ba3203e3e0be0e0bb826dff5",
 }
 
 function M.config()
@@ -15,13 +15,14 @@ function M.config()
     [[ \/_/\/_/\/____/\/___/  \/__/    \/_/\/_/\/_/\/_/]],
   }
   dashboard.section.buttons.val = {
-    dashboard.button("f", " " .. " Find file", ":Telescope find_files <CR>"),
-    dashboard.button("e", " " .. " New file", ":ene <BAR> startinsert <CR>"),
-    dashboard.button("p", " " .. " Find project", ":lua require('telescope').extensions.projects.projects()<CR>"),
-    dashboard.button("r", "󰄉 " .. " Recent files", ":Telescope oldfiles <CR>"),
-    dashboard.button("t", " " .. " Find text", ":Telescope live_grep <CR>"),
-    dashboard.button("c", " " .. " Config", ":e $MYVIMRC <CR>"),
-    dashboard.button("q", " " .. " Quit", ":qa<CR>"),
+    dashboard.button("f", " " .. " Find file", "<cmd>Telescope find_files <CR>"),
+    dashboard.button("e", " " .. " New file", "<cmd>ene <BAR> startinsert <CR>"),
+    dashboard.button("p", " " .. " Find project", "<cmd>lua require('telescope').extensions.projects.projects()<CR>"),
+    dashboard.button("r", "󰄉 " .. " Recent files", "<cmd>Telescope oldfiles <CR>"),
+    dashboard.button("t", " " .. " Find text", "<cmd>Telescope live_grep <CR>"),
+    dashboard.button("c", " " .. " Config", "<cmd>e $MYVIMRC <CR>"),
+    dashboard.button("l", "󰒲 " .. " Lazy", "<cmd>Lazy <CR>"),
+    dashboard.button("q", " " .. " Quit", "<cmd>qa<CR>"),
   }
   local function footer()
     local version = " " .. vim.version().major .. "." .. vim.version().minor .. "." .. vim.version().patch
