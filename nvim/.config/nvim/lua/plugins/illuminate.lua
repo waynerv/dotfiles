@@ -7,7 +7,8 @@ local M = {
 function M.config()
   require("illuminate").configure {
     delay = 300,
-    filetypes_denylist = require("utils").ignore_filetypes,
+    filetypes_denylist = {},
+    filetypes_allowlist = require("utils").enhance_filetypes,
     under_cursor = true,
     large_file_cutoff = 5000,
     large_file_overrides = {

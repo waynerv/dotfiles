@@ -30,6 +30,15 @@ M.ignore_filetypes = {
   "Trouble",
 }
 
+M.enhance_filetypes = {
+  "c",
+  "go",
+  "lua",
+  "python",
+  "sh",
+  "yaml",
+}
+
 M.kind_icons = {
   Array = "󰅪",
   Boolean = "◩",

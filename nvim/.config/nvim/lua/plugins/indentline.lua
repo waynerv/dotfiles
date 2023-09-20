@@ -9,6 +9,7 @@ local M = {
     show_first_indent_level = true,
     use_treesitter = true,
     show_current_context = true,
+    filetype = require("utils").enhance_filetypes,
     buftype_exclude = require("utils").ignore_buftypes,
     filetype_exclude = require("utils").ignore_filetypes,
   },
