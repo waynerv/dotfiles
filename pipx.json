@@ -25,7 +25,7 @@
                     "include_dependencies": false,
                     "package": "black",
                     "package_or_url": "black",
-                    "package_version": "23.7.0",
+                    "package_version": "23.9.1",
                     "pip_args": [
                         "--index-url",
                         "https://pypi.tuna.tsinghua.edu.cn/simple"
@@ -155,7 +155,7 @@
                     "include_dependencies": false,
                     "package": "cookiecutter",
                     "package_or_url": "cookiecutter",
-                    "package_version": "2.3.0",
+                    "package_version": "2.3.1",
                     "pip_args": [
                         "--index-url",
                         "https://pypi.tuna.tsinghua.edu.cn/simple"
