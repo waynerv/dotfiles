@@ -5,6 +5,8 @@ local M = {
   keys = {
     { [[<C-\>]] },
     { "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<cr>", desc = "Toggle lazygit" },
+    { "<leader>tf", "<cmd>ToggleTerm direction=float<cr>", desc = "Toggle floating terminal" },
+    { "<leader>th", "<cmd>ToggleTerm direction=horizontal<cr>", desc = "Toggle horizontal terminal" },
   },
 }
 

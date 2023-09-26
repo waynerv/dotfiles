@@ -56,7 +56,7 @@ map({ "n", "v" }, "<M-h>", "^", { desc = "Go to beginning of line" })
 map({ "n", "v" }, "<M-l>", "$", { desc = "Go to end of line" })
 
 -- Clear search highlights with <esc>
-map({ "i", "n" }, "<esc>", "<cmd>noh<cr><esc>", { desc = "Escape and clear hlsearch" })
+map({ "n", "i" }, "<esc>", "<cmd>noh<cr><esc>", { desc = "Escape and clear hlsearch" })
 
 -- Better paste
 map("v", "p", "P")
