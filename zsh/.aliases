@@ -2,6 +2,7 @@
 alias path='echo $PATH | tr -s ":" "\n"'
 alias vi="nvim"
 alias vim="nvim"
+alias vic='nvim --clean'
 
 # macOS only
 if [[ "$OSTYPE" == "darwin"* ]]; then
