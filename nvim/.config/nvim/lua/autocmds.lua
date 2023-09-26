@@ -31,6 +31,16 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
   end,
 })
 
+-- disable fold for some filetypes
+vim.api.nvim_create_autocmd({ "FileType" }, {
+  pattern = { "help", "checkhealth", "gitcommit" },
+  callback = function()
+    require("ufo").detach()
+    vim.wo.foldcolumn = "0"
+    vim.opt_local.foldenable = false
+  end,
+})
+
 -- resize splits if window got resized
 vim.api.nvim_create_autocmd({ "VimResized" }, {
   callback = function()
