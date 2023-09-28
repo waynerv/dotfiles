@@ -1,6 +1,6 @@
 local M = {
   "lewis6991/gitsigns.nvim",
-  commit = "bdeba1cec3faddd89146690c10b9a87949c0ee66",
+  commit = "ff01d34daaed72f271a8ffa088a7e839a60c640f",
   event = "VeryLazy",
 }
 
@@ -21,7 +21,7 @@ M.opts = {
   current_line_blame_opts = {
     virt_text = true,
     virt_text_pos = "eol", -- 'eol' | 'overlay' | 'right_align'
-    delay = 1000,
+    delay = 500,
   },
   sign_priority = 6,
   update_debounce = 100,
