@@ -1,7 +1,8 @@
 local M = {
   "lukas-reineke/indent-blankline.nvim",
-  commit = "8299fe7703dfff4b1752aeed271c3b95281a952d",
+  version = "2.20.8",
   event = { "BufReadPost", "BufNewFile" },
+  dependencies = { "nvim-treesitter/nvim-treesitter" },
   opts = {
     char = "▏",
     context_char = "▏",
