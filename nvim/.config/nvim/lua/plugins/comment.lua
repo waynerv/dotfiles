@@ -1,6 +1,6 @@
 local M = {
   "numToStr/Comment.nvim",
-  commit = "eab2c83a0207369900e92783f56990808082eac2",
+  commit = "0236521ea582747b58869cb72f70ccfa967d2e89",
   event = "VeryLazy",
   dependencies = {
     "nvim-treesitter/nvim-treesitter",

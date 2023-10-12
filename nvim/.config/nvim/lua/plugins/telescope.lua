@@ -6,11 +6,11 @@ local M = {
     "nvim-tree/nvim-web-devicons",
     {
       "nvim-lua/plenary.nvim",
-      commit = "a56bf0071bf63d35274fdc4738bb1e8821cfd2ea",
+      commit = "9ce85b0f7dcfe5358c0be937ad23e456907d410b",
     },
     {
       "nvim-telescope/telescope-fzf-native.nvim",
-      commit = "9bc8237565ded606e6c366a71c64c0af25cd7a50",
+      commit = "6c921ca12321edaa773e324ef64ea301a1d0da62",
       build = "make",
     },
   },

@@ -1,6 +1,6 @@
 local M = {
   "stevearc/dressing.nvim",
-  commit = "713b56e13c58ad519920e0e634763345cb4fc832",
+  commit = "1f2d1206a03bd3add8aedf6251e4534611de577f",
   init = function()
     ---@diagnostic disable-next-line: duplicate-set-field
     vim.ui.select = function(...)

@@ -1,6 +1,6 @@
 local M = {
   "kevinhwang91/nvim-ufo",
-  commit = "aebd36bf5447862671356fcd5d4a8708ce6c9470",
+  commit = "6f2ccdf2da390d62f8f9e15fc5ddbcbd312e1e66",
   event = { "BufReadPost", "BufNewFile" },
   dependencies = {
     {
@@ -9,13 +9,13 @@ local M = {
     },
     {
       "luukvbaal/statuscol.nvim",
-      commit = "9f1ff2dcf614544c5022e876d83b4894c1944e87",
+      commit = "98d02fc90ebd7c4674ec935074d1d09443d49318",
       config = function()
         local builtin = require "statuscol.builtin"
         require("statuscol").setup {
           relculright = true,
           segments = {
-            { sign = { name = { ".*" }, colwidth = 1 }, click = "v:lua.ScSa" },
+            { sign = { name = { ".*" }, namespace = { "gitsigns" }, colwidth = 1 }, click = "v:lua.ScSa" },
             { text = { builtin.lnumfunc, " " }, click = "v:lua.ScLa" },
             { text = { builtin.foldfunc }, click = "v:lua.ScFa" },
           },
