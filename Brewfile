@@ -1,5 +1,6 @@
 tap "homebrew/bundle"
 tap "hudochenkov/sshpass"
+tap "morantron/tmux-fingers"
 # Record and share terminal sessions
 brew "asciinema"
 # GNU File, Shell, and Text utilities
@@ -81,6 +82,8 @@ brew "wrk"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
 brew "hudochenkov/sshpass/sshpass"
+# mouseless terminal interaction
+brew "morantron/tmux-fingers/tmux-fingers"
 # GPU-accelerated terminal emulator
 cask "alacritty"
 # Universal database tool and SQL client
