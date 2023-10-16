@@ -1,6 +1,6 @@
 # dotfiles
 
-## Install packages
+## How to restore
 
 ### Basic tools
 
@@ -12,52 +12,44 @@ brew install git
 
 ### Set up
 
-1. clone dotfiles repo:
+1. setup oh-my-zsh:
 
+    1.1 install oh-my-zsh:
     ```bash
-    git clone https://github.com/waynerv/dotfiles.git ~/dotfiles 
+    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    ```
+    1.2 install zsh-syntax-highlighting plugin:
+    ```bash
+    git clone --filter=blob:none https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    ```
+    1.3 install zsh-autosuggestions plugin:
+    ```bash
+    git clone --filter=blob:none https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    ```
+    1.4 install Powerlevel10k theme:
+    ```bash
+    git clone --filter=blob:none https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
     ```
 
-2. install homebrew formulaes & casks:
+2. clone dotfiles repo:
+
+    ```bash
+    git clone --filter=blob:none https://github.com/waynerv/dotfiles.git ~/dotfiles 
+    ```
+
+3. install homebrew formulaes & casks:
 
     ```bash
     brew bundle install ~/dotfiles/Brewfile
     ```
 
-3. install pipx packages:
+4. install pipx packages:
 
     ```bash
     for p in $(cat ~/dotfiles/pipx.json | jq -r '.venvs[].metadata.main_package.package_or_url'); do pipx install --index-url https://pypi.tuna.tsinghua.edu.cn/simple $p; done
     ```
 
-4. [install nerd font](https://github.com/romkatv/powerlevel10k/blob/master/README.md#meslo-nerd-font-patched-for-powerlevel10k)
- 
-5. setup oh-my-zsh:
-
-    4.1 install oh-my-zsh:
-    ```bash
-    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-    ```
-    4.2 install zsh-syntax-highlighting plugin:
-    ```bash
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-    ```
-    4.3 install zsh-autosuggestions plugin:
-    ```bash
-    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-    ```
-    4.4 install Powerlevel10k theme:
-    ```bash
-    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-    ```
-
-6. install tmux-256color terminfo:
-    
-    ```bash
-    /usr/bin/tic -x -o $HOME/.local/share/terminfo ~/dotfiles/tmux-256color.src
-    ```
-
-7. install dotfiles using stow:
+5. restore dotfiles using stow:
 
     ```bash
     cd ~/dotfiles
@@ -65,12 +57,20 @@ brew install git
     git reset --hard
     ```
 
-8. install asdf packages:
+6. install asdf plugins:
 
     ```bash
     cd ~
     for plug in {golang,python,nodejs,rust}; do asdf plugin add $plug; done
     asdf install
+    ```
+
+7. install nerd font [Hack Nerd Font Mono](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Hack.zip)
+
+8. install tmux-256color terminfo:
+    
+    ```bash
+    /usr/bin/tic -x -o $HOME/.local/share/terminfo ~/dotfiles/tmux-256color.src
     ```
 
 9. import configuration file of iterm2 and raycast.
@@ -101,14 +101,11 @@ nvim/.config/nvim/autoload/plug.vim
 lrwxr-xr-x  1 waynerv  staff  29  5 21 22:36 /Users/waynerv/.config/nvim -> ../dotfiles/nvim/.config/nvim
 ```
 
-### homebrew
+### backup package updates
+
+just run `make backup`. This will backup homebrew and pipx changes:
 
 ```bash
 brew bundle dump --describe --force --file=~/dotfiles/Brewfile
-```
-
-### pipx
-
-```bash
 pipx list --json > ~/dotfiles/pipx.json
 ```
