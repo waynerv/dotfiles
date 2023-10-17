@@ -1,19 +1,19 @@
 return {
   {
-    "HiPhish/nvim-ts-rainbow2",
-    commit = "09214437d00b2e6863f95578d72abe5bca2d0f6b",
+    "HiPhish/rainbow-delimiters.nvim",
+    commit = "f1ce55edcbd2c25a544c93357c66d4172a870766",
     event = { "BufReadPost", "BufNewFile" },
     dependencies = { "nvim-treesitter/nvim-treesitter" },
   },
   {
     "nvim-treesitter/nvim-treesitter-textobjects",
-    commit = "9e519b6146512c8e2e702faf8ac48420f4f5deec",
+    commit = "76c7a89b41de77a4f83fb77fa072c5ad7605fe3b",
     event = { "BufReadPost", "BufNewFile" },
     dependencies = { "nvim-treesitter/nvim-treesitter" },
   },
   {
     "nvim-treesitter/nvim-treesitter",
-    commit = "2aa9e9b0e655462890c6d2d8632a0d569be66482",
+    commit = "9c4fc86b67c1d68141cef57846d24cbee9b74fb0",
     event = { "BufReadPost", "BufNewFile" },
     build = ":TSUpdate",
     config = function()
@@ -47,14 +47,6 @@ return {
         context_commentstring = {
           enable = true,
           enable_autocmd = false,
-        },
-
-        rainbow = {
-          enable = true,
-          -- list of languages you want to disable the plugin for
-          disable = { "jsx", "cpp" },
-          -- Which query to use for finding delimiters
-          query = "rainbow-parens",
         },
 
         textobjects = {

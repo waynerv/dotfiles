@@ -11,7 +11,7 @@ local M = {
   },
 }
 
-M.config = function()
+function M.config()
   require("nvim-navbuddy").setup {
     window = { border = "rounded" },
     lsp = { auto_attach = true },
