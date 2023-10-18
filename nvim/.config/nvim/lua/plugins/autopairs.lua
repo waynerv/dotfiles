@@ -1,6 +1,6 @@
 local M = {
   "windwp/nvim-autopairs",
-  commit = "748e72c05495a3d30e88a6ef04b21697019a9aa9",
+  commit = "f6c71641f6f183427a651c0ce4ba3fb89404fa9e",
   event = "InsertEnter",
   dependencies = { "hrsh7th/nvim-cmp" },
 }
@@ -24,6 +24,7 @@ function M.config()
       check_comma = true,
       highlight = "PmenuSel",
       highlight_grey = "LineNr",
+      use_virt_lines = false,
     },
   }
 
