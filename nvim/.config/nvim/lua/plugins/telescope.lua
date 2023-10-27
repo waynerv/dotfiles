@@ -18,7 +18,7 @@ local M = {
     { "<leader>ff", "<cmd>Telescope find_files<CR>", desc = "Find files" },
     { "<leader>fg", "<cmd>Telescope live_grep<CR>", desc = "Grep files" },
     { "<leader>fp", "<cmd>Telescope projects<CR>", desc = "Projects" },
-    { "<leader>fb", "<cmd>Telescope buffers<CR>", desc = "Buffers" },
+    { "<leader>fb", "<cmd>Telescope buffers sort_mru=true sort_lastused=true<CR>", desc = "Buffers" },
     { "<leader>fr", "<cmd>Telescope oldfiles<CR>", desc = "Recent files" },
     { "<leader>fh", "<cmd>Telescope help_tags<CR>", desc = "Help" },
     { "<leader>fd", "<cmd>Telescope diagnostics<CR>", desc = "Diagnostics" },
