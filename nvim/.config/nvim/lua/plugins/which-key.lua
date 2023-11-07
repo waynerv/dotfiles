@@ -1,6 +1,6 @@
 local M = {
   "folke/which-key.nvim",
-  commit = "bf09a25bdc9a83bcc69d2cf078e680368676513b",
+  commit = "4433e5ec9a507e5097571ed55c02ea9658fb268a",
   event = "VeryLazy",
 }
 
@@ -9,11 +9,11 @@ function M.config()
   wk.setup()
   wk.register {
     ["<leader>"] = {
-      f = { name = "Find" },
-      g = { name = "Gitsigns" },
-      l = { name = "LSP" },
-      s = { name = "Swap" },
-      t = { name = "Toggle" },
+      f = { "Find" },
+      g = { "Gitsigns" },
+      l = { "LSP" },
+      s = { "Swap" },
+      t = { "Toggle" },
     },
   }
 end

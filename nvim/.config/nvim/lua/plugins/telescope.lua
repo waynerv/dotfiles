@@ -1,6 +1,6 @@
 local M = {
   "nvim-telescope/telescope.nvim",
-  commit = "276362a8020c6e94c7a76d49aa00d4923b0c02f3",
+  tag = "0.1.4",
   cmd = { "Telescope" },
   dependencies = {
     "nvim-tree/nvim-web-devicons",
