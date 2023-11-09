@@ -65,6 +65,7 @@ return {
         keymap(bufnr, "n", "<leader>ls", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
         keymap(bufnr, "n", "<leader>lq", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
         keymap(bufnr, "n", "<leader>lf", "<cmd>lua vim.lsp.buf.format{ async = true }<cr>", opts)
+        keymap(bufnr, "n", "<leader>lt", "<cmd>LspRestart<cr>", opts)
       end
       local on_attach = function(client, bufnr)
         lsp_keymaps(bufnr)
