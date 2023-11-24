@@ -25,7 +25,7 @@ function M.config()
     dashboard.button("q", " " .. " Quit", "<cmd>qa<CR>"),
   }
   local function footer()
-    local version = " " .. vim.version().major .. "." .. vim.version().minor .. "." .. vim.version().patch
+    local version = " " .. vim.version().major .. "." .. vim.version().minor .. "." .. vim.version().patch
     local site = " 󰥱 waynerv.com"
     return version .. "\t" .. site
   end
