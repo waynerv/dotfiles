@@ -26,9 +26,12 @@ return {
   },
   {
     "j-hui/fidget.nvim",
-    tag = "legacy",
     event = "LspAttach",
     opts = {},
+    -- stylua: ignore
+    keys = {
+      { "<leader>lc", mode = { "n" }, function() require("fidget").notification.reset() end, desc = "Clear fidget notification" },
+    },
   },
   {
     "neovim/nvim-lspconfig",
@@ -64,7 +67,6 @@ return {
         keymap(bufnr, "n", "<leader>lr", "<cmd>lua vim.lsp.buf.rename()<cr>", opts)
         keymap(bufnr, "n", "<leader>ls", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
         keymap(bufnr, "n", "<leader>lq", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
-        keymap(bufnr, "n", "<leader>lf", "<cmd>lua vim.lsp.buf.format{ async = true }<cr>", opts)
         keymap(bufnr, "n", "<leader>lt", "<cmd>LspRestart<cr>", opts)
       end
       local on_attach = function(client, bufnr)

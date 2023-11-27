@@ -5,7 +5,11 @@ local M = {
   dependencies = {
     {
       "williamboman/mason.nvim",
-      commit = "d66c60e17dd6fd8165194b1d14d21f7eb2c1697a",
+      commit = "41e75af1f578e55ba050c863587cffde3556ffa6",
+    },
+    {
+      "WhoIsSethDaniel/mason-tool-installer.nvim",
+      commit = "e4f34741daa9cf95de68a603d3e7a6844a69fdf0",
     },
   },
 }
@@ -26,6 +30,15 @@ function M.config()
   require("mason-lspconfig").setup {
     ensure_installed = require("lspsettings").servers,
     automatic_installation = false,
+  }
+  require("mason-tool-installer").setup {
+    ensure_installed = {
+      "goimports-reviser",
+      "shellcheck",
+      "shfmt",
+      "staticcheck",
+      "stylua",
+    },
   }
 end
 

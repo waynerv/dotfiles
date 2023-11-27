@@ -1,11 +1,12 @@
 local M = {}
 
 M.servers = {
+  "bashls",
+  "gopls",
   "lua_ls",
   "pyright",
-  "bashls",
+  "ruff_lsp",
   "yamlls",
-  "gopls",
 }
 
 return M
