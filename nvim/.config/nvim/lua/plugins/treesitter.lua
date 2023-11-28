@@ -1,7 +1,7 @@
 return {
   {
     "HiPhish/rainbow-delimiters.nvim",
-    commit = "f1ce55edcbd2c25a544c93357c66d4172a870766",
+    commit = "47404636a34580db1636dc0cf35027bdf77abba5",
     event = { "BufReadPost", "BufNewFile" },
     dependencies = { "nvim-treesitter/nvim-treesitter" },
   },
