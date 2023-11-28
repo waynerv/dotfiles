@@ -1,42 +1,6 @@
 {
     "pipx_spec_version": "0.1",
     "venvs": {
-        "black": {
-            "metadata": {
-                "injected_packages": {},
-                "main_package": {
-                    "app_paths": [
-                        {
-                            "__Path__": "/Users/waynerv/.local/pipx/venvs/black/bin/black",
-                            "__type__": "Path"
-                        },
-                        {
-                            "__Path__": "/Users/waynerv/.local/pipx/venvs/black/bin/blackd",
-                            "__type__": "Path"
-                        }
-                    ],
-                    "app_paths_of_dependencies": {},
-                    "apps": [
-                        "black",
-                        "blackd"
-                    ],
-                    "apps_of_dependencies": [],
-                    "include_apps": true,
-                    "include_dependencies": false,
-                    "package": "black",
-                    "package_or_url": "black",
-                    "package_version": "23.9.1",
-                    "pip_args": [
-                        "--index-url",
-                        "https://pypi.tuna.tsinghua.edu.cn/simple"
-                    ],
-                    "suffix": ""
-                },
-                "pipx_metadata_version": "0.2",
-                "python_version": "Python 3.11.6",
-                "venv_args": []
-            }
-        },
         "bpython": {
             "metadata": {
                 "injected_packages": {},
@@ -95,7 +59,7 @@
                     "suffix": ""
                 },
                 "pipx_metadata_version": "0.2",
-                "python_version": "Python 3.11.6",
+                "python_version": "Python 3.11.5",
                 "venv_args": []
             }
         },
@@ -155,7 +119,7 @@
                     "include_dependencies": false,
                     "package": "cookiecutter",
                     "package_or_url": "cookiecutter",
-                    "package_version": "2.4.0",
+                    "package_version": "2.5.0",
                     "pip_args": [
                         "--index-url",
                         "https://pypi.tuna.tsinghua.edu.cn/simple"
@@ -163,54 +127,7 @@
                     "suffix": ""
                 },
                 "pipx_metadata_version": "0.2",
-                "python_version": "Python 3.11.6",
-                "venv_args": []
-            }
-        },
-        "flake8": {
-            "metadata": {
-                "injected_packages": {},
-                "main_package": {
-                    "app_paths": [
-                        {
-                            "__Path__": "/Users/waynerv/.local/pipx/venvs/flake8/bin/flake8",
-                            "__type__": "Path"
-                        }
-                    ],
-                    "app_paths_of_dependencies": {
-                        "pycodestyle": [
-                            {
-                                "__Path__": "/Users/waynerv/.local/pipx/venvs/flake8/bin/pycodestyle",
-                                "__type__": "Path"
-                            }
-                        ],
-                        "pyflakes": [
-                            {
-                                "__Path__": "/Users/waynerv/.local/pipx/venvs/flake8/bin/pyflakes",
-                                "__type__": "Path"
-                            }
-                        ]
-                    },
-                    "apps": [
-                        "flake8"
-                    ],
-                    "apps_of_dependencies": [
-                        "pycodestyle",
-                        "pyflakes"
-                    ],
-                    "include_apps": true,
-                    "include_dependencies": false,
-                    "package": "flake8",
-                    "package_or_url": "flake8",
-                    "package_version": "6.1.0",
-                    "pip_args": [
-                        "--index-url",
-                        "https://pypi.tuna.tsinghua.edu.cn/simple"
-                    ],
-                    "suffix": ""
-                },
-                "pipx_metadata_version": "0.2",
-                "python_version": "Python 3.11.6",
+                "python_version": "Python 3.11.5",
                 "venv_args": []
             }
         },
@@ -241,61 +158,7 @@
                     "suffix": ""
                 },
                 "pipx_metadata_version": "0.2",
-                "python_version": "Python 3.11.6",
-                "venv_args": []
-            }
-        },
-        "pgcli": {
-            "metadata": {
-                "injected_packages": {},
-                "main_package": {
-                    "app_paths": [
-                        {
-                            "__Path__": "/Users/waynerv/.local/pipx/venvs/pgcli/bin/pgcli",
-                            "__type__": "Path"
-                        }
-                    ],
-                    "app_paths_of_dependencies": {
-                        "pygments": [
-                            {
-                                "__Path__": "/Users/waynerv/.local/pipx/venvs/pgcli/bin/pygmentize",
-                                "__type__": "Path"
-                            }
-                        ],
-                        "sqlparse": [
-                            {
-                                "__Path__": "/Users/waynerv/.local/pipx/venvs/pgcli/bin/sqlformat",
-                                "__type__": "Path"
-                            }
-                        ],
-                        "tabulate": [
-                            {
-                                "__Path__": "/Users/waynerv/.local/pipx/venvs/pgcli/bin/tabulate",
-                                "__type__": "Path"
-                            }
-                        ]
-                    },
-                    "apps": [
-                        "pgcli"
-                    ],
-                    "apps_of_dependencies": [
-                        "sqlformat",
-                        "pygmentize",
-                        "tabulate"
-                    ],
-                    "include_apps": true,
-                    "include_dependencies": false,
-                    "package": "pgcli",
-                    "package_or_url": "pgcli",
-                    "package_version": "3.5.0",
-                    "pip_args": [
-                        "--index-url",
-                        "https://pypi.tuna.tsinghua.edu.cn/simple"
-                    ],
-                    "suffix": ""
-                },
-                "pipx_metadata_version": "0.2",
-                "python_version": "Python 3.11.6",
+                "python_version": "Python 3.11.5",
                 "venv_args": []
             }
         },
@@ -342,12 +205,6 @@
                                 "__type__": "Path"
                             }
                         ],
-                        "jsonschema": [
-                            {
-                                "__Path__": "/Users/waynerv/.local/pipx/venvs/poetry/bin/jsonschema",
-                                "__type__": "Path"
-                            }
-                        ],
                         "keyring": [
                             {
                                 "__Path__": "/Users/waynerv/.local/pipx/venvs/poetry/bin/keyring",
@@ -383,7 +240,6 @@
                         "dul-receive-pack",
                         "dul-upload-pack",
                         "dulwich",
-                        "jsonschema",
                         "keyring",
                         "pkginfo",
                         "virtualenv",
@@ -393,7 +249,7 @@
                     "include_dependencies": false,
                     "package": "poetry",
                     "package_or_url": "poetry",
-                    "package_version": "1.6.1",
+                    "package_version": "1.7.1",
                     "pip_args": [
                         "--index-url",
                         "https://pypi.tuna.tsinghua.edu.cn/simple"
@@ -401,7 +257,7 @@
                     "suffix": ""
                 },
                 "pipx_metadata_version": "0.2",
-                "python_version": "Python 3.11.6",
+                "python_version": "Python 3.11.5",
                 "venv_args": []
             }
         },
@@ -437,7 +293,7 @@
                     "suffix": ""
                 },
                 "pipx_metadata_version": "0.2",
-                "python_version": "Python 3.11.6",
+                "python_version": "Python 3.11.5",
                 "venv_args": []
             }
         },
@@ -477,7 +333,7 @@
                     "suffix": ""
                 },
                 "pipx_metadata_version": "0.2",
-                "python_version": "Python 3.11.6",
+                "python_version": "Python 3.11.5",
                 "venv_args": []
             }
         }
