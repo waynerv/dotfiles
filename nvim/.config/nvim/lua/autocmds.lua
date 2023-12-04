@@ -21,16 +21,6 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
   end,
 })
 
--- change indentation for some filetypes
-vim.api.nvim_create_autocmd({ "FileType" }, {
-  pattern = { "go", "python" },
-  callback = function()
-    vim.opt_local.tabstop = 4
-    vim.opt_local.shiftwidth = 4
-    vim.opt_local.softtabstop = 4
-  end,
-})
-
 -- disable fold for some filetypes
 vim.api.nvim_create_autocmd({ "FileType" }, {
   pattern = { "help", "checkhealth", "gitcommit" },
@@ -38,6 +28,23 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
     require("ufo").detach()
     vim.wo.foldcolumn = "0"
     vim.opt_local.foldenable = false
+  end,
+})
+
+-- change indentation for some filetypes
+vim.api.nvim_create_autocmd({ "FileType" }, {
+  pattern = { "lua" },
+  callback = function()
+    vim.opt_local.tabstop = 2
+    vim.opt_local.shiftwidth = 2
+    vim.opt_local.softtabstop = 2
+  end,
+})
+
+vim.api.nvim_create_autocmd({ "FileType" }, {
+  pattern = { "go" },
+  callback = function()
+    vim.opt_local.expandtab = false
   end,
 })
 

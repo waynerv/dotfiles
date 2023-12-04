@@ -18,6 +18,11 @@ local M = {
       go = { "goimports-reviser" },
       lua = { "stylua" },
     },
+    formatters = {
+      shfmt = {
+        prepend_args = { "-i", "4" },
+      },
+    },
   },
 }
 

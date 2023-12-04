@@ -22,10 +22,10 @@ opt.ignorecase = true                       -- ignore case in search patterns
 opt.smartcase = true                        -- smart case
 
 -- Tab & Indent & Wrap
-opt.expandtab = true                        -- convert tabs to spaces
-opt.softtabstop = 2
-opt.shiftwidth = 2                          -- the number of spaces inserted for each indentation
-opt.tabstop = 2                             -- insert 2 spaces for a tab
+opt.expandtab = true                        -- convert tabs to spaces when insert
+opt.softtabstop = 4                         -- how far cursor moves while typing Tab
+opt.shiftwidth = 4                          -- the number of spaces inserted for each indentation
+opt.tabstop = 4                             -- define tab display width as 4 spaces
 opt.smartindent = true                      -- make indenting smarter again
 opt.wrap = false                            -- display lines as one long line
 opt.linebreak = true                        -- wrap lines at 'breakat'
