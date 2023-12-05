@@ -1,5 +1,6 @@
 tap "homebrew/bundle"
 tap "hudochenkov/sshpass"
+tap "j178/tap"
 tap "morantron/tmux-fingers"
 # Record and share terminal sessions
 brew "asciinema"
@@ -82,6 +83,8 @@ brew "wrk"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
 brew "hudochenkov/sshpass/sshpass"
+# leetgo is a command line tool for leetcode.com. It can help you to login, submit, test, and view your submissions.
+brew "j178/tap/leetgo"
 # GPU-accelerated terminal emulator
 cask "alacritty"
 # Universal database tool and SQL client
