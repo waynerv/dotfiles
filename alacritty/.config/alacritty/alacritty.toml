@@ -1,0 +1,15 @@
+import = ["/Users/waynerv/.config/alacritty/themes/kanagawa_wave.toml"]
+
+[env]
+LANG = "zh_CN.UTF-8"
+
+[font]
+size = 16.0
+
+[font.normal]
+family = "Hack Nerd Font Mono"
+
+[window]
+decorations = "None"
+opacity = 0.8
+option_as_alt = "OnlyLeft"
