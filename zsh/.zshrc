@@ -132,7 +132,7 @@ export GOPATH="$HOME/go"
 export EDITOR="nvim"
 
 # K9s
-export K9SCONFIG="$HOME/.config/k9s"
+export K9S_CONFIG_DIR="$HOME/.config/k9s"
 
 eval $(thefuck --alias)
 

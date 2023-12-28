@@ -1,0 +1,16 @@
+k9s:
+  cluster: kubernetes
+  readOnly: false
+  namespace:
+    active: qfusion-admin
+    lockFavorites: false
+    favorites:
+    - default
+    - qfusion
+    - qfusion-admin
+    - kube-system
+  view:
+    active: po
+  featureGates:
+    nodeShell: false
+  portForwardAddress: localhost
