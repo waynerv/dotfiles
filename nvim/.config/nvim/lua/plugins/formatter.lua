@@ -1,6 +1,6 @@
 local M = {
   "stevearc/conform.nvim",
-  commit = "fd32ed2dc192ec656a0536699336cd2fe3eb543f",
+  commit = "34b81e70da83e26c048290204de44268eb59814e",
   cmd = { "ConformInfo" },
   keys = {
     {

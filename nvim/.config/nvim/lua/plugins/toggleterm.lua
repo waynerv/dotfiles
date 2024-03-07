@@ -1,6 +1,6 @@
 local M = {
   "akinsho/toggleterm.nvim",
-  commit = "c80844fd52ba76f48fabf83e2b9f9b93273f418d",
+  commit = "193786e0371e3286d3bc9aa0079da1cd41beaa62",
   cmd = "ToggleTerm",
   keys = {
     { [[<C-\>]] },

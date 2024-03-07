@@ -1,6 +1,6 @@
 local M = {
   "goolord/alpha-nvim",
-  commit = "234822140b265ec4ba3203e3e0be0e0bb826dff5",
+  commit = "41283fb402713fc8b327e60907f74e46166f4cfd",
   event = "VimEnter",
 }
 

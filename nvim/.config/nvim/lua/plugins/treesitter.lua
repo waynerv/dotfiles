@@ -1,19 +1,19 @@
 return {
   {
     "HiPhish/rainbow-delimiters.nvim",
-    commit = "47404636a34580db1636dc0cf35027bdf77abba5",
+    commit = "cfc3f53cfa0fbabd95bd33747288aea24fe45211",
     event = { "BufReadPost", "BufNewFile" },
     dependencies = { "nvim-treesitter/nvim-treesitter" },
   },
   {
     "nvim-treesitter/nvim-treesitter-textobjects",
-    commit = "76c7a89b41de77a4f83fb77fa072c5ad7605fe3b",
+    commit = "b7a0bfa3e93697ca5b61b15df633404bf8f45883",
     event = { "BufReadPost", "BufNewFile" },
     dependencies = { "nvim-treesitter/nvim-treesitter" },
   },
   {
     "nvim-treesitter/nvim-treesitter",
-    commit = "9c4fc86b67c1d68141cef57846d24cbee9b74fb0",
+    commit = "c09932bd2de01dc9c01e870fe83060693c67de13",
     event = { "BufReadPost", "BufNewFile" },
     build = ":TSUpdate",
     config = function()

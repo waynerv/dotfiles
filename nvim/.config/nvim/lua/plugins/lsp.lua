@@ -5,11 +5,11 @@ return {
     dependencies = {
       {
         "SmiteshP/nvim-navic",
-        commit = "9c89730da6a05acfeb6a197e212dfadf5aa60ca0",
+        commit = "8649f694d3e76ee10c19255dece6411c29206a54",
       },
       {
         "MunifTanjim/nui.nvim",
-        commit = "0f913a3ae1a24c8a4487fbf111b4044cc22b1b0d",
+        commit = "756c59f46057cd2d43619cd3a6d4e01b2aa60295",
       },
     },
     keys = {
@@ -26,7 +26,7 @@ return {
   },
   {
     "j-hui/fidget.nvim",
-    commit = "300018af4abd00610a345e382ca1f4b7ba420f77",
+    commit = "60404ba67044c6ab01894dd5bf77bd64ea5e09aa",
     event = "LspAttach",
     opts = {},
     -- stylua: ignore
