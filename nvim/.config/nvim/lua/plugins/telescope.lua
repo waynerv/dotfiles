@@ -1,16 +1,16 @@
 local M = {
   "nvim-telescope/telescope.nvim",
-  tag = "0.1.5",
+  commit = "dfa230be84a044e7f546a6c2b0a403c739732b86",
   cmd = { "Telescope" },
   dependencies = {
     "nvim-tree/nvim-web-devicons",
     {
       "nvim-lua/plenary.nvim",
-      commit = "9ce85b0f7dcfe5358c0be937ad23e456907d410b",
+      commit = "a3e3bc82a3f95c5ed0d7201546d5d2c19b20d683",
     },
     {
       "nvim-telescope/telescope-fzf-native.nvim",
-      commit = "6c921ca12321edaa773e324ef64ea301a1d0da62",
+      commit = "9ef21b2e6bb6ebeaf349a0781745549bbb870d27",
       build = "make",
     },
   },

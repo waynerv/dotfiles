@@ -1,6 +1,6 @@
 local M = {
   "ojroques/nvim-osc52",
-  commit = "1aa814582a8ab76e85492edc0e719deaa90552e8",
+  commit = "04cfaba1865ae5c53b6f887c3ca7304973824fb2",
   keys = {
     { "<leader>c", mode = {"n", "v"}, desc = "Copy with osc52" },
   },

@@ -1,6 +1,6 @@
 local M = {
   "echasnovski/mini.cursorword",
-  commit = "8d3e1e052688bcd52e9e819a5cdb7f8a5b498c64",
+  commit = "b6fb7e8556b3e3bb09c5cca1937d8e542f8a0261",
   event = { "BufReadPost", "BufNewFile" },
 }
 
