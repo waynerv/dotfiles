@@ -10,11 +10,14 @@
 [pull]
 	rebase = false
 [merge]
-	conflictstyle = diff3
+	conflictstyle = zdiff3
 [diff]
 	colorMoved = default
+    algorithm = histogram
 [init]
 	defaultBranch = main
+[branch]
+    sort = -committerdate
 
 [interactive]
 	diffFilter = delta --color-only --features=interactive
