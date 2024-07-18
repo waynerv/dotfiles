@@ -9,13 +9,13 @@ local M = {
     },
     {
       "luukvbaal/statuscol.nvim",
-      commit = "ef3617d0c8cfaa29f7bcdaa8b7cc35df2a409bae",
+      commit = "d6f7f5437c5404d958b88bb73e0721b1c0e09223",
       config = function()
         local builtin = require "statuscol.builtin"
         require("statuscol").setup {
           relculright = true,
           segments = {
-            { sign = { name = { ".*" }, namespace = { "gitsigns" }, colwidth = 1 }, click = "v:lua.ScSa" },
+            { sign = { name = { ".*" }, namespace = { "gitsigns", "diagnostic" }, colwidth = 1 }, click = "v:lua.ScSa" },
             { text = { builtin.lnumfunc, " " }, click = "v:lua.ScLa" },
             { text = { builtin.foldfunc }, click = "v:lua.ScFa" },
           },
