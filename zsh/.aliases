@@ -10,8 +10,8 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   alias up="brew update && brew upgrade && brew cleanup && omz update && git -C ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k pull"
   alias cat="bat"
   alias h="history | fzf --tac --no-sort"
-  alias l="exa --long --header --git --icons --group-directories-first"
-  alias la="exa --long --header --git --icons --group-directories-first --all"
+  alias l="eza --long --header --git --icons --group-directories-first"
+  alias la="eza --long --header --git --icons --group-directories-first --all"
   # tmux
   alias ta='tmux attach || tmux new -s local'
   alias tat='tmux attach -t'

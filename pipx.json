@@ -56,13 +56,14 @@
                     "package": "bpython",
                     "package_or_url": "bpython",
                     "package_version": "0.24",
+                    "pinned": false,
                     "pip_args": [
                         "--index-url",
                         "https://pypi.tuna.tsinghua.edu.cn/simple"
                     ],
                     "suffix": ""
                 },
-                "pipx_metadata_version": "0.4",
+                "pipx_metadata_version": "0.5",
                 "python_version": "Python 3.11.5",
                 "source_interpreter": null,
                 "venv_args": []
@@ -129,13 +130,14 @@
                     "package": "cookiecutter",
                     "package_or_url": "cookiecutter",
                     "package_version": "2.6.0",
+                    "pinned": false,
                     "pip_args": [
                         "--index-url",
                         "https://pypi.tuna.tsinghua.edu.cn/simple"
                     ],
                     "suffix": ""
                 },
-                "pipx_metadata_version": "0.4",
+                "pipx_metadata_version": "0.5",
                 "python_version": "Python 3.11.5",
                 "source_interpreter": null,
                 "venv_args": []
@@ -165,15 +167,136 @@
                     "package": "jinja2-cli",
                     "package_or_url": "jinja2-cli",
                     "package_version": "0.8.2",
+                    "pinned": false,
                     "pip_args": [
                         "--index-url",
                         "https://pypi.tuna.tsinghua.edu.cn/simple"
                     ],
                     "suffix": ""
                 },
-                "pipx_metadata_version": "0.4",
+                "pipx_metadata_version": "0.5",
                 "python_version": "Python 3.11.5",
                 "source_interpreter": null,
+                "venv_args": []
+            }
+        },
+        "mycli": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/Users/waynerv/.local/pipx/venvs/mycli/bin/mycli",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "pygments": [
+                            {
+                                "__Path__": "/Users/waynerv/.local/pipx/venvs/mycli/bin/pygmentize",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "sqlparse": [
+                            {
+                                "__Path__": "/Users/waynerv/.local/pipx/venvs/mycli/bin/sqlformat",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "tabulate": [
+                            {
+                                "__Path__": "/Users/waynerv/.local/pipx/venvs/mycli/bin/tabulate",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "mycli"
+                    ],
+                    "apps_of_dependencies": [
+                        "pygmentize",
+                        "sqlformat",
+                        "tabulate"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "mycli",
+                    "package_or_url": "mycli",
+                    "package_version": "1.27.2",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.12.3",
+                "source_interpreter": {
+                    "__Path__": "/usr/local/opt/python@3.12/libexec/bin/python",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "pgcli": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/Users/waynerv/.local/pipx/venvs/pgcli/bin/pgcli",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "pygments": [
+                            {
+                                "__Path__": "/Users/waynerv/.local/pipx/venvs/pgcli/bin/pygmentize",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "sqlparse": [
+                            {
+                                "__Path__": "/Users/waynerv/.local/pipx/venvs/pgcli/bin/sqlformat",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "tabulate": [
+                            {
+                                "__Path__": "/Users/waynerv/.local/pipx/venvs/pgcli/bin/tabulate",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "pgcli"
+                    ],
+                    "apps_of_dependencies": [
+                        "sqlformat",
+                        "pygmentize",
+                        "tabulate"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "pgcli",
+                    "package_or_url": "pgcli",
+                    "package_version": "4.1.0",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.12.3",
+                "source_interpreter": {
+                    "__Path__": "/usr/local/opt/python@3.12/libexec/bin/python",
+                    "__type__": "Path"
+                },
                 "venv_args": []
             }
         },
@@ -268,14 +391,15 @@
                     "man_paths_of_dependencies": {},
                     "package": "poetry",
                     "package_or_url": "poetry",
-                    "package_version": "1.8.2",
+                    "package_version": "1.8.3",
+                    "pinned": false,
                     "pip_args": [
                         "--index-url",
                         "https://pypi.tuna.tsinghua.edu.cn/simple"
                     ],
                     "suffix": ""
                 },
-                "pipx_metadata_version": "0.4",
+                "pipx_metadata_version": "0.5",
                 "python_version": "Python 3.11.5",
                 "source_interpreter": null,
                 "venv_args": []
@@ -310,13 +434,14 @@
                     "package": "thefuck",
                     "package_or_url": "thefuck",
                     "package_version": "3.32",
+                    "pinned": false,
                     "pip_args": [
                         "--index-url",
                         "https://pypi.tuna.tsinghua.edu.cn/simple"
                     ],
                     "suffix": ""
                 },
-                "pipx_metadata_version": "0.4",
+                "pipx_metadata_version": "0.5",
                 "python_version": "Python 3.11.5",
                 "source_interpreter": null,
                 "venv_args": []
@@ -361,14 +486,15 @@
                     "man_paths_of_dependencies": {},
                     "package": "tldr",
                     "package_or_url": "tldr",
-                    "package_version": "3.2.0",
+                    "package_version": "3.3.0",
+                    "pinned": false,
                     "pip_args": [
                         "--index-url",
                         "https://pypi.tuna.tsinghua.edu.cn/simple"
                     ],
                     "suffix": ""
                 },
-                "pipx_metadata_version": "0.4",
+                "pipx_metadata_version": "0.5",
                 "python_version": "Python 3.11.5",
                 "source_interpreter": null,
                 "venv_args": []

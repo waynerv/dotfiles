@@ -17,12 +17,14 @@ brew "bat"
 brew "btop"
 # Cross-platform make
 brew "cmake"
+# Fast and statically typed, compiled language with Ruby-like syntax
+brew "crystal"
 # Tool for exploring each layer in a docker image
 brew "dive"
 # More intuitive version of du in rust
 brew "dust"
-# Modern replacement for 'ls'
-brew "exa"
+# Modern, maintained replacement for ls
+brew "eza"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
 # Command-line fuzzy finder written in Go
@@ -37,6 +39,8 @@ brew "git-trim"
 brew "gnu-sed"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
+# Graph visualization software from AT&T and Bell Labs
+brew "graphviz"
 # Kubernetes package manager
 brew "helm"
 # Configurable static site generator
@@ -114,6 +118,7 @@ mas "GIPHY CAPTURE", id: 668208984
 mas "iShot", id: 1485844094
 mas "Kindle Classic", id: 405399194
 mas "OneDrive", id: 823766827
+mas "QQ音乐", id: 595615424
 mas "Unsplash Wallpapers", id: 1284863847
 mas "微信", id: 836500024
 mas "腾讯会议", id: 1484048379

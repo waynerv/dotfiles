@@ -5,6 +5,7 @@ k9s:
     active: qfusion-admin
     lockFavorites: false
     favorites:
+    - all
     - default
     - qfusion
     - qfusion-admin
