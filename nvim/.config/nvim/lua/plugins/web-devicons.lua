@@ -1,6 +1,6 @@
 local M = {
   "nvim-tree/nvim-web-devicons",
-  commit = "b77921fdc44833c994fdb389d658ccbce5490c16",
+  commit = "5061e580de591ae8337b1a7294096d70ea8cfd4d",
   opts = {
     override = {
       zsh = {
