@@ -111,15 +111,14 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
+command -v fzf &> /dev/null && source <(fzf --zsh)
+
 if [[ "$OSTYPE" == "darwin"* ]]; then
   [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
-  [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
   # For builtin ncurses5.7 to support tmux-256color terminfo
   export TERMINFO_DIRS=$TERMINFO_DIRS:$HOME/.local/share/terminfo
 elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
   [ -f /usr/share/autojump/autojump.sh ] && . /usr/share/autojump/autojump.sh
-  [ -f /usr/share/doc/fzf/examples/key-bindings.zsh ] && . /usr/share/doc/fzf/examples/key-bindings.zsh
-  [ -f /usr/share/doc/fzf/examples/completion.zsh ] && . /usr/share/doc/fzf/examples/completion.zsh
 fi
 
 # Created by `pipx` on 2021-06-02 04:50:33
