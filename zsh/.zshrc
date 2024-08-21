@@ -114,11 +114,8 @@ source $ZSH/oh-my-zsh.sh
 command -v fzf &> /dev/null && source <(fzf --zsh)
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
-  [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
   # For builtin ncurses5.7 to support tmux-256color terminfo
   export TERMINFO_DIRS=$TERMINFO_DIRS:$HOME/.local/share/terminfo
-elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
-  [ -f /usr/share/autojump/autojump.sh ] && . /usr/share/autojump/autojump.sh
 fi
 
 # Created by `pipx` on 2021-06-02 04:50:33
@@ -133,5 +130,9 @@ export EDITOR="nvim"
 # K9s
 export K9S_CONFIG_DIR="$HOME/.config/k9s"
 
+# thefuck
 eval $(thefuck --alias)
+
+# zoxide
+eval "$(zoxide init zsh)"
 

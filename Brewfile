@@ -9,8 +9,6 @@ brew "coreutils"
 brew "asdf"
 # Linter and formatter to improve copywriting, correct spaces, words between CJK
 brew "autocorrect"
-# Shell extension to jump to frequently used directories
-brew "autojump"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
@@ -85,6 +83,8 @@ brew "wget"
 brew "wrk"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
 brew "hudochenkov/sshpass/sshpass"
 # leetgo is a command line tool for leetcode.com. It can help you to login, submit, test, and view your submissions.
 brew "j178/tap/leetgo"
