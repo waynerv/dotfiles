@@ -1,3 +1,4 @@
+[general]
 import = ["/Users/waynerv/.config/alacritty/themes/kanagawa_wave.toml"]
 
 [env]
