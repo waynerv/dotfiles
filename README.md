@@ -82,7 +82,7 @@ brew install git
 ```bash
 mkdir -p ~/dotfiles/<package>
 mv ~/<dotfile> ~/dotfiles/<package>/<dotfile>
-cd ~/dorfiles
+cd ~/dotfiles
 stow <package>
 ```
 Example:
