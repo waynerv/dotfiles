@@ -26,7 +26,7 @@ return {
   },
   {
     "j-hui/fidget.nvim",
-    commit = "1ba38e4cbb24683973e00c2e36f53ae64da38ef5",
+    commit = "d855eed8a06531a7e8fd0684889b2943f373c469",
     event = "LspAttach",
     opts = {},
     -- stylua: ignore

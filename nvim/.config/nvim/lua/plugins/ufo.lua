@@ -9,7 +9,7 @@ local M = {
     },
     {
       "luukvbaal/statuscol.nvim",
-      commit = "d6f7f5437c5404d958b88bb73e0721b1c0e09223",
+      commit = "93d8bcda516fc86e11c03f9ef577bae9a72fba0e",
       config = function()
         local builtin = require "statuscol.builtin"
         require("statuscol").setup {
