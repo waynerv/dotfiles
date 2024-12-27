@@ -1,6 +1,6 @@
 local M = {
   "numToStr/Comment.nvim",
-  commit = "0236521ea582747b58869cb72f70ccfa967d2e89",
+  commit = "e30b7f2008e52442154b66f7c519bfd2f1e32acb",
   keys = {
     { "gc", mode = { "n", "x" } },
   },
@@ -8,7 +8,7 @@ local M = {
     "nvim-treesitter/nvim-treesitter",
     {
       "JoosepAlviste/nvim-ts-context-commentstring",
-      commit = "729d83ecb990dc2b30272833c213cc6d49ed5214",
+      commit = "1b212c2eee76d787bbea6aa5e92a2b534e7b4f8f",
     },
   },
 }

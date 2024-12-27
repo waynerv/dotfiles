@@ -9,7 +9,7 @@ return {
       },
       {
         "MunifTanjim/nui.nvim",
-        commit = "b1b3dcd6ed8f355c78bad3d395ff645be5f8b6ae",
+        commit = "53e907ffe5eedebdca1cd503b00aa8692068ca46",
       },
     },
     keys = {
@@ -26,7 +26,7 @@ return {
   },
   {
     "j-hui/fidget.nvim",
-    commit = "d855eed8a06531a7e8fd0684889b2943f373c469",
+    commit = "9238947645ce17d96f30842e61ba81147185b657",
     event = "LspAttach",
     opts = {},
     -- stylua: ignore
@@ -36,7 +36,7 @@ return {
   },
   {
     "neovim/nvim-lspconfig",
-    commit = "39106f0b71539bfed103d5ac25309f8d445c8d5e",
+    commit = "ff2b85abaa810f6611233dbe6d31c07510ebf43d",
     event = { "BufReadPre", "BufNewFile" },
     dependencies = {
       "williamboman/mason-lspconfig.nvim",

@@ -1,11 +1,11 @@
 local M = {
   "williamboman/mason-lspconfig.nvim",
-  commit = "a4caa0d083aab56f6cd5acf2d42331b74614a585",
+  commit = "2daa8921b7afdcfa47419a21ea343c3df6d74fa0",
   cmd = "Mason",
   dependencies = {
     {
       "williamboman/mason.nvim",
-      commit = "0950b15060067f752fde13a779a994f59516ce3d",
+      commit = "e2f7f9044ec30067bc11800a9e266664b88cda22",
     },
     {
       "WhoIsSethDaniel/mason-tool-installer.nvim",

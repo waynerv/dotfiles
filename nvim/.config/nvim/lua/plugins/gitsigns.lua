@@ -1,16 +1,17 @@
 local M = {
   "lewis6991/gitsigns.nvim",
-  commit = "75dc649106827183547d3bedd4602442340d2f7f",
+  commit = "ac5aba6dce8c06ea22bea2c9016f51a2dbf90dc7",
   event = "VeryLazy",
 }
 
 M.opts = {
   signs = {
-    add = { hl = "GitSignsAdd", text = "▎", numhl = "GitSignsAddNr", linehl = "GitSignsAddLn" },
-    change = { hl = "GitSignsChange", text = "▎", numhl = "GitSignsChangeNr", linehl = "GitSignsChangeLn" },
-    delete = { hl = "GitSignsDelete", text = "󰐊", numhl = "GitSignsDeleteNr", linehl = "GitSignsDeleteLn" },
-    topdelete = { hl = "GitSignsDelete", text = "󰐊", numhl = "GitSignsDeleteNr", linehl = "GitSignsDeleteLn" },
-    changedelete = { hl = "GitSignsChange", text = "▎", numhl = "GitSignsChangeNr", linehl = "GitSignsChangeLn" },
+    add = { text = "▎" },
+    change = { text = "▎" },
+    delete = { text = "󰐊" },
+    topdelete = { text = "󰐊" },
+    changedelete = { text = "▎" },
+    untracked = { text = "▎" },
   },
   signcolumn = true, -- Toggle with `:Gitsigns toggle_signs`
   watch_gitdir = {
@@ -50,10 +51,14 @@ M.opts = {
     map("n", "<leader>gu", gs.undo_stage_hunk, "Undo Stage Hunk")
     map("n", "<leader>gR", gs.reset_buffer, "Reset Buffer")
     map("n", "<leader>gk", gs.preview_hunk, "Preview Hunk")
-    map("n", "<leader>gb", function() gs.blame_line { full = true } end, "Blame Line")
+    map("n", "<leader>gb", function()
+      gs.blame_line { full = true }
+    end, "Blame Line")
     map("n", "<leader>tb", gs.toggle_current_line_blame, "Toggle blame line")
     map("n", "<leader>gd", gs.diffthis, "Diff This")
-    map("n", "<leader>gD", function() gs.diffthis "~" end, "Diff This ~")
+    map("n", "<leader>gD", function()
+      gs.diffthis "~"
+    end, "Diff This ~")
     map({ "o", "x" }, "ih", ":<C-U>Gitsigns select_hunk<cr>", "GitSigns Select Hunk")
   end,
 }

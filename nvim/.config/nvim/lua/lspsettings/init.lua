@@ -5,7 +5,7 @@ M.servers = {
   "gopls",
   "lua_ls",
   "pyright",
-  "ruff_lsp",
+  "ruff",
   "yamlls",
 }
 

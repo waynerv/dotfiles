@@ -1,15 +1,15 @@
 local M = {
   "kevinhwang91/nvim-ufo",
-  commit = "65dda6360879f6ffe0278163b9192a573a0d2a08",
+  commit = "32cb247b893a384f1888b9cd737264159ecf183c",
   event = { "BufReadPost", "BufNewFile" },
   dependencies = {
     {
       "kevinhwang91/promise-async",
-      commit = "93540c168c5ed2b030ec3e6c40ab8bbb85e36355",
+      commit = "119e8961014c9bfaf1487bf3c2a393d254f337e2",
     },
     {
       "luukvbaal/statuscol.nvim",
-      commit = "93d8bcda516fc86e11c03f9ef577bae9a72fba0e",
+      commit = "8822f76e105549620ef9c0d96e7b95aedf14c490",
       config = function()
         local builtin = require "statuscol.builtin"
         require("statuscol").setup {
