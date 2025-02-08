@@ -15,6 +15,8 @@ brew "bat"
 brew "btop"
 # Cross-platform make
 brew "cmake"
+# Package compiler and linker metadata toolkit
+brew "pkgconf"
 # Fast and statically typed, compiled language with Ruby-like syntax
 brew "crystal"
 # Tool for exploring each layer in a docker image
@@ -35,6 +37,8 @@ brew "git-delta"
 brew "git-trim"
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
+# GNU version of the tar archiving utility
+brew "gnu-tar"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
 # Graph visualization software from AT&T and Bell Labs
@@ -90,8 +94,8 @@ brew "hudochenkov/sshpass/sshpass"
 brew "j178/tap/leetgo"
 # GPU-accelerated terminal emulator
 cask "alacritty"
-# Universal database tool and SQL client
-cask "dbeaver-community"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
 # Opens a terminal window to the current directory in Finder
 cask "go2shell"
 # Free and open-source media player

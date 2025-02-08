@@ -121,6 +121,9 @@ fi
 # Created by `pipx` on 2021-06-02 04:50:33
 export PATH="$HOME/.local/bin:$PATH"
 
+# asdf
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
 # Go Path
 export GOPATH="$HOME/go"
 

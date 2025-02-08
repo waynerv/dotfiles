@@ -64,8 +64,11 @@
                     "suffix": ""
                 },
                 "pipx_metadata_version": "0.5",
-                "python_version": "Python 3.11.5",
-                "source_interpreter": null,
+                "python_version": "Python 3.11.9",
+                "source_interpreter": {
+                    "__Path__": "/Users/waynerv/.asdf/shims/python3.11",
+                    "__type__": "Path"
+                },
                 "venv_args": []
             }
         },
@@ -138,8 +141,11 @@
                     "suffix": ""
                 },
                 "pipx_metadata_version": "0.5",
-                "python_version": "Python 3.11.5",
-                "source_interpreter": null,
+                "python_version": "Python 3.11.9",
+                "source_interpreter": {
+                    "__Path__": "/Users/waynerv/.asdf/shims/python3.11",
+                    "__type__": "Path"
+                },
                 "venv_args": []
             }
         },
@@ -175,8 +181,11 @@
                     "suffix": ""
                 },
                 "pipx_metadata_version": "0.5",
-                "python_version": "Python 3.11.5",
-                "source_interpreter": null,
+                "python_version": "Python 3.11.9",
+                "source_interpreter": {
+                    "__Path__": "/Users/waynerv/.asdf/shims/python3.11",
+                    "__type__": "Path"
+                },
                 "venv_args": []
             }
         },
@@ -226,15 +235,18 @@
                     "man_paths_of_dependencies": {},
                     "package": "mycli",
                     "package_or_url": "mycli",
-                    "package_version": "1.27.2",
+                    "package_version": "1.29.2",
                     "pinned": false,
-                    "pip_args": [],
+                    "pip_args": [
+                        "--index-url",
+                        "https://pypi.tuna.tsinghua.edu.cn/simple"
+                    ],
                     "suffix": ""
                 },
                 "pipx_metadata_version": "0.5",
-                "python_version": "Python 3.12.3",
+                "python_version": "Python 3.11.9",
                 "source_interpreter": {
-                    "__Path__": "/usr/local/opt/python@3.12/libexec/bin/python",
+                    "__Path__": "/Users/waynerv/.asdf/shims/python3.11",
                     "__type__": "Path"
                 },
                 "venv_args": []
@@ -288,13 +300,16 @@
                     "package_or_url": "pgcli",
                     "package_version": "4.1.0",
                     "pinned": false,
-                    "pip_args": [],
+                    "pip_args": [
+                        "--index-url",
+                        "https://pypi.tuna.tsinghua.edu.cn/simple"
+                    ],
                     "suffix": ""
                 },
                 "pipx_metadata_version": "0.5",
-                "python_version": "Python 3.12.3",
+                "python_version": "Python 3.11.9",
                 "source_interpreter": {
-                    "__Path__": "/usr/local/opt/python@3.12/libexec/bin/python",
+                    "__Path__": "/Users/waynerv/.asdf/shims/python3.11",
                     "__type__": "Path"
                 },
                 "venv_args": []
@@ -391,7 +406,7 @@
                     "man_paths_of_dependencies": {},
                     "package": "poetry",
                     "package_or_url": "poetry",
-                    "package_version": "1.8.3",
+                    "package_version": "1.8.5",
                     "pinned": false,
                     "pip_args": [
                         "--index-url",
@@ -400,8 +415,11 @@
                     "suffix": ""
                 },
                 "pipx_metadata_version": "0.5",
-                "python_version": "Python 3.11.5",
-                "source_interpreter": null,
+                "python_version": "Python 3.11.9",
+                "source_interpreter": {
+                    "__Path__": "/Users/waynerv/.asdf/shims/python3.11",
+                    "__type__": "Path"
+                },
                 "venv_args": []
             }
         },
@@ -436,14 +454,18 @@
                     "package_version": "3.32",
                     "pinned": false,
                     "pip_args": [
+                        "--force-reinstall",
                         "--index-url",
                         "https://pypi.tuna.tsinghua.edu.cn/simple"
                     ],
                     "suffix": ""
                 },
                 "pipx_metadata_version": "0.5",
-                "python_version": "Python 3.11.5",
-                "source_interpreter": null,
+                "python_version": "Python 3.11.9",
+                "source_interpreter": {
+                    "__Path__": "/Users/waynerv/.asdf/shims/python3.11",
+                    "__type__": "Path"
+                },
                 "venv_args": []
             }
         },
@@ -495,8 +517,11 @@
                     "suffix": ""
                 },
                 "pipx_metadata_version": "0.5",
-                "python_version": "Python 3.11.5",
-                "source_interpreter": null,
+                "python_version": "Python 3.11.9",
+                "source_interpreter": {
+                    "__Path__": "/Users/waynerv/.asdf/shims/python3.11",
+                    "__type__": "Path"
+                },
                 "venv_args": []
             }
         }
