@@ -11,7 +11,7 @@ k9s:
     - qfusion-admin
     - kube-system
   view:
-    active: po
+    active: pod
   featureGates:
     nodeShell: false
   portForwardAddress: localhost

@@ -1,10 +1,10 @@
 tap "homebrew/bundle"
 tap "hudochenkov/sshpass"
 tap "j178/tap"
+# Zstandard is a real-time compression algorithm
+brew "zstd"
 # Record and share terminal sessions
 brew "asciinema"
-# GNU File, Shell, and Text utilities
-brew "coreutils"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
 # Linter and formatter to improve copywriting, correct spaces, words between CJK
@@ -15,6 +15,8 @@ brew "bat"
 brew "btop"
 # Cross-platform make
 brew "cmake"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
 # Fast and statically typed, compiled language with Ruby-like syntax
@@ -92,8 +94,6 @@ brew "zoxide"
 brew "hudochenkov/sshpass/sshpass"
 # leetgo is a command line tool for leetcode.com. It can help you to login, submit, test, and view your submissions.
 brew "j178/tap/leetgo"
-# GPU-accelerated terminal emulator
-cask "alacritty"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
 # Opens a terminal window to the current directory in Finder
@@ -102,8 +102,6 @@ cask "go2shell"
 cask "iina"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
-# GPU-based terminal emulator
-cask "kitty"
 # Privacy-first, open-source platform for knowledge sharing and management
 cask "logseq"
 # Smooths scrolling and set mouse scroll directions independently

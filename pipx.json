@@ -15,10 +15,6 @@
                             "__type__": "Path"
                         },
                         {
-                            "__Path__": "/Users/waynerv/.local/pipx/venvs/bpython/bin/bpython-curses",
-                            "__type__": "Path"
-                        },
-                        {
                             "__Path__": "/Users/waynerv/.local/pipx/venvs/bpython/bin/bpython-urwid",
                             "__type__": "Path"
                         }
@@ -40,7 +36,6 @@
                     "apps": [
                         "bpdb",
                         "bpython",
-                        "bpython-curses",
                         "bpython-urwid"
                     ],
                     "apps_of_dependencies": [
@@ -55,7 +50,7 @@
                     "man_paths_of_dependencies": {},
                     "package": "bpython",
                     "package_or_url": "bpython",
-                    "package_version": "0.24",
+                    "package_version": "0.25",
                     "pinned": false,
                     "pip_args": [
                         "--index-url",
@@ -406,7 +401,7 @@
                     "man_paths_of_dependencies": {},
                     "package": "poetry",
                     "package_or_url": "poetry",
-                    "package_version": "1.8.5",
+                    "package_version": "2.0.1",
                     "pinned": false,
                     "pip_args": [
                         "--index-url",
