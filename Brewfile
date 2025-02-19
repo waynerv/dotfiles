@@ -5,8 +5,6 @@ tap "j178/tap"
 brew "zstd"
 # Record and share terminal sessions
 brew "asciinema"
-# Extendable version manager with support for Ruby, Node.js, Erlang & more
-brew "asdf"
 # Linter and formatter to improve copywriting, correct spaces, words between CJK
 brew "autocorrect"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -61,6 +59,8 @@ brew "kubernetes-cli"
 brew "lazygit"
 # Mac App Store command-line interface
 brew "mas"
+# Polyglot runtime manager (asdf rust clone)
+brew "mise"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Execute binaries from Python packages in isolated environments
@@ -102,8 +102,6 @@ cask "go2shell"
 cask "iina"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
-# Privacy-first, open-source platform for knowledge sharing and management
-cask "logseq"
 # Smooths scrolling and set mouse scroll directions independently
 cask "mos"
 # Image optimisation tool
@@ -118,30 +116,8 @@ mas "Bob", id: 1630034110
 mas "CotEditor", id: 1024640650
 mas "GIPHY CAPTURE", id: 668208984
 mas "iShot", id: 1485844094
-mas "Kindle Classic", id: 405399194
 mas "OneDrive", id: 823766827
 mas "QQ音乐", id: 595615424
 mas "Unsplash Wallpapers", id: 1284863847
 mas "微信", id: 836500024
 mas "腾讯会议", id: 1484048379
-vscode "4ops.packer"
-vscode "flippidippi.flippidippi-theme"
-vscode "foxundermoon.shell-format"
-vscode "github.codespaces"
-vscode "golang.go"
-vscode "joaompinto.vscode-graphviz"
-vscode "labuladong.leetcode-helper"
-vscode "ms-azuretools.vscode-docker"
-vscode "ms-python.debugpy"
-vscode "ms-python.isort"
-vscode "ms-python.python"
-vscode "ms-python.vscode-pylance"
-vscode "ms-vscode-remote.remote-ssh"
-vscode "ms-vscode.makefile-tools"
-vscode "ms-vscode.remote-explorer"
-vscode "redhat.vscode-yaml"
-vscode "searking.preview-vscode"
-vscode "tamasfe.even-better-toml"
-vscode "timonwong.shellcheck"
-vscode "vscodevim.vim"
-vscode "zhuangtongfa.material-theme"

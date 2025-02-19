@@ -77,7 +77,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git asdf poetry kubectl golang zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git poetry kubectl golang zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -121,9 +121,6 @@ fi
 # Created by `pipx` on 2021-06-02 04:50:33
 export PATH="$HOME/.local/bin:$PATH"
 
-# asdf
-export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
-
 # Go Path
 export GOPATH="$HOME/go"
 
@@ -133,10 +130,14 @@ export EDITOR="nvim"
 # K9s
 export K9S_CONFIG_DIR="$HOME/.config/k9s"
 
+[[ -f /opt/homebrew/bin/brew ]] && eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# mise
+eval "$(mise activate zsh)"
+
 # thefuck
 eval $(thefuck --alias)
 
 # zoxide
 eval "$(zoxide init zsh)"
 
-[[ -f /opt/homebrew/bin/brew ]] && eval "$(/opt/homebrew/bin/brew shellenv)"

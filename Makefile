@@ -5,7 +5,7 @@ delete:
 	stow --verbose --target=$$HOME --delete */
 
 backup:
-	brew bundle dump --describe --force --file=~/dotfiles/Brewfile
+	brew bundle dump --no-vscode --describe --force --file=~/dotfiles/Brewfile
 	pipx list --json > ~/dotfiles/pipx.json
 	git diff
 

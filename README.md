@@ -40,7 +40,7 @@ brew install git
 3. install homebrew formulaes & casks:
 
     ```bash
-    brew bundle install ~/dotfiles/Brewfile
+    brew bundle install --file ~/dotfiles/Brewfile --verbose
     ```
 
 4. install pipx packages:
@@ -57,12 +57,11 @@ brew install git
     git reset --hard
     ```
 
-6. install asdf plugins:
+6. install dev-tools using mise:
 
     ```bash
     cd ~
-    for plug in {golang,python,nodejs,rust}; do asdf plugin add $plug; done
-    asdf install
+    mise install
     ```
 
 7. install nerd font [Hack Nerd Font Mono](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Hack.zip)
