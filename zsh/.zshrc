@@ -7,6 +7,8 @@ fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+command -v brew &> /dev/null || export PATH="/opt/homebrew/bin:/home/linuxbrew/.linuxbrew/bin:$PATH"
+eval "$(brew shellenv)"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -129,8 +131,6 @@ export EDITOR="nvim"
 
 # K9s
 export K9S_CONFIG_DIR="$HOME/.config/k9s"
-
-[[ -f /opt/homebrew/bin/brew ]] && eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # mise
 eval "$(mise activate zsh)"
