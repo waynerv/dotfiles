@@ -104,8 +104,12 @@ cask "iina"
 cask "iterm2"
 # Smooths scrolling and set mouse scroll directions independently
 cask "mos"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
 # Image optimisation tool
 cask "optimage"
+# Replacement for Docker Desktop
+cask "orbstack"
 # Control your tools with a few keystrokes
 cask "raycast"
 # Configurable document editor that supports Markdown

@@ -52,6 +52,7 @@ brew install git
 5. restore dotfiles using stow:
 
     ```bash
+    mkdir -p ~/.config ~/.ssh
     cd ~/dotfiles
     stow --adopt */
     git reset --hard
@@ -64,7 +65,9 @@ brew install git
     mise install
     ```
 
-7. install nerd font [Hack Nerd Font Mono](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Hack.zip)
+7. install nerd font from https://www.nerdfonts.com/font-downloads:
+    - Hack Nerd Font Mono
+    - DejaVuSansM Nerd Font Mono
 
 8. install tmux-256color terminfo:
     
@@ -73,6 +76,13 @@ brew install git
     ```
 
 9. import configuration file of iterm2 and raycast.
+
+10. configure macOS system defaults(need reboot):
+
+    ```bash
+    defaults -currentHost write -g AppleFontSmoothing -int 0
+    defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+    ```
 
 ## How to backup
 

@@ -54,7 +54,8 @@
                     "pinned": false,
                     "pip_args": [
                         "--index-url",
-                        "https://pypi.tuna.tsinghua.edu.cn/simple"
+                        "https://pypi.tuna.tsinghua.edu.cn/simple",
+                        "--force-reinstall"
                     ],
                     "suffix": ""
                 },
@@ -344,7 +345,6 @@
                     "package_version": "3.32",
                     "pinned": false,
                     "pip_args": [
-                        "--force-reinstall",
                         "--index-url",
                         "https://pypi.tuna.tsinghua.edu.cn/simple"
                     ],
