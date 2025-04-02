@@ -120,7 +120,6 @@ mas "Bob", id: 1630034110
 mas "CotEditor", id: 1024640650
 mas "GIPHY CAPTURE", id: 668208984
 mas "iShot", id: 1485844094
-mas "OneDrive", id: 823766827
 mas "QQ音乐", id: 595615424
 mas "Unsplash Wallpapers", id: 1284863847
 mas "微信", id: 836500024

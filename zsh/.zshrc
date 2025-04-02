@@ -125,6 +125,9 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # Go Path
 export GOPATH="$HOME/go"
+export GO111MODULE=on
+export GOPROXY=https://goproxy.cn
+export GOTOOLCHAIN=local
 
 # Neovim
 export EDITOR="nvim"
