@@ -1,6 +1,6 @@
 local M = {
   "nvim-tree/nvim-tree.lua",
-  commit = "68fc4c20f5803444277022c681785c5edd11916d",
+  commit = "1c733e8c1957dc67f47580fe9c458a13b5612d5b",
   cmd = { "NvimTreeToggle", "NvimTreeOpen", "NvimTreeFocus" },
   dependencies = { "nvim-tree/nvim-web-devicons" },
   keys = {

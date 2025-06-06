@@ -49,6 +49,7 @@ opt.showmode = false                        -- we don't need to see things like 
 opt.showtabline = 0                         -- always show tabs
 opt.splitbelow = true                       -- force all horizontal splits to go below current window
 opt.splitright = true                       -- force all vertical splits to go to the right of current window
+opt.winborder = 'rounded'                   -- use rounded borders on all floating windows
 
 -- Settings
 opt.fillchars.eob = " "                     -- show empty lines at the end of a buffer as ` ` {default `~`}

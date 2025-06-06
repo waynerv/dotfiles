@@ -26,7 +26,7 @@ return {
   },
   {
     "j-hui/fidget.nvim",
-    commit = "9238947645ce17d96f30842e61ba81147185b657",
+    commit = "d9ba6b7bfe29b3119a610892af67602641da778e",
     event = "LspAttach",
     opts = {},
     -- stylua: ignore
@@ -36,7 +36,7 @@ return {
   },
   {
     "neovim/nvim-lspconfig",
-    commit = "ff2b85abaa810f6611233dbe6d31c07510ebf43d",
+    commit = "036885e8e5456d3907626b634693234f628afef6",
     event = { "BufReadPre", "BufNewFile" },
     dependencies = {
       "williamboman/mason-lspconfig.nvim",
@@ -63,8 +63,8 @@ return {
         keymap(bufnr, "n", "g.", "<cmd>lua vim.lsp.buf.code_action()<cr>", opts)
         keymap(bufnr, "n", "<leader>li", "<cmd>LspInfo<cr>", opts)
         keymap(bufnr, "n", "<leader>lI", "<cmd>Mason<cr>", opts)
-        keymap(bufnr, "n", "<leader>ln", "<cmd>lua vim.diagnostic.goto_next({buffer=0})<cr>", opts)
-        keymap(bufnr, "n", "<leader>lp", "<cmd>lua vim.diagnostic.goto_prev({buffer=0})<cr>", opts)
+        keymap(bufnr, "n", "<leader>ln", "<cmd>lua vim.diagnostic.jump({count=1, float=true})<cr>", opts)
+        keymap(bufnr, "n", "<leader>lp", "<cmd>lua vim.diagnostic.jump({count=-1, float=true})<cr>", opts)
         keymap(bufnr, "n", "<leader>lr", "<cmd>lua vim.lsp.buf.rename()<cr>", opts)
         keymap(bufnr, "n", "<leader>ls", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
         keymap(bufnr, "n", "<leader>lq", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
@@ -92,24 +92,17 @@ return {
         lspconfig[server].setup(Opts)
       end
 
-      -- config diagnostic
-      local signs = {
-        { name = "DiagnosticSignError", text = "" },
-        { name = "DiagnosticSignWarn", text = "" },
-        { name = "DiagnosticSignHint", text = "" },
-        { name = "DiagnosticSignInfo", text = "" },
-      }
-
-      for _, sign in ipairs(signs) do
-        vim.fn.sign_define(sign.name, { texthl = sign.name, text = sign.text, numhl = "" })
-      end
-
       local config = {
         -- disable virtual text
         virtual_text = false,
-        -- show signs
+        -- config diagnostic signs
         signs = {
-          active = signs,
+          text = {
+            [vim.diagnostic.severity.ERROR] = "" ,
+            [vim.diagnostic.severity.WARN] = "" ,
+            [vim.diagnostic.severity.HINT] = "" ,
+            [vim.diagnostic.severity.INFO] = "" ,
+          },
         },
         update_in_insert = false,
         underline = true,
@@ -126,14 +119,6 @@ return {
       }
 
       vim.diagnostic.config(config)
-
-      vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
-        border = "rounded",
-      })
-
-      vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
-        border = "rounded",
-      })
     end,
   },
 }

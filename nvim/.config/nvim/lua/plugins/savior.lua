@@ -1,6 +1,6 @@
 local M = {
   "willothy/savior.nvim",
-  commit = "b5ab8a692ab1b9ed911b7e43237f84d294fd6df3",
+  commit = "ad8878c929bd759c8fac64744306f6e6c1e15e7d",
   dependencies = { "j-hui/fidget.nvim" },
   event = { "InsertEnter", "TextChanged" },
   config = true,

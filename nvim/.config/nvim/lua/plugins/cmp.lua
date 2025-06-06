@@ -1,6 +1,6 @@
 local M = {
   "hrsh7th/nvim-cmp",
-  commit = "b555203ce4bd7ff6192e759af3362f9d217e8c89",
+  commit = "b5311ab3ed9c846b585c0c15b7559be131ec4be9",
   event = { "InsertEnter", "CmdlineEnter" },
   dependencies = {
     {

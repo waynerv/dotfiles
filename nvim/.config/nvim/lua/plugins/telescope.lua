@@ -1,6 +1,6 @@
 local M = {
   "nvim-telescope/telescope.nvim",
-  commit = "2eca9ba22002184ac05eddbe47a7fe2d5a384dfc",
+  commit = "b4da76be54691e854d3e0e02c36b0245f945c2c7",
   cmd = { "Telescope" },
   dependencies = {
     "nvim-tree/nvim-web-devicons",
@@ -10,7 +10,7 @@ local M = {
     },
     {
       "nvim-telescope/telescope-fzf-native.nvim",
-      commit = "dae2eac9d91464448b584c7949a31df8faefec56",
+      commit = "1f08ed60cafc8f6168b72b80be2b2ea149813e55",
       build = "make",
     },
   },
@@ -29,8 +29,8 @@ local M = {
       "<leader>fG",
       function()
         require("telescope.builtin").live_grep {
-          additional_args = function(args)
-            return vim.list_extend(args, { "--hidden", "--no-ignore" })
+          additional_args = function()
+            return { "--hidden", "--no-ignore" }
           end,
         }
       end,
