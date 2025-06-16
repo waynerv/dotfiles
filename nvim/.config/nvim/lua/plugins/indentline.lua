@@ -1,17 +1,17 @@
 local M = {
   "lukas-reineke/indent-blankline.nvim",
-  version = "2.20.8",
+  main = "ibl",
+  commit = "005b56001b2cb30bfa61b7986bc50657816ba4ba",
   event = { "BufReadPost", "BufNewFile" },
   opts = {
-    char = "▏",
-    context_char = "▏",
-    show_trailing_blankline_indent = false,
-    show_first_indent_level = true,
-    use_treesitter = false,
-    show_current_context = false,
-    filetype = require("utils").enhance_filetypes,
-    buftype_exclude = require("utils").ignore_buftypes,
-    filetype_exclude = require("utils").ignore_filetypes,
+    indent = {
+      char = "│",
+    },
+    scope = {
+      char = "│",
+      show_start = false,
+      show_end = false,
+    },
   },
 }
 
