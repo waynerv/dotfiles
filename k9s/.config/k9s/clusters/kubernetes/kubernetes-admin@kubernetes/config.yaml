@@ -5,13 +5,13 @@ k9s:
     active: qfusion-admin
     lockFavorites: false
     favorites:
-    - all
-    - default
-    - qfusion
-    - qfusion-admin
-    - kube-system
+      - all
+      - default
+      - qfusion
+      - qfusion-admin
+      - kube-system
   view:
-    active: pod
+    active: v1/pods
   featureGates:
     nodeShell: false
-  portForwardAddress: localhost
+  proxy: null

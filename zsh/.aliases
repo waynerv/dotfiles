@@ -20,6 +20,8 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   alias tl='tmux list-sessions'
   alias tksv='tmux kill-server'
   alias tkss='tmux kill-session -t'
+  # local installed claude code
+  alias claude="~/.claude/local/claude"
 fi
 
 # for skins work properly

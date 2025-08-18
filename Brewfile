@@ -5,8 +5,12 @@ tap "j178/tap"
 brew "zstd"
 # Record and share terminal sessions
 brew "asciinema"
+# Code searching, linting, rewriting
+brew "ast-grep"
 # Linter and formatter to improve copywriting, correct spaces, words between CJK
 brew "autocorrect"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
@@ -119,8 +123,9 @@ cask "visual-studio-code"
 mas "Bob", id: 1630034110
 mas "CotEditor", id: 1024640650
 mas "GIPHY CAPTURE", id: 668208984
-mas "iShot", id: 1485844094
 mas "QQ音乐", id: 595615424
+mas "Quantumult X", id: 1443988620
+mas "sing-box", id: 6673731168
 mas "Unsplash Wallpapers", id: 1284863847
 mas "微信", id: 836500024
 mas "腾讯会议", id: 1484048379
