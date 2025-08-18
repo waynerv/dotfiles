@@ -3,6 +3,10 @@
   "feedbackSurveyState": {
     "lastShownTime": 1754045457818
   },
+  "env": {
+    "DISABLE_TELEMETRY": "1",
+    "DISABLE_ERROR_REPORTING": "1"
+  },
   "statusLine": {
     "type": "command",
     "command": "~/.claude/statusline.sh",
