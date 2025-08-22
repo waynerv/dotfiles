@@ -13,6 +13,7 @@ description: Create a git commit with code review
 ## Your task
  
 - Use the code-reviewer subagent to review above changes.
+- If the review found any critical issues, prompt user for 'fix' or 'continue', then abort all tasks and terminate execution immediately.
 - If 0 files are staged, automatically adds all modified and new files with `git add`.
 - Create a single commit and write review of code-reviewer to commit message body, use #$ARGUMENTS as subject line of commit message if provided.
 - Append all user inputs of current session to commit message body as is in ordered list format.
