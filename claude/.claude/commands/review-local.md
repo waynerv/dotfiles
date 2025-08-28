@@ -1,5 +1,5 @@
 ---
-allowed-tools: Bash(git status:*), Bash(git diff:*)
+allowed-tools: Bash(git status:*), Bash(git log:*), Bash(git diff:*)
 description: Review recent changes with code-reviewer subagent
 ---
  

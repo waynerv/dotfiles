@@ -5,6 +5,7 @@ input=$(cat)
 # Extract values using jq
 MODEL_DISPLAY=$(echo "$input" | jq -r '.model.display_name')
 CURRENT_DIR=$(echo "$input" | jq -r '.workspace.current_dir')
+VERSION=$(echo "$input" | jq -r '.version')
 
 # Show git branch if in a git repo
 GIT_BRANCH=""
@@ -15,4 +16,4 @@ if git rev-parse --git-dir > /dev/null 2>&1; then
     fi
 fi
 
-echo "[$MODEL_DISPLAY] 📁 ${CURRENT_DIR##*/}$GIT_BRANCH"
+echo "[$MODEL_DISPLAY] 📦 $VERSION | 📁 ${CURRENT_DIR##*/}$GIT_BRANCH"
