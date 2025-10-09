@@ -32,10 +32,10 @@ map("n", "<C-k>", "<C-w>k", { desc = "Go to upper window", remap = true })
 map("n", "<C-l>", "<C-w>l", { desc = "Go to right window", remap = true })
 
 -- Move with shift-arrows
-map("n", "<M-Up>", "<C-w><S-k>", { desc = "Move window up" })
-map("n", "<M-Down>", "<C-w><S-j>", { desc = "Move window down" })
-map("n", "<M-Left>", "<C-w><S-h>", { desc = "Move window to left" })
-map("n", "<M-Right>", "<C-w><S-l>", { desc = "Move window to right" })
+map("n", "<A-Up>", "<C-w><S-k>", { desc = "Move window up" })
+map("n", "<A-Down>", "<C-w><S-j>", { desc = "Move window down" })
+map("n", "<A-Left>", "<C-w><S-h>", { desc = "Move window to left" })
+map("n", "<A-Right>", "<C-w><S-l>", { desc = "Move window to right" })
 
 -- Resize with arrows
 map("n", "<C-Up>", "<cmd>resize +2<cr>", { desc = "Increase window height" })
@@ -44,16 +44,16 @@ map("n", "<C-Left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease window wi
 map("n", "<C-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
 
 -- Move Lines
-map("n", "<M-j>", "<cmd>m .+1<cr>==", { desc = "Move down" })
-map("n", "<M-k>", "<cmd>m .-2<cr>==", { desc = "Move up" })
-map("i", "<M-j>", "<esc><cmd>m .+1<cr>==gi", { desc = "Move down" })
-map("i", "<M-k>", "<esc><cmd>m .-2<cr>==gi", { desc = "Move up" })
-map("v", "<M-j>", ":m '>+1<cr>gv=gv", { desc = "Move down" })
-map("v", "<M-k>", ":m '<-2<cr>gv=gv", { desc = "Move up" })
+map("n", "<A-j>", "<cmd>m .+1<cr>==", { desc = "Move down" })
+map("n", "<A-k>", "<cmd>m .-2<cr>==", { desc = "Move up" })
+map("i", "<A-j>", "<esc><cmd>m .+1<cr>==gi", { desc = "Move down" })
+map("i", "<A-k>", "<esc><cmd>m .-2<cr>==gi", { desc = "Move up" })
+map("v", "<A-j>", ":m '>+1<cr>gv=gv", { desc = "Move down" })
+map("v", "<A-k>", ":m '<-2<cr>gv=gv", { desc = "Move up" })
 
 -- Easier access to beginning and end of line
-map({ "n", "v" }, "<M-h>", "^", { desc = "Go to beginning of line" })
-map({ "n", "v" }, "<M-l>", "$", { desc = "Go to end of line" })
+map({ "n", "v" }, "<A-h>", "^", { desc = "Go to beginning of line" })
+map({ "n", "v" }, "<A-l>", "$", { desc = "Go to end of line" })
 
 -- Clear search highlights with <esc>
 map({ "n", "i" }, "<esc>", "<cmd>noh<cr><esc>", { desc = "Escape and clear hlsearch" })
