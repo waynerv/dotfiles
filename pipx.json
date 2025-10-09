@@ -60,104 +60,9 @@
                     "suffix": ""
                 },
                 "pipx_metadata_version": "0.5",
-                "python_version": "Python 3.11.13",
+                "python_version": "Python 3.12.11",
                 "source_interpreter": {
-                    "__Path__": "/Users/waynerv/.local/share/mise/installs/python/3.11.13/bin/python3.11",
-                    "__type__": "Path"
-                },
-                "venv_args": []
-            }
-        },
-        "claude-monitor": {
-            "metadata": {
-                "injected_packages": {},
-                "main_package": {
-                    "app_paths": [
-                        {
-                            "__Path__": "/Users/waynerv/.local/pipx/venvs/claude-monitor/bin/ccm",
-                            "__type__": "Path"
-                        },
-                        {
-                            "__Path__": "/Users/waynerv/.local/pipx/venvs/claude-monitor/bin/ccmonitor",
-                            "__type__": "Path"
-                        },
-                        {
-                            "__Path__": "/Users/waynerv/.local/pipx/venvs/claude-monitor/bin/claude-code-monitor",
-                            "__type__": "Path"
-                        },
-                        {
-                            "__Path__": "/Users/waynerv/.local/pipx/venvs/claude-monitor/bin/claude-monitor",
-                            "__type__": "Path"
-                        },
-                        {
-                            "__Path__": "/Users/waynerv/.local/pipx/venvs/claude-monitor/bin/cmonitor",
-                            "__type__": "Path"
-                        }
-                    ],
-                    "app_paths_of_dependencies": {
-                        "markdown-it-py": [
-                            {
-                                "__Path__": "/Users/waynerv/.local/pipx/venvs/claude-monitor/bin/markdown-it",
-                                "__type__": "Path"
-                            }
-                        ],
-                        "numpy": [
-                            {
-                                "__Path__": "/Users/waynerv/.local/pipx/venvs/claude-monitor/bin/f2py",
-                                "__type__": "Path"
-                            },
-                            {
-                                "__Path__": "/Users/waynerv/.local/pipx/venvs/claude-monitor/bin/numpy-config",
-                                "__type__": "Path"
-                            }
-                        ],
-                        "pygments": [
-                            {
-                                "__Path__": "/Users/waynerv/.local/pipx/venvs/claude-monitor/bin/pygmentize",
-                                "__type__": "Path"
-                            }
-                        ],
-                        "python-dotenv": [
-                            {
-                                "__Path__": "/Users/waynerv/.local/pipx/venvs/claude-monitor/bin/dotenv",
-                                "__type__": "Path"
-                            }
-                        ]
-                    },
-                    "apps": [
-                        "ccm",
-                        "ccmonitor",
-                        "claude-code-monitor",
-                        "claude-monitor",
-                        "cmonitor"
-                    ],
-                    "apps_of_dependencies": [
-                        "f2py",
-                        "numpy-config",
-                        "dotenv",
-                        "markdown-it",
-                        "pygmentize"
-                    ],
-                    "include_apps": true,
-                    "include_dependencies": false,
-                    "man_pages": [],
-                    "man_pages_of_dependencies": [],
-                    "man_paths": [],
-                    "man_paths_of_dependencies": {},
-                    "package": "claude-monitor",
-                    "package_or_url": "claude-monitor",
-                    "package_version": "3.1.0",
-                    "pinned": false,
-                    "pip_args": [
-                        "--index-url",
-                        "https://pypi.python.org/simple"
-                    ],
-                    "suffix": ""
-                },
-                "pipx_metadata_version": "0.5",
-                "python_version": "Python 3.13.5",
-                "source_interpreter": {
-                    "__Path__": "/opt/homebrew/opt/python@3.13/libexec/bin/python",
+                    "__Path__": "/Users/waynerv/.local/share/mise/installs/python/3.12.11/bin/python3.12",
                     "__type__": "Path"
                 },
                 "venv_args": []
@@ -232,9 +137,9 @@
                     "suffix": ""
                 },
                 "pipx_metadata_version": "0.5",
-                "python_version": "Python 3.11.13",
+                "python_version": "Python 3.12.11",
                 "source_interpreter": {
-                    "__Path__": "/Users/waynerv/.local/share/mise/installs/python/3.11.13/bin/python3.11",
+                    "__Path__": "/Users/waynerv/.local/share/mise/installs/python/3.12.11/bin/python3.12",
                     "__type__": "Path"
                 },
                 "venv_args": []
@@ -272,9 +177,9 @@
                     "suffix": ""
                 },
                 "pipx_metadata_version": "0.5",
-                "python_version": "Python 3.11.13",
+                "python_version": "Python 3.12.11",
                 "source_interpreter": {
-                    "__Path__": "/Users/waynerv/.local/share/mise/installs/python/3.11.13/bin/python3.11",
+                    "__Path__": "/Users/waynerv/.local/share/mise/installs/python/3.12.11/bin/python3.12",
                     "__type__": "Path"
                 },
                 "venv_args": []
@@ -399,7 +304,7 @@
                     "man_paths_of_dependencies": {},
                     "package": "poetry",
                     "package_or_url": "poetry",
-                    "package_version": "2.1.4",
+                    "package_version": "2.2.1",
                     "pinned": false,
                     "pip_args": [
                         "--index-url",
@@ -408,9 +313,9 @@
                     "suffix": ""
                 },
                 "pipx_metadata_version": "0.5",
-                "python_version": "Python 3.11.13",
+                "python_version": "Python 3.12.11",
                 "source_interpreter": {
-                    "__Path__": "/Users/waynerv/.local/share/mise/installs/python/3.11.13/bin/python3.11",
+                    "__Path__": "/Users/waynerv/.local/share/mise/installs/python/3.12.11/bin/python3.12",
                     "__type__": "Path"
                 },
                 "venv_args": []
@@ -500,7 +405,7 @@
                     "man_paths_of_dependencies": {},
                     "package": "tldr",
                     "package_or_url": "tldr",
-                    "package_version": "3.4.1",
+                    "package_version": "3.4.3",
                     "pinned": false,
                     "pip_args": [
                         "--index-url",
@@ -509,9 +414,9 @@
                     "suffix": ""
                 },
                 "pipx_metadata_version": "0.5",
-                "python_version": "Python 3.11.13",
+                "python_version": "Python 3.12.11",
                 "source_interpreter": {
-                    "__Path__": "/Users/waynerv/.local/share/mise/installs/python/3.11.13/bin/python3.11",
+                    "__Path__": "/Users/waynerv/.local/share/mise/installs/python/3.12.11/bin/python3.12",
                     "__type__": "Path"
                 },
                 "venv_args": []

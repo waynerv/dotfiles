@@ -17,6 +17,10 @@ brew "bat"
 brew "btop"
 # Cross-platform make
 brew "cmake"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# OpenAI's coding agent that runs in your terminal
+brew "codex"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Package compiler and linker metadata toolkit
@@ -69,8 +73,6 @@ brew "mise"
 brew "neovim"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
-# Search tool like grep and The Silver Searcher
-brew "ripgrep"
 # Work with remote images registries
 brew "skopeo"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
@@ -127,5 +129,4 @@ mas "QQ音乐", id: 595615424
 mas "Quantumult X", id: 1443988620
 mas "sing-box", id: 6673731168
 mas "Unsplash Wallpapers", id: 1284863847
-mas "微信", id: 836500024
 mas "腾讯会议", id: 1484048379

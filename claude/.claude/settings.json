@@ -4,7 +4,6 @@
     "DISABLE_TELEMETRY": "1",
     "DISABLE_ERROR_REPORTING": "1"
   },
-  "model": "opus",
   "statusLine": {
     "type": "command",
     "command": "~/.claude/statusline.sh",
@@ -12,5 +11,6 @@
   },
   "feedbackSurveyState": {
     "lastShownTime": 1754045457818
-  }
+  },
+  "model": "opus"
 }
