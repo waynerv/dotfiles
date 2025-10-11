@@ -1,6 +1,6 @@
 local M = {
   "windwp/nvim-autopairs",
-  commit = "4d74e75913832866aa7de35e4202463ddf6efd1b",
+  commit = "23320e75953ac82e559c610bec5a90d9c6dfa743",
   event = "InsertEnter",
   dependencies = { "hrsh7th/nvim-cmp" },
 }
@@ -27,11 +27,6 @@ function M.config()
       use_virt_lines = false,
     },
   }
-
-  local cmp_autopairs = require "nvim-autopairs.completion.cmp"
-  local cmp = require "cmp"
-
-  cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done {})
 end
 
 return M

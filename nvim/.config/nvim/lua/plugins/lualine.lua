@@ -1,6 +1,6 @@
 local M = {
   "nvim-lualine/lualine.nvim",
-  commit = "0c6cca9f2c63dadeb9225c45bc92bb95a151d4af",
+  commit = "b8c23159c0161f4b89196f74ee3a6d02cdc3a955",
   dependencies = { "nvim-tree/nvim-web-devicons" },
   event = "VeryLazy",
 }
@@ -57,7 +57,7 @@ function M.config()
       theme = "auto",
       component_separators = { left = "", right = "" },
       section_separators = { left = "", right = "" },
-      disabled_filetypes = { "alpha", "dashboard" },
+      disabled_filetypes = { "alpha", "dashboard", "snacks_dashboard" },
       always_divide_middle = true,
     },
     sections = {

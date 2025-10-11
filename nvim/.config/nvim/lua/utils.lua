@@ -28,6 +28,8 @@ M.ignore_filetypes = {
   "toggleterm",
   "TelescopePrompt",
   "Trouble",
+  "snacks_picker_input",
+  "snacks_dashboard",
 }
 
 M.enhance_filetypes = {

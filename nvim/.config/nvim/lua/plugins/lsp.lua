@@ -26,7 +26,7 @@ return {
   },
   {
     "j-hui/fidget.nvim",
-    commit = "d9ba6b7bfe29b3119a610892af67602641da778e",
+    commit = "3f5475949679953af6d78654db29b944fa826e6a",
     event = "LspAttach",
     opts = {},
     -- stylua: ignore
@@ -35,64 +35,42 @@ return {
     },
   },
   {
-    "neovim/nvim-lspconfig",
-    commit = "036885e8e5456d3907626b634693234f628afef6",
+    "mason-org/mason-lspconfig.nvim",
+    commit = "6bdb14f230de0904229ec367b410fb817e59b072",
     event = { "BufReadPre", "BufNewFile" },
     dependencies = {
-      "williamboman/mason-lspconfig.nvim",
-      "hrsh7th/cmp-nvim-lsp",
+      {
+        "mason-org/mason.nvim",
+        commit = "ad7146aa61dcaeb54fa900144d768f040090bff0",
+        cmd = "Mason",
+        opts = {
+          ui = {
+            border = "none",
+            icons = {
+              package_installed = "✓",
+              package_pending = "➜",
+              package_uninstalled = "✗",
+            },
+          },
+        },
+      },
+      "neovim/nvim-lspconfig",
     },
     config = function()
-      -- Add additional capabilities supported by nvim-cmp and ufo.nvim
-      local capabilities = require("cmp_nvim_lsp").default_capabilities()
-      capabilities.textDocument.foldingRange = {
-        dynamicRegistration = false,
-        lineFoldingOnly = true,
-      }
+      -- config common capbilities
+      vim.lsp.config("*", {
+        capabilities = {
+          textDocument = {
+            foldingRange = {
+              dynamicRegistration = false,
+              lineFoldingOnly = true,
+            },
+          },
+        },
+      })
 
-      -- Define keymaps
-      local function lsp_keymaps(bufnr)
-        local opts = { noremap = true, silent = true }
-        local keymap = vim.api.nvim_buf_set_keymap
-        keymap(bufnr, "n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts)
-        keymap(bufnr, "n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
-        keymap(bufnr, "n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)
-        keymap(bufnr, "n", "gI", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts)
-        keymap(bufnr, "n", "gr", "<cmd>lua vim.lsp.buf.references({includeDeclaration=false})<CR>", opts)
-        keymap(bufnr, "n", "gl", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
-        keymap(bufnr, "n", "g.", "<cmd>lua vim.lsp.buf.code_action()<cr>", opts)
-        keymap(bufnr, "n", "<leader>li", "<cmd>LspInfo<cr>", opts)
-        keymap(bufnr, "n", "<leader>lI", "<cmd>Mason<cr>", opts)
-        keymap(bufnr, "n", "<leader>ln", "<cmd>lua vim.diagnostic.jump({count=1, float=true})<cr>", opts)
-        keymap(bufnr, "n", "<leader>lp", "<cmd>lua vim.diagnostic.jump({count=-1, float=true})<cr>", opts)
-        keymap(bufnr, "n", "<leader>lr", "<cmd>lua vim.lsp.buf.rename()<cr>", opts)
-        keymap(bufnr, "n", "<leader>ls", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
-        keymap(bufnr, "n", "<leader>lq", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
-        keymap(bufnr, "n", "<leader>lt", "<cmd>LspRestart<cr>", opts)
-      end
-      local on_attach = function(client, bufnr)
-        lsp_keymaps(bufnr)
-      end
-
-      -- setup lsp servers
-      local lspconfig = require "lspconfig"
-      for _, server in pairs(require("lspsettings").servers) do
-        Opts = {
-          on_attach = on_attach,
-          capabilities = capabilities,
-        }
-
-        server = vim.split(server, "@")[1]
-
-        local require_ok, conf_opts = pcall(require, "lspsettings." .. server)
-        if require_ok then
-          Opts = vim.tbl_deep_extend("force", conf_opts, Opts)
-        end
-
-        lspconfig[server].setup(Opts)
-      end
-
-      local config = {
+      -- config diagnostic
+      local diagnostics = {
         -- disable virtual text
         virtual_text = false,
         -- config diagnostic signs
@@ -117,8 +95,67 @@ return {
           suffix = "",
         },
       }
+      vim.diagnostic.config(diagnostics)
 
-      vim.diagnostic.config(config)
+      -- config LSP keymaps
+      -- stylua: ignore
+      vim.api.nvim_create_autocmd("LspAttach", {
+        callback = function(event)
+          local keymap = function(keys, func, desc, mode, opts)
+            mode = mode or "n"
+            opts = vim.tbl_extend("force", { buffer = event.buf, noremap = true, silent = true, desc = desc }, opts or {})
+            vim.keymap.set(mode, keys, func, opts)
+          end
+          keymap("gD", vim.lsp.buf.declaration, "Goto Declaration")
+          keymap("gd", vim.lsp.buf.definition, "Goto Definition")
+          keymap("gI", vim.lsp.buf.implementation, "Goto Implementation")
+          keymap("gr", function() vim.lsp.buf.references { includeDeclaration = false } end, "References", nil, { nowait = true })
+          keymap("gl", vim.diagnostic.open_float, "Show Diagnostic")
+          keymap("g.", vim.lsp.buf.code_action, "Code Action", { "n", "x" })
+          keymap("<leader>li", "<cmd>LspInfo<cr>")
+          keymap("<leader>lI", "<cmd>Mason<cr>")
+          keymap("<leader>ln", function() vim.diagnostic.jump { count = 1, float = true } end, "Next Diagnostic")
+          keymap("<leader>lp", function() vim.diagnostic.jump { count = -1, float = true } end, "Prev Diagnostic")
+          keymap("<leader>lr", vim.lsp.buf.rename, "Rename")
+          keymap("<leader>ls", vim.lsp.buf.signature_help, "Signature Help")
+          keymap("<leader>lq", vim.diagnostic.setloclist, "Diagnostic Loclist")
+          keymap("<leader>lt", "<cmd>LspRestart<cr>")
+        end,
+      })
+
+      -- Ensure packages are installed
+      local ensure_installed = {
+        "bash-language-server",
+        "lua-language-server",
+        "yaml-language-server",
+        "pyright",
+        "ruff",
+        "gopls",
+        -- tools
+        "goimports-reviser",
+        "shellcheck",
+        "shfmt",
+        "staticcheck",
+        "stylua",
+      }
+      local mr = require "mason-registry"
+      mr.refresh(function()
+        for _, tool in ipairs(ensure_installed) do
+          local p = mr.get_package(tool)
+          if not p:is_installed() then
+            p:install()
+          end
+        end
+      end)
+
+      -- Automatically install/enable language servers
+      require("mason-lspconfig").setup {
+        automatic_enable = {
+          exclude = {
+            "stylua",
+          },
+        },
+      }
     end,
   },
 }

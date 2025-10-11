@@ -1,5 +1,6 @@
 local M = {
   "hrsh7th/nvim-cmp",
+  enabled = false,
   commit = "b5311ab3ed9c846b585c0c15b7559be131ec4be9",
   event = { "InsertEnter", "CmdlineEnter" },
   dependencies = {
@@ -115,6 +116,7 @@ function M.config()
       end,
     },
     sources = {
+      { name = "lazydev" },
       { name = "nvim_lsp" },
       { name = "nvim_lua" },
       { name = "luasnip" },

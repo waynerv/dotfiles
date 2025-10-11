@@ -1,6 +1,6 @@
 local M = {
   "kevinhwang91/nvim-ufo",
-  commit = "3c7a3570e9c9dc198a2ad4491b0b0e51c4d4ba08",
+  commit = "72d54c31079d38d8dfc5456131b1d0fb5c0264b0",
   event = { "BufReadPost", "BufNewFile" },
   dependencies = {
     {

@@ -1,6 +1,6 @@
 local M = {
   "stevearc/conform.nvim",
-  commit = "0e93e0d12d2f7ebdea9e3e444dfaff0050cefbe6",
+  commit = "fbcb4fa7f34bfea9be702ffff481a8e336ebf6ed",
   cmd = { "ConformInfo" },
   keys = {
     {
@@ -21,6 +21,9 @@ local M = {
     formatters = {
       shfmt = {
         prepend_args = { "-i", "4" },
+      },
+      ["goimports-reviser"] = {
+        prepend_args = { "-company-prefixes", "gitlab.woqutech.com" },
       },
     },
   },

@@ -1,6 +1,6 @@
 local M = {
   "folke/flash.nvim",
-  commit = "3c942666f115e2811e959eabbdd361a025db8b63",
+  commit = "2febce67ff9cf7638d2569d17c41af02c38401eb",
   event = "VeryLazy",
   opts = {},
   -- stylua: ignore

@@ -1,6 +1,6 @@
 local M = {
-  "echasnovski/mini.cursorword",
-  commit = "ab63cc74975f4e107dbb490f6d3040eacfc1c023",
+  "nvim-mini/mini.cursorword",
+  commit = "d843392f739fcfd85969e2dadeb71c8e0221afb5",
   event = { "BufReadPost", "BufNewFile" },
 }
 
