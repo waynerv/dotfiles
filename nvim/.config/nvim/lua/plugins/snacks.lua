@@ -38,6 +38,13 @@ local M = {
     scroll = { enabled = false },
     statuscolumn = { enabled = false },
     words = { enabled = false },
+    styles = {
+      input = {
+        relative = "cursor",
+        row = -3,
+        col = 0,
+      },
+    },
   },
   -- stylua: ignore
   keys = {

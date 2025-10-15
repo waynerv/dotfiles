@@ -148,7 +148,7 @@ return {
         end
       end)
 
-      -- Automatically install/enable language servers
+      -- Automatically enable language servers
       require("mason-lspconfig").setup {
         automatic_enable = {
           exclude = {
