@@ -46,27 +46,26 @@ return {
       -- put the language you want in this array
       local ensure_installed =
         { "bash", "c", "dockerfile", "go", "gomod", "lua", "markdown", "markdown_inline", "python", "regex" }
-      local alreadyInstalled = require("nvim-treesitter.config").get_installed()
-      local parsersToInstall = vim
+      local already_installed = require("nvim-treesitter.config").get_installed()
+      local need_install = vim
         .iter(ensure_installed)
         :filter(function(parser)
-          return not vim.tbl_contains(alreadyInstalled, parser)
+          return not vim.tbl_contains(already_installed, parser)
         end)
         :totable()
-      require("nvim-treesitter").install(parsersToInstall)
+      require("nvim-treesitter").install(need_install)
 
-      local parsersInstalled = require("nvim-treesitter.config").get_installed "parsers"
-      for _, parser in pairs(parsersInstalled) do
+      local installed_parsers = require("nvim-treesitter.config").get_installed "parsers"
+      for _, parser in pairs(installed_parsers) do
         local filetypes = vim.treesitter.language.get_filetypes(parser)
         vim.api.nvim_create_autocmd({ "FileType" }, {
           pattern = filetypes,
           callback = function(event)
-            local max_filesize = 1024 * 1024 -- 1 MB
-            local size = vim.fn.getfsize(vim.api.nvim_buf_get_name(event.buf))
-            if size < max_filesize then
-              vim.treesitter.start()
-            end
+            -- highlighting
+            pcall(vim.treesitter.start)
+            -- folds
             vim.wo.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+            -- indents
             vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
           end,
         })

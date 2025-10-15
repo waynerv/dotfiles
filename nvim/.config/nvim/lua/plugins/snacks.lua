@@ -12,6 +12,7 @@ local M = {
       sections = {
         { section = "header" },
         { section = "keys", gap = 1, padding = 1 },
+        { icon = " ", title = "Projects", section = "projects", indent = 2, padding = 2 },
         { section = "startup" },
       },
     },
@@ -23,7 +24,7 @@ local M = {
       },
       scope = {
         enabled = false,
-        char = "│"
+        char = "│",
       },
       animate = {
         enabled = false,
@@ -38,6 +39,7 @@ local M = {
     statuscolumn = { enabled = false },
     words = { enabled = false },
   },
+  -- stylua: ignore
   keys = {
     -- Top Pickers
     { "<leader><space>", function() Snacks.picker.smart() end, desc = "Smart Find Files" },

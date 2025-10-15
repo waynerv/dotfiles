@@ -128,7 +128,7 @@ return {
         "bash-language-server",
         "lua-language-server",
         "yaml-language-server",
-        "pyright",
+        "basedpyright",
         "ruff",
         "gopls",
         -- tools
