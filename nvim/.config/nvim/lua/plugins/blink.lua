@@ -1,7 +1,9 @@
 local M = {
   "saghen/blink.cmp",
   -- optional: provides snippets for the snippet source
-  dependencies = { "rafamadriz/friendly-snippets" },
+  dependencies = {
+    { "rafamadriz/friendly-snippets", commit = "572f5660cf05f8cd8834e096d7b4c921ba18e175" },
+  },
   event = { "InsertEnter", "CmdlineEnter" },
 
   -- use a release tag to download pre-built binaries
@@ -34,8 +36,26 @@ local M = {
       nerd_font_variant = "mono",
     },
 
-    -- (Default) Only show the documentation popup when manually triggered
-    completion = { documentation = { auto_show = false } },
+    completion = {
+      menu = {
+        draw = {
+          columns = {
+            { "kind_icon" },
+            { "label", "label_description", gap = 1 },
+            { "source_name" },
+          },
+          components = {
+            kind_icon = {
+              text = function(ctx)
+                local kind_icons = require("utils").kind_icons
+                return kind_icons[ctx.kind] .. ctx.icon_gap
+              end,
+            },
+          },
+        },
+      },
+      documentation = { auto_show = true },
+    },
 
     -- Default list of enabled providers defined so that you can extend it
     -- elsewhere in your config, without redefining it, due to `opts_extend`
@@ -49,6 +69,8 @@ local M = {
     --
     -- See the fuzzy documentation for more information
     fuzzy = { implementation = "prefer_rust_with_warning" },
+
+    signature = { enabled = true },
   },
   opts_extend = { "sources.default" },
 }
