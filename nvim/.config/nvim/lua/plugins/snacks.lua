@@ -2,6 +2,7 @@ local M = {
   "folke/snacks.nvim",
   priority = 1000,
   lazy = false,
+  version = "2.27.0",
   opts = {
     -- your configuration comes here
     -- or leave it empty to use the default settings
@@ -32,7 +33,7 @@ local M = {
     },
     input = { enabled = true },
     picker = { enabled = true },
-    notifier = { enabled = false },
+    notifier = { enabled = true },
     quickfile = { enabled = false },
     scope = { enabled = false },
     scroll = { enabled = false },
