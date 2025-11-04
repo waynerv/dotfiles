@@ -7,6 +7,7 @@ local M = {
 function M.config()
   local wk = require "which-key"
   wk.add {
+    { "<leader>c", group = "Copy" },
     { "<leader>f", group = "Files" },
     { "<leader>g", group = "Git" },
     { "<leader>l", group = "LSP" },

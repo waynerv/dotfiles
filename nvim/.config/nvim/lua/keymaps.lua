@@ -58,8 +58,11 @@ map({ "n", "v" }, "<A-l>", "$", { desc = "Go to end of line" })
 -- Clear search highlights with <esc>
 map({ "n", "i" }, "<esc>", "<cmd>noh<cr><esc>", { desc = "Escape and clear hlsearch" })
 
--- Better paste
+-- Better copy/paste
 map("v", "p", "P")
+map("v", "<leader>c", '"+y', { desc = "Copy selection to system clipboard" })
+map("n", "<leader>cc", '"+yy', { desc = "Copy current line to system clipboard" })
+map("n", "<leader>cf", "<cmd>let @+ = expand('%:p')<cr>", { desc = "Copy current buffer path to system clipboard" })
 
 -- save file
 map({ "n", "i", "v" }, "<C-s>", "<cmd>w<cr><esc>", { desc = "Save file" })
