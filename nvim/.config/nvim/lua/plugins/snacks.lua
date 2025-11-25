@@ -2,7 +2,7 @@ local M = {
   "folke/snacks.nvim",
   priority = 1000,
   lazy = false,
-  version = "2.27.0",
+  version = "2.30.0",
   opts = {
     -- your configuration comes here
     -- or leave it empty to use the default settings
@@ -20,13 +20,6 @@ local M = {
     explorer = { enabled = false },
     indent = {
       enabled = true,
-      indent = {
-        char = "│",
-      },
-      scope = {
-        enabled = false,
-        char = "│",
-      },
       animate = {
         enabled = false,
       },
