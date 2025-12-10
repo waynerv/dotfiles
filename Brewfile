@@ -17,10 +17,6 @@ brew "bat"
 brew "btop"
 # Cross-platform make
 brew "cmake"
-# Search tool like grep and The Silver Searcher
-brew "ripgrep"
-# OpenAI's coding agent that runs in your terminal
-brew "codex"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Package compiler and linker metadata toolkit
@@ -43,6 +39,8 @@ brew "git"
 brew "git-delta"
 # Trim your git remote tracking branches that are merged or gone
 brew "git-trim"
+# Render markdown on the CLI
+brew "glow"
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
 # GNU version of the tar archiving utility
@@ -73,6 +71,10 @@ brew "mise"
 brew "neovim"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
 # Work with remote images registries
 brew "skopeo"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
@@ -87,8 +89,12 @@ brew "tokei"
 brew "topgrade"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Parser generator tool
+brew "tree-sitter-cli"
 # Command-line unarchiving tools supporting multiple formats
 brew "unar"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
 # Internet file retriever
 brew "wget"
 # HTTP benchmarking tool
@@ -100,6 +106,8 @@ brew "zoxide"
 brew "hudochenkov/sshpass/sshpass"
 # leetgo is a command line tool for leetcode.com. It can help you to login, submit, test, and view your submissions.
 brew "j178/tap/leetgo"
+# OpenAI's coding agent that runs in your terminal
+cask "codex"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
 # Opens a terminal window to the current directory in Finder
