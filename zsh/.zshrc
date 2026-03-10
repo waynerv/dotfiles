@@ -144,3 +144,6 @@ eval $(thefuck --alias)
 # zoxide
 eval "$(zoxide init zsh)"
 
+
+# Amp CLI
+export PATH="/Users/waynerv/.amp/bin:$PATH"

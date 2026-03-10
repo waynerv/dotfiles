@@ -1,8 +1,11 @@
+tap "anomalyco/tap"
 tap "homebrew/bundle"
 tap "hudochenkov/sshpass"
 tap "j178/tap"
 # Zstandard is a real-time compression algorithm
 brew "zstd"
+# Browser automation CLI for AI agents
+brew "agent-browser"
 # Record and share terminal sessions
 brew "asciinema"
 # Code searching, linting, rewriting
@@ -45,7 +48,7 @@ brew "glow"
 brew "gnu-sed"
 # GNU version of the tar archiving utility
 brew "gnu-tar"
-# GNU Pretty Good Privacy (PGP) package
+# GNU Privacy Guard (OpenPGP)
 brew "gnupg"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
@@ -103,11 +106,15 @@ brew "wrk"
 brew "yq"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
+# The AI coding agent built for the terminal.
+brew "anomalyco/tap/opencode"
 brew "hudochenkov/sshpass/sshpass"
 # leetgo is a command line tool for leetcode.com. It can help you to login, submit, test, and view your submissions.
 brew "j178/tap/leetgo"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
+# AI-powered software engineering agent by Factory
+cask "droid"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
 # Opens a terminal window to the current directory in Finder
@@ -138,3 +145,4 @@ mas "Quantumult X", id: 1443988620
 mas "sing-box", id: 6673731168
 mas "Unsplash Wallpapers", id: 1284863847
 mas "腾讯会议", id: 1484048379
+uv "specify-cli"
