@@ -1,10 +1,5 @@
-# This is Git's per-user configuration file.
-[url "git@gitlab.woqutech.com:"]
-	insteadOf = https://gitlab.woqutech.com/
-[user]
-# Please adapt and uncomment the following lines:
-	name = Waynerv
-	email = wei.xie@woqutech.com
+[include]
+    path = ~/.gitconfig.local
 [core]
 	pager = delta
 [pull]
