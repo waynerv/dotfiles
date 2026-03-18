@@ -53,8 +53,7 @@ brew install git
 
     ```bash
     mkdir -p ~/.config ~/.ssh
-    cd ~/dotfiles
-    stow --adopt */
+    cd ~/dotfiles && stow --adopt */
     git reset --hard
     ```
 

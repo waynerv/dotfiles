@@ -1,7 +1,5 @@
 tap "anomalyco/tap"
-tap "homebrew/bundle"
 tap "hudochenkov/sshpass"
-tap "j178/tap"
 # Zstandard is a real-time compression algorithm
 brew "zstd"
 # Browser automation CLI for AI agents
@@ -109,16 +107,14 @@ brew "zoxide"
 # The AI coding agent built for the terminal.
 brew "anomalyco/tap/opencode"
 brew "hudochenkov/sshpass/sshpass"
-# leetgo is a command line tool for leetcode.com. It can help you to login, submit, test, and view your submissions.
-brew "j178/tap/leetgo"
+# Terminal-based AI coding assistant
+cask "claude-code"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
 # AI-powered software engineering agent by Factory
 cask "droid"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
-# Opens a terminal window to the current directory in Finder
-cask "go2shell"
 # Free and open-source media player
 cask "iina"
 # Terminal emulator as alternative to Apple's Terminal app
@@ -127,8 +123,6 @@ cask "iterm2"
 cask "mos"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
-# Image optimisation tool
-cask "optimage"
 # Replacement for Docker Desktop
 cask "orbstack"
 # Control your tools with a few keystrokes
@@ -139,10 +133,7 @@ cask "typora"
 cask "visual-studio-code"
 mas "Bob", id: 1630034110
 mas "CotEditor", id: 1024640650
-mas "GIPHY CAPTURE", id: 668208984
-mas "QQ音乐", id: 595615424
 mas "Quantumult X", id: 1443988620
-mas "sing-box", id: 6673731168
-mas "Unsplash Wallpapers", id: 1284863847
+mas "Windows App", id: 1295203466
 mas "腾讯会议", id: 1484048379
 uv "specify-cli"
