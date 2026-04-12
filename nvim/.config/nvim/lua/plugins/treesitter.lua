@@ -45,7 +45,7 @@ return {
     config = function()
       -- put the language you want in this array
       local ensure_installed =
-        { "bash", "c", "dockerfile", "go", "gomod", "lua", "markdown", "markdown_inline", "python", "regex" }
+        { "bash", "c", "dockerfile", "go", "gomod", "lua", "markdown", "markdown_inline", "python", "regex", "typescript", "scss" }
       local already_installed = require("nvim-treesitter.config").get_installed()
       local need_install = vim
         .iter(ensure_installed)

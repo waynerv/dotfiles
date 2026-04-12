@@ -26,7 +26,7 @@ return {
   },
   {
     "j-hui/fidget.nvim",
-    commit = "3f5475949679953af6d78654db29b944fa826e6a",
+    commit = "889e2e96edef4e144965571d46f7a77bcc4d0ddf",
     event = "LspAttach",
     opts = {},
     -- stylua: ignore
@@ -54,7 +54,10 @@ return {
           },
         },
       },
-      "neovim/nvim-lspconfig",
+      {
+        "neovim/nvim-lspconfig",
+        commit = "0203a9608d63eda57679b01e69f33a7b4c34b0d1",
+      },
     },
     config = function()
       -- config common capbilities
@@ -112,14 +115,14 @@ return {
           keymap("gr", function() vim.lsp.buf.references { includeDeclaration = false } end, "References", nil, { nowait = true })
           keymap("gl", vim.diagnostic.open_float, "Show Diagnostic")
           keymap("g.", vim.lsp.buf.code_action, "Code Action", { "n", "x" })
-          keymap("<leader>li", "<cmd>LspInfo<cr>")
+          keymap("<leader>li", "<cmd>checkhealth vim.lsp<cr>")
           keymap("<leader>lI", "<cmd>Mason<cr>")
           keymap("<leader>ln", function() vim.diagnostic.jump { count = 1, float = true } end, "Next Diagnostic")
           keymap("<leader>lp", function() vim.diagnostic.jump { count = -1, float = true } end, "Prev Diagnostic")
           keymap("<leader>lr", vim.lsp.buf.rename, "Rename")
           keymap("<leader>ls", vim.lsp.buf.signature_help, "Signature Help")
           keymap("<leader>lq", vim.diagnostic.setloclist, "Diagnostic Loclist")
-          keymap("<leader>lt", "<cmd>LspRestart<cr>")
+          keymap("<leader>lt", "<cmd>lsp restart<cr>")
         end,
       })
 
