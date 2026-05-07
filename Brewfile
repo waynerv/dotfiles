@@ -20,10 +20,6 @@ brew "btop"
 brew "cmake"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
-# Package compiler and linker metadata toolkit
-brew "pkgconf"
-# Fast and statically typed, compiled language with Ruby-like syntax
-brew "crystal"
 # Tool for exploring each layer in a docker image
 brew "dive"
 # More intuitive version of du in rust
@@ -70,8 +66,8 @@ brew "mas"
 brew "mise"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# Execute binaries from Python packages in isolated environments
-brew "pipx"
+# Package compiler and linker metadata toolkit
+brew "pkgconf"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Static analysis and lint tool, for (ba)sh scripts
@@ -133,7 +129,14 @@ cask "typora"
 cask "visual-studio-code"
 mas "Bob", id: 1630034110
 mas "CotEditor", id: 1024640650
+mas "QQ音乐", id: 595615424
 mas "Quantumult X", id: 1443988620
-mas "Windows App", id: 1295203466
+mas "RG-SSLVPN", id: 1603182638
+mas "WPS Office", id: 1443749478
+mas "企业微信", id: 1189898970
+mas "微信", id: 836500024
 mas "腾讯会议", id: 1484048379
+mas "飞书", id: 1551632588
 uv "specify-cli"
+uv "thefuck"
+uv "tldr"

@@ -120,7 +120,6 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   export TERMINFO_DIRS=$TERMINFO_DIRS:$HOME/.local/share/terminfo
 fi
 
-# Created by `pipx` on 2021-06-02 04:50:33
 export PATH="$HOME/.local/bin:$PATH"
 
 # Go Path
