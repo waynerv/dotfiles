@@ -99,7 +99,7 @@
 # bashit_branch = "stable"
 
 # Run specific steps - same options as the command line flag
-only = ["brew_cask", "brew_formula", "mise", "pip3", "pipx", "shell", "tldr", "tmux", "uv", "mas"]
+only = ["brew_cask", "brew_formula", "mise", "pip3", "pipx", "shell", "tldr", "tmux", "uv", "mas", "custom_commands"]
 
 # Whether to self update
 #
@@ -139,6 +139,8 @@ only = ["brew_cask", "brew_formula", "mise", "pip3", "pipx", "shell", "tldr", "t
 [commands]
 # "Python Environment" = "~/dev/.env/bin/pip install -i https://pypi.python.org/simple -U --upgrade-strategy eager jupyter"
 # "Custom command using interactive shell (unix)" = "-i vim_upgrade"
+"Ampcode" = "amp update"
+"Droid" = "droid update"
 
 
 [python]

@@ -1,9 +1,7 @@
 tap "anomalyco/tap"
 tap "hudochenkov/sshpass"
-# Zstandard is a real-time compression algorithm
-brew "zstd"
-# Browser automation CLI for AI agents
-brew "agent-browser"
+tap "modem-dev/tap"
+tap "morantron/tmux-fingers"
 # Record and share terminal sessions
 brew "asciinema"
 # Code searching, linting, rewriting
@@ -30,6 +28,8 @@ brew "eza"
 brew "fd"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# Zstandard is a real-time compression algorithm
+brew "zstd"
 # Distributed revision control system
 brew "git"
 # Syntax-highlighting pager for git and diff output
@@ -48,8 +48,12 @@ brew "gnupg"
 brew "graphviz"
 # Kubernetes package manager
 brew "helm"
+# Agent multiplexer that lives in your terminal
+brew "herdr"
 # Configurable static site generator
 brew "hugo"
+# Feature-rich interactive Jira CLI
+brew "jira-cli"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Kubernetes CLI To Manage Your Clusters In Style!
@@ -64,6 +68,8 @@ brew "lazygit"
 brew "mas"
 # Polyglot runtime manager (asdf rust clone)
 brew "mise"
+# Deep clean and optimize your Mac
+brew "mole"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Package compiler and linker metadata toolkit
@@ -101,10 +107,12 @@ brew "yq"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # The AI coding agent built for the terminal.
-brew "anomalyco/tap/opencode"
-brew "hudochenkov/sshpass/sshpass"
-# Terminal-based AI coding assistant
-cask "claude-code"
+brew "anomalyco/tap/opencode", trusted: true
+brew "hudochenkov/sshpass/sshpass", trusted: true
+# Desktop-inspired terminal diff viewer for agent-authored changesets
+brew "modem-dev/tap/hunk", trusted: true
+# mouseless terminal interaction
+brew "morantron/tmux-fingers/tmux-fingers", trusted: true
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
 # AI-powered software engineering agent by Factory
@@ -113,8 +121,8 @@ cask "droid"
 cask "ghostty"
 # Free and open-source media player
 cask "iina"
-# Terminal emulator as alternative to Apple's Terminal app
-cask "iterm2"
+# Tool for multi-language users
+cask "input-source-pro"
 # Smooths scrolling and set mouse scroll directions independently
 cask "mos"
 # Knowledge base that works on top of a local folder of plain text Markdown files
@@ -127,11 +135,12 @@ cask "raycast"
 cask "typora"
 # Open-source code editor
 cask "visual-studio-code"
-mas "Bob", id: 1630034110
+# Binary releases of VS Code without MS branding/telemetry/licensing
+cask "vscodium"
 mas "CotEditor", id: 1024640650
-mas "QQ音乐", id: 595615424
 mas "Quantumult X", id: 1443988620
 mas "RG-SSLVPN", id: 1603182638
+mas "Windows App", id: 1295203466
 mas "WPS Office", id: 1443749478
 mas "企业微信", id: 1189898970
 mas "微信", id: 836500024
@@ -140,3 +149,5 @@ mas "飞书", id: 1551632588
 uv "specify-cli"
 uv "thefuck"
 uv "tldr"
+npm "@earendil-works/pi-coding-agent"
+npm "corepack"

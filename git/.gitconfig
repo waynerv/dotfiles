@@ -15,12 +15,16 @@
 	defaultBranch = main
 [branch]
     sort = -committerdate
+[alias]
+    diffs = -c delta.features=side-by-side diff
 
 [interactive]
 	diffFilter = delta --color-only --features=interactive
 
 [delta]
 	features = decorations
+    hyperlinks = true
+    hyperlinks-file-link-format = "vscode://file/{path}:{line}"
 	navigate = true
     tabs = 4
 

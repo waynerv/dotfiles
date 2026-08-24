@@ -81,6 +81,7 @@ brew install git
     ```bash
     defaults -currentHost write -g AppleFontSmoothing -int 0
     defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+    defaults write com.vscodium ApplePressAndHoldEnabled -bool false
     ```
 
 ## How to backup
