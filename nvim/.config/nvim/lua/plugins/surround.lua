@@ -1,6 +1,6 @@
 local M = {
   "kylechui/nvim-surround",
-  commit = "75de1782c781961e392efcca57601bf436f4d550",
+  commit = "2e93e154de9ff326def6480a4358bfc149d5da2c",
   event = "VeryLazy",
   config = true,
 }

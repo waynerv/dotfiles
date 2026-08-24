@@ -17,6 +17,7 @@ local M = {
       sh = { "shfmt" },
       go = { "goimports-reviser" },
       lua = { "stylua" },
+      json = { "fixjson" },
     },
     formatters = {
       shfmt = {
