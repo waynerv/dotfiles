@@ -1,0 +1,32 @@
+# Adapted from herdr's Kanagawa UI palette (Apache-2.0; see LICENSE.herdr).
+# Source: https://github.com/herdrdev/herdr/blob/5608de0608918aba2f9d501e7793b984a0ca9cfa/src/app/state.rs#L403
+# Modification: map UI roles to Ghostty terminal colors for Rex.
+# Herdr has no separate bright ANSI colors; reuse its semantic colors for 9-14.
+
+# surface_dim, red, green, yellow, blue, mauve, teal, subtext0
+palette = 0=#1f1f28
+palette = 1=#c34043
+palette = 2=#76946a
+palette = 3=#c0a36e
+palette = 4=#7e9cd8
+palette = 5=#957fb8
+palette = 6=#7fb4ca
+palette = 7=#c8c3aa
+
+# overlay0, semantic colors, text
+palette = 8=#727169
+palette = 9=#c34043
+palette = 10=#76946a
+palette = 11=#c0a36e
+palette = 12=#7e9cd8
+palette = 13=#957fb8
+palette = 14=#7fb4ca
+palette = 15=#dcd7ba
+
+# panel_bg, text, accent, panel_bg, selection_bg, text
+background = 1f1f28
+foreground = dcd7ba
+cursor-color = 7e9cd8
+cursor-text = 1f1f28
+selection-background = 32384b
+selection-foreground = dcd7ba
